@@ -121,15 +121,14 @@
 
   /* ---------- Sticky day nav ---------- */
   .daynav {
-    position: sticky; top: 0; z-index: 20;
-    background: rgba(255, 248, 241, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    position: sticky; top: 0; z-index: 40;
+    background: rgba(255,248,241,0.92); backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--line);
-    padding-top: env(safe-area-inset-top);
   }
   .daynav ul {
-    list-style: none; margin: 0; padding: 8px 12px;
-    display: flex; gap: 8px; overflow-x: auto; -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; scroll-snap-type: x proximity;
+    display: flex; flex-wrap: wrap; gap: 8px; list-style: none;
+    margin: 0; padding: 10px 16px; justify-content: center;
+    max-width: 980px; margin-inline: auto;
   }
   .daynav ul::-webkit-scrollbar { display: none; }
   .daynav li { flex: 0 0 auto; scroll-snap-align: start; }
@@ -214,6 +213,31 @@
     font-weight: 700; font-size: 13px; color: #1a73e8; margin-left: 4px;
   }
 
+
+  .filter-list {
+    margin: 10px 0 0; padding: 0; list-style: none;
+    font-size: 15px; line-height: 1.45; color: var(--ink-soft);
+  }
+  .filter-list li {
+    padding: 8px 0 8px 18px; position: relative;
+    border-bottom: 1px solid var(--line);
+  }
+  .filter-list li:last-child { border-bottom: 0; }
+  .filter-list li::before {
+    content: "✓"; position: absolute; left: 0; top: 8px;
+    color: var(--orange-deep); font-weight: 800; font-size: 13px;
+  }
+  .card.no .filter-list li::before { content: "✕"; color: #8a2436; }
+  .card.no {
+    border-color: #f8c3cc; background: #fff7f8;
+  }
+  .card.no .k { color: #8a2436; }
+  .card.no .filter-list { color: #8a2436; }
+  /* keep blocks inside wrap from bleeding */
+  main.wrap > .block { max-width: 100%; }
+  .map-strip .map-actions { align-items: stretch; }
+  .map-btn { text-align: center; justify-content: center; }
+
   .day-agenda {
     display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 16px;
     padding: 12px; background: #fff4ea; border: 1px solid #ffd1ad; border-radius: 16px;
@@ -291,6 +315,8 @@
 
   /* ---------- Cards (flights / stay / car) ---------- */
   .cards { display: grid; gap: 10px; }
+  .cards.two { grid-template-columns: 1fr; gap: 12px; }
+  @media (min-width: 640px) { .cards.two { grid-template-columns: 1fr 1fr; } }
   .card {
     background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px;
   }
@@ -391,36 +417,38 @@
       <div class="tile wide"><div class="k">What we're looking for</div><div class="v">4BR · garden · ≤ ~$1M · Carlsbad-vibe streets</div><div class="s">Young families, good schools, grocery minutes away, park/greenery, not too inland. Beach-close not required. Shortlists in Operator chat.</div></div>
     </div>
   </div>
+
+  <section class="block" id="maya-filter">
+    <div class="section-title"><h2>Maya's filter</h2><span class="date">locked 20 Sep</span></div>
+    <p class="lede">The neighbourhood test from the call. Every door gets scored against this — not just the listing photos.</p>
+    <div class="cards two">
+      <div class="card pick">
+        <div class="k">Yes — feel like home</div>
+        <ul class="filter-list">
+          <li>Safe, clean streets · affluent, young-family energy (not a retiree bubble)</li>
+          <li>Good school district for the kids</li>
+          <li>Nice grocery a few minutes' drive</li>
+          <li>Greenery / a park nearby</li>
+          <li>Not too far inland — <strong>Carlsbad vibe</strong>; Vista wins because Carlsbad Village is a quick hop with baby</li>
+          <li>Garage <em>plus</em> street parking for guests (or guest lots if gated)</li>
+        </ul>
+      </div>
+      <div class="card no">
+        <div class="k">Hard no-nos</div>
+        <ul class="filter-list">
+          <li>Unkept houses, smashed-up cars on the block</li>
+          <li>Crappy streets — if it doesn't feel right from the kerb, it isn't</li>
+          <li>Bad school district (Nick tip or you find it yourself)</li>
+          <li>Beach-front premium for its own sake — expensive, not the life right now</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note"><strong>How to use it on the kerb:</strong> photo the street both ways, note guest parking, walk or time the park, check grocery minutes on Maps, glance school ratings before you fall in love with the kitchen. Beach is a bonus, not the goal. Escondido is the most inland day — score the Carlsbad/Village drive harder.</div>
+  </section>
+
 </main>
 
 
-<section class="block" id="maya-filter">
-  <div class="section-title"><h2>Maya's filter</h2><span class="date">locked 20 Sep</span></div>
-  <p class="lede">The neighbourhood test from the call. Every door gets scored against this — not just the listing photos.</p>
-  <div class="cards two">
-    <div class="card pick">
-      <div class="k">Yes — feel like home</div>
-      <div class="s" style="margin-top:8px; line-height:1.55">
-        Safe, clean streets · affluent, young-family energy (not a retiree bubble)<br>
-        Good school district for the kids<br>
-        Nice grocery a few minutes' drive<br>
-        Greenery / a park nearby<br>
-        Not too far inland — <strong>Carlsbad vibe</strong>; Vista wins because Carlsbad Village is a quick hop with baby<br>
-        Garage <em>plus</em> street parking for guests (or guest lots if gated)
-      </div>
-    </div>
-    <div class="card" style="border-color:#f8c3cc; background:#fff7f8">
-      <div class="k" style="color:#8a2436">Hard no-nos</div>
-      <div class="s" style="margin-top:8px; line-height:1.55; color:#8a2436">
-        Unkept houses, smashed-up cars on the block<br>
-        Crappy streets — if it doesn't feel right from the kerb, it isn't<br>
-        Bad school district (Nick tip or you find it yourself)<br>
-        Beach-front premium for its own sake — expensive, not the life right now
-      </div>
-    </div>
-  </div>
-  <div class="note" style="margin-top:12px"><strong>How to use it on the kerb:</strong> photo the street both ways, note guest parking, walk or time the park, check grocery minutes on Maps, glance school ratings before you fall in love with the kitchen. Beach is a bonus, not the goal. Escondido is the most inland day — score the Carlsbad/Village drive harder.</div>
-</section>
 
 <!-- ============ Day nav ============ -->
 <nav class="daynav" aria-label="Jump to a day">
