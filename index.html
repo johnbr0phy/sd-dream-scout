@@ -195,6 +195,25 @@
 
   /* ---------- Timeline ---------- */
   /* Day agenda strip — clock-first */
+
+  .map-strip {
+    display: flex; flex-direction: column; gap: 8px;
+    margin: 0 0 16px; padding: 12px 14px;
+    background: #eef6ff; border: 1px solid #c5ddf7; border-radius: 16px;
+  }
+  .map-strip .map-why { font-size: 14px; color: var(--ink-soft); line-height: 1.45; margin: 0; }
+  .map-strip .map-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+  .map-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #1a73e8; color: #fff !important; text-decoration: none !important;
+    font-weight: 700; font-size: 14px; padding: 10px 14px; border-radius: 999px;
+  }
+  .map-btn.secondary { background: #fff; color: #1a73e8 !important; border: 1px solid #1a73e8; }
+  a.drive-maps {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-weight: 700; font-size: 13px; color: #1a73e8; margin-left: 4px;
+  }
+
   .day-agenda {
     display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 16px;
     padding: 12px; background: #fff4ea; border: 1px solid #ffd1ad; border-radius: 16px;
@@ -407,6 +426,7 @@
 <nav class="daynav" aria-label="Jump to a day">
   <ul>
     <li><a href="#maya-filter">Maya filter</a></li>
+    <li><a href="#hub-map">🗺️ Hub map</a></li>
     <li><a href="#wed">Wed <small>arrive</small></a></li>
     <li><a href="#thu">Thu <small>Oceanside · 4</small></a></li>
     <li><a href="#fri">Fri <small>Vista · 2</small></a></li>
@@ -420,11 +440,29 @@
 
 <main class="wrap">
 
+  
+<section class="block" id="hub-map">
+  <div class="section-title"><h2>Why San Marcos is the hub</h2><span class="date">one Airbnb · four towns</span></div>
+  <p class="lede">Stay in the middle. Oceanside west, Vista north, Escondido east, Carlsbad Village a short hop for Maya's baby walk. One suitcase, one Tesla base, star-shaped days — not a hotel move every night.</p>
+  <div class="map-strip">
+    <p class="map-why"><strong>Star map from Lake San Marcos.</strong> Maps draws Oceanside → back → Vista → back → Escondido → back → Carlsbad Village → back. That's the geometry of the week.</p>
+    <div class="map-actions">
+      <a class="map-btn" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Oceanside%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Vista%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Escondido%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Carlsbad%20Village%2C%20Carlsbad%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Open the hub star in Maps</a>
+      <a class="map-btn secondary" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Oceanside%2C%20CA" rel="noopener" target="_blank">Hub → Oceanside</a>
+      <a class="map-btn secondary" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Vista%2C%20CA" rel="noopener" target="_blank">Hub → Vista</a>
+      <a class="map-btn secondary" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Escondido%2C%20CA" rel="noopener" target="_blank">Hub → Escondido</a>
+      <a class="map-btn secondary" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Carlsbad%20Village%2C%20Carlsbad%2C%20CA" rel="noopener" target="_blank">Hub → Carlsbad Village</a>
+    </div>
+  </div>
+  <div class="note">Approximate pins (Lake San Marcos as stand-in for the Airbnb). Exact address lands when we stamp the stay. Each day also has its own full multi-stop route under the agenda.</div>
+</section>
+
   <!-- ============ WED ============ -->
   <section class="block" id="wed">
     <div class="section-title"><h2>Arrive &amp; settle</h2><span class="date">Wed 30 Sep</span></div>
     <div class="day-agenda" aria-label="Day schedule at a glance">
     <div class="ag"><span class="t">07:00 AM</span><span class="w">Depart EWR</span></div>
+    <div class="map-strip"><p class="map-why"><strong>🗺️ Wednesday route — land → base → Village market → dinner.</strong> Morning land at SAN, north to the San Marcos hub, then a short hop into Carlsbad Village for the market and back for dinner.</p><div class="map-actions"><a class="map-btn" href="https://www.google.com/maps/dir/San%20Diego%20International%20Airport%20%28SAN%29/Point%20Loma%2C%20San%20Diego%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Revolution%20Roasters%2C%20Carlsbad%2C%20CA/2900%20State%20St%2C%20Carlsbad%2C%20CA/Brickmans%2C%20Lakehouse%20Resort%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Open today's drive in Maps</a><a class="map-btn secondary" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Oceanside%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Vista%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Escondido%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Carlsbad%20Village%2C%20Carlsbad%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Why San Marcos is central</a></div></div>
     <div class="ag"><span class="t">09:49 AM</span><span class="w">Land SAN</span></div>
     <div class="ag"><span class="t">10:15 AM</span><span class="w">Tesla pickup</span></div>
     <div class="ag"><span class="t">11:30 AM</span><span class="w">Airbnb check-in</span></div>
@@ -483,7 +521,7 @@
         <div>
           <div class="tl-label">Drive note</div>
           <div class="tl-title">SAN → San Marcos Airbnb · ~35–50 min</div>
-          <div class="tl-detail">I-5 → I-805 → SR-78. Estimate; traffic varies.</div>
+          <div class="tl-detail">I-5 → I-805 → SR-78. Estimate; traffic varies. <a class="drive-maps" href="https://www.google.com/maps/dir/San%20Diego%20International%20Airport%20%28SAN%29/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">🗺️ Maps drive · SAN → hub</a></div>
         </div>
       </li>
 <li>
@@ -545,7 +583,8 @@
     <div class="section-title"><h2>Oceanside</h2><span class="date">Thu 1 Oct</span></div>
     <div class="day-agenda" aria-label="Day schedule at a glance">
     <div class="ag"><span class="t">07:30 AM</span><span class="w">Coffee</span>
-    <div class="ag"><span class="t">03:00 PM</span><span class="w">Trader Joe's</span></div></div>
+    <div class="ag"><span class="t">03:00 PM</span><span class="w">Trader Joe's</span></div><div class="map-strip"><p class="map-why"><strong>🗺️ Thursday route — Oceanside loop from the hub.</strong> Out-and-back from San Marcos. Oceanside is ~20–30 min west — close enough for a dense day, far enough that a coast-only base would punish Vista/Escondido days.</p><div class="map-actions"><a class="map-btn" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Ignite%20Coffee%20Company%2C%20Oceanside%2C%20CA/Piper%20Oceanside%2C%20Oceanside%2C%20CA/2570%20Vista%20Way%2C%20Oceanside%2C%20CA/Revolution%20Roasters%2C%20Oceanside%2C%20CA/The%20Switchboard%2C%20Oceanside%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Open today's drive in Maps</a><a class="map-btn secondary" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Oceanside%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Vista%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Escondido%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Carlsbad%20Village%2C%20Carlsbad%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Why San Marcos is central</a></div></div>
+    </div>
     <div class="ag"><span class="t">08:15 AM</span><span class="w">Breakfast</span></div>
     <div class="ag"><span class="t">09:30 AM–12:00 PM</span><span class="w">Viewings</span></div>
     <div class="ag"><span class="t">12:30 PM</span><span class="w">Lunch</span></div>
@@ -612,7 +651,7 @@
         <div>
           <div class="tl-label">Drive note</div>
           <div class="tl-title">San Marcos → Oceanside · ~20–30 min</div>
-          <div class="tl-detail">Estimate. Leave early enough to be in a café chair by opening.</div>
+          <div class="tl-detail">Estimate. Leave early enough to be in a café chair by opening. <a class="drive-maps" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Oceanside%2C%20CA" rel="noopener" target="_blank">🗺️ Maps drive · hub → Oceanside</a></div>
         </div>
       </li>
 <li class="coffee has-thumb">
@@ -705,7 +744,7 @@
         <div>
           <div class="tl-label">Drive home</div>
           <div class="tl-title">Oceanside → San Marcos · ~20–30 min</div>
-          <div class="tl-detail">Send the day's photos before you forget which door was which.</div>
+          <div class="tl-detail">Send the day's photos before you forget which door was which. <a class="drive-maps" href="https://www.google.com/maps/dir/Oceanside%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">🗺️ Maps drive · Oceanside → hub</a></div>
         </div>
       </li>
     </ul>
@@ -716,7 +755,8 @@
     <div class="section-title"><h2>Vista</h2><span class="date">Fri 2 Oct</span></div>
     <div class="day-agenda" aria-label="Day schedule at a glance">
     <div class="ag"><span class="t">07:30 AM</span><span class="w">Coffee</span>
-    <div class="ag"><span class="t">03:00 PM</span><span class="w">Trader Joe's Vista</span></div></div>
+    <div class="ag"><span class="t">03:00 PM</span><span class="w">Trader Joe's Vista</span></div><div class="map-strip"><p class="map-why"><strong>🗺️ Friday route — Vista + Carlsbad Village from the hub.</strong> Vista is a few minutes north; Carlsbad Village is Maya's baby-stroller hop. Same hub — no hotel move.</p><div class="map-actions"><a class="map-btn" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/James%20Coffee%2C%20Vista%2C%20CA/1861%20University%20Dr%2C%20Vista%2C%20CA/Carlsbad%20Village%2C%20Carlsbad%2C%20CA/Sanders%20Social%20House%2C%20Vista%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Open today's drive in Maps</a><a class="map-btn secondary" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Oceanside%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Vista%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Escondido%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Carlsbad%20Village%2C%20Carlsbad%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Why San Marcos is central</a></div></div>
+    </div>
     <div class="ag"><span class="t">08:15 AM</span><span class="w">Breakfast</span></div>
     <div class="ag"><span class="t">09:30 AM–12:00 PM</span><span class="w">Homes + walks</span></div>
     <div class="ag"><span class="t">12:30 PM</span><span class="w">Lunch</span></div>
@@ -767,7 +807,7 @@
         <div>
           <div class="tl-label">Drive note</div>
           <div class="tl-title">San Marcos → Shadowridge · ~15–25 min</div>
-          <div class="tl-detail">Estimate. Closest day to base.</div>
+          <div class="tl-detail">Estimate. Closest day to base. <a class="drive-maps" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Shadowridge%2C%20Vista%2C%20CA" rel="noopener" target="_blank">🗺️ Maps drive · hub → Vista</a></div>
         </div>
       </li>
 <li class="coffee has-thumb">
@@ -870,7 +910,7 @@
         <div>
           <div class="tl-label">Drive home</div>
           <div class="tl-title">Shadowridge → San Marcos · ~15–25 min</div>
-          <div class="tl-detail">Early night. Saturday is home turf.</div>
+          <div class="tl-detail">Early night. Saturday is home turf. <a class="drive-maps" href="https://www.google.com/maps/dir/Shadowridge%2C%20Vista%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">🗺️ Maps drive · Vista → hub</a></div>
         </div>
       </li>
     </ul>
@@ -881,7 +921,8 @@
     <div class="section-title"><h2>San Marcos</h2><span class="date">Sat 3 Oct</span></div>
     <div class="day-agenda" aria-label="Day schedule at a glance">
     <div class="ag"><span class="t">07:30 AM</span><span class="w">Coffee</span>
-    <div class="ag"><span class="t">03:15 PM</span><span class="w">Costco San Marcos</span></div></div>
+    <div class="ag"><span class="t">03:15 PM</span><span class="w">Costco San Marcos</span></div><div class="map-strip"><p class="map-why"><strong>🗺️ Saturday route — Vista market + San Marcos Costco + local doors.</strong> Home-turf day. Market in Vista, Costco and doors in San Marcos — this is why the Airbnb sits here.</p><div class="map-actions"><a class="map-btn" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/355%20S%20Melrose%20Dr%2C%20Vista%2C%20CA/Steady%20State%20Roasting%2C%20San%20Marcos%2C%20CA/725%20Center%20Dr%2C%20San%20Marcos%2C%20CA/Double%20Peak%20Park%2C%20San%20Marcos%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Open today's drive in Maps</a><a class="map-btn secondary" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Oceanside%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Vista%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Escondido%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Carlsbad%20Village%2C%20Carlsbad%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Why San Marcos is central</a></div></div>
+    </div>
     <div class="ag"><span class="t">08:15 AM</span><span class="w">Breakfast</span></div>
     <div class="ag"><span class="t">09:30 AM–12:00 PM</span><span class="w">Homes</span></div>
     <div class="ag"><span class="t">12:30 PM</span><span class="w">Lunch</span></div>
@@ -929,7 +970,7 @@
         <div>
           <div class="tl-label">Drive note</div>
           <div class="tl-title">Short hops all day</div>
-          <div class="tl-detail">Everything is minutes from the Airbnb; the Carlsbad coffee run after lunch is the longest leg and it's still short.</div>
+          <div class="tl-detail">Everything is minutes from the Airbnb; the Carlsbad coffee run after lunch is the longest leg and it's still short. <a class="drive-maps" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Double%20Peak%20Park%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">🗺️ Maps drive · local hops</a></div>
         </div>
       </li>
 <li>
@@ -1032,7 +1073,8 @@
     <div class="section-title"><h2>Escondido → home</h2><span class="date">Sun 4 Oct</span></div>
     <div class="day-agenda" aria-label="Day schedule at a glance">
     <div class="ag"><span class="t">07:00 AM</span><span class="w">Checkout</span>
-    <div class="ag"><span class="t">11:50 AM</span><span class="w">Jimbo's</span></div></div>
+    <div class="ag"><span class="t">11:50 AM</span><span class="w">Jimbo's</span></div><div class="map-strip"><p class="map-why"><strong>🗺️ Sunday route — Escondido doors → SAN.</strong> East to Escondido for the morning stack, then south to SAN. Still one base — you never re-park a suitcase.</p><div class="map-actions"><a class="map-btn" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/James%20Coffee%20Co%2C%20Escondido%2C%20CA/1633%20S%20Centre%20City%20Pkwy%2C%20Escondido%2C%20CA/San%20Diego%20International%20Airport%20%28SAN%29" rel="noopener" target="_blank">Open today's drive in Maps</a><a class="map-btn secondary" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Oceanside%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Vista%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Escondido%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Carlsbad%20Village%2C%20Carlsbad%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Why San Marcos is central</a></div></div>
+    </div>
     <div class="ag"><span class="t">07:30 AM</span><span class="w">Coffee</span></div>
     <div class="ag"><span class="t">08:15 AM</span><span class="w">Breakfast</span></div>
     <div class="ag"><span class="t">9:15–11:45 AM</span><span class="w">All 4 homes</span></div>
@@ -1093,7 +1135,7 @@
         <div>
           <div class="tl-label">Checkout</div>
           <div class="tl-title">Pack the car before coffee</div>
-          <div class="tl-detail">Everything goes in the boot at the Airbnb so the afternoon is one straight line to SAN.</div>
+          <div class="tl-detail">Everything goes in the boot at the Airbnb so the afternoon is one straight line to SAN. <a class="drive-maps" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Escondido%2C%20CA" rel="noopener" target="_blank">🗺️ Maps drive · hub → Escondido</a></div>
         </div>
       </li>
 <li class="coffee has-thumb">
@@ -1163,7 +1205,7 @@
         <div>
           <div class="tl-label">Drive note</div>
           <div class="tl-title">Escondido → SAN · ~45–60 min</div>
-          <div class="tl-detail">Add a 90+ minute pre-flight buffer. Hand the Model Y back to the Turo host — SAN drop-off or Point Loma (92106), whichever you agreed; top up the charge to the listing's return level first.</div>
+          <div class="tl-detail">Add a 90+ minute pre-flight buffer. Hand the Model Y back to the Turo host — SAN drop-off or Point Loma (92106), whichever you agreed; top up the charge to the listing's return level first. <a class="drive-maps" href="https://www.google.com/maps/dir/Escondido%2C%20CA/San%20Diego%20International%20Airport%20%28SAN%29" rel="noopener" target="_blank">🗺️ Maps drive · Escondido → SAN</a></div>
         </div>
       </li>
 <li>
