@@ -7,7 +7,7 @@ Open `index.html` directly — no build step, no network needed. All images live
 
 ## Live page (GitHub Pages)
 
-**https://johnbr0phy.github.io/house-search/**
+**https://johnbr0phy.github.io/sd-dream-scout/**
 
 Only this folder is published. The workflow at `.github/workflows/pages.yml` uploads
 `sd-scout-2026-09/` as the Pages artifact on every push to `main` that touches this folder
