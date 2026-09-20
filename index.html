@@ -345,10 +345,6 @@
  tr.total td.amt { color: var(--orange-deep); font-family: var(--serif); font-size: 20px; }
  td .src { display: block; color: var(--muted); font-size: 13px; margin-top: 2px; }
 
- .coffee-tally { display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 14px; }
- .coffee-tally .stop { display: grid; grid-template-columns: 56px 1fr auto; gap: 10px; align-items: center; background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 8px 10px; font-size: 15px; }
- .coffee-tally .when { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 700; }
- .coffee-tally .amt { color: var(--ink-soft); font-variant-numeric: tabular-nums; }
 
  .mood { display: grid; grid-template-columns: 96px 1fr; gap: 14px; align-items: center; margin: 16px 0 6px; }
  .mood img { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; box-shadow: var(--shadow); }
@@ -1415,30 +1411,14 @@
  <tr><td>Airbnb · Hilltop 1BR house · Vista<span class="src">Quoted 20 Sep · fees included · not booked · <a href="https://www.airbnb.com/rooms/782804933331065682?check_in=2026-09-30&amp;check_out=2026-10-04&amp;adults=1">listing</a></span></td><td class="amt">$687</td></tr>
  <tr><td>2026 Tesla Model Y Premium · FSD included · Turo · 4 days<span class="src">Quoted 20 Sep · listing before taxes. Turo taxes, fees &amp; protection plan not yet added</span></td><td class="amt">$501</td></tr>
  <tr><td>Food · breakfast / lunch / dinner · ~4.5 days<span class="src">Solo EST (~$55-85 a day)</span></td><td class="amt">$250-380</td></tr>
- <tr><td>Coffee · 8 café stops<span class="src">Solo EST $6-8 a stop - tally below</span></td><td class="amt">$48-64</td></tr>
+ <tr><td>Coffee · café stops<span class="src">Solo EST · morning + after lunch, nothing after 4 PM</span></td><td class="amt">$48-64</td></tr>
  <tr><td>Parking · tolls · Supercharging<span class="src">EST</span></td><td class="amt">$40-80</td></tr>
  <tr><td>Misc · tips, water, contingency<span class="src">EST</span></td><td class="amt">$50-100</td></tr>
  <tr class="total"><td>Grand total · solo EST<span class="src" style="font-weight:400">Lines above sum to ~$2,275-2,525; headroom for Turo taxes, fees &amp; protection on the $501. The original 2-adult plan ranged ~$2,500-$3,600</span></td><td class="amt">~$2,400-2,750</td></tr>
  </tbody>
  </table>
 
- <div class="mood">
- <img src="img/coffee-heart.jpg" width="800" height="800" alt="A cappuccino with a heart drawn in the foam" loading="lazy" decoding="async">
- <p>Eight cups. One for each morning we might have here, and a few extra for the afternoons.</p>
- </div>
- <p class="lede" style="margin-bottom:10px">Two coffees most days: morning + after lunch. <strong>Nothing after 4:00 PM.</strong></p>
- <div class="coffee-tally">
- <div class="stop"><span class="when">Wed PM</span><span>Revolution Roasters - Carlsbad (before 4 PM)</span><span class="amt">$6-8</span></div>
- <div class="stop"><span class="when">Thu AM</span><span>Ignite Coffee Company - Oceanside</span><span class="amt">$6-8</span></div>
- <div class="stop"><span class="when">Thu PM</span><span>Revolution Roasters - Oceanside</span><span class="amt">$6-8</span></div>
- <div class="stop"><span class="when">Fri AM</span><span>James Coffee - Vista</span><span class="amt">$6-8</span></div>
- <div class="stop"><span class="when">Fri PM</span><span>Cosmic Bloom Coffee - Vista</span><span class="amt">$6-8</span></div>
- <div class="stop"><span class="when">Sat AM</span><span>Steady State Roasting - San Marcos</span><span class="amt">$6-8</span></div>
- <div class="stop"><span class="when">Sat PM</span><span>Steady State Roasting - Carlsbad</span><span class="amt">$6-8</span></div>
- <div class="stop"><span class="when">Sun AM</span><span>James Coffee - Escondido Bakery</span><span class="amt">$6-8</span></div>
- </div>
- <p class="small" style="color:var(--muted); font-size:14px; margin-top:10px;">Exact drink prices weren't on the roasters' sites (bean bags, not menus) - estimates.</p>
- </section>
+  </section>
 
  <!-- ============ BEFORE WE STAMP ============ -->
  <section class="block" id="stamp">
