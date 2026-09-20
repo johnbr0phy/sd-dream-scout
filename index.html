@@ -194,13 +194,44 @@
   .gallery-note { color: var(--muted); font-size: 14px; margin: -8px 0 16px; text-align: center; }
 
   /* ---------- Timeline ---------- */
+  /* Day agenda strip — clock-first */
+  .day-agenda {
+    display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 16px;
+    padding: 12px; background: #fff4ea; border: 1px solid #ffd1ad; border-radius: 16px;
+  }
+  .day-agenda .ag {
+    display: flex; align-items: baseline; gap: 6px;
+    background: #fff; border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 12px 6px 8px; font-size: 14px; line-height: 1.2;
+  }
+  .day-agenda .ag .t {
+    font-variant-numeric: tabular-nums; font-weight: 800; font-size: 15px;
+    color: var(--orange-deep); letter-spacing: -0.02em; min-width: 3.6em;
+  }
+  .day-agenda .ag .w { color: var(--ink-soft); font-weight: 600; }
+
   .timeline { list-style: none; margin: 0; padding: 0; }
   .timeline li {
-    display: grid; grid-template-columns: 44px 1fr; gap: 12px;
+    display: grid; grid-template-columns: 72px 44px 1fr; gap: 10px;
     background: var(--paper); border: 1px solid var(--line); border-radius: 16px;
-    padding: 14px 14px 14px 12px; margin-bottom: 10px;
+    padding: 14px 14px 14px 10px; margin-bottom: 10px;
+    align-items: start;
   }
-  .timeline li.has-thumb { grid-template-columns: 44px 1fr 72px; }
+  .timeline li.has-thumb { grid-template-columns: 72px 44px 1fr 72px; }
+  .tl-time {
+    font-variant-numeric: tabular-nums;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.15;
+    color: var(--orange-deep);
+    letter-spacing: -0.03em;
+    text-align: right;
+    padding-top: 10px;
+    white-space: pre-line;
+  }
+  .tl-time .ampm { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--muted); margin-top: 2px; }
+  .tl-time .range { font-size: 13px; font-weight: 700; color: var(--ink-soft); display: block; margin-top: 4px; line-height: 1.2; }
   .timeline .thumb {
     width: 72px; height: 72px; border-radius: 14px; object-fit: cover; align-self: start;
     box-shadow: var(--shadow); border: 2px solid #fff;
@@ -215,7 +246,7 @@
   .viewing .icon { background: var(--orange); color: #fff; }
   .drive .icon { background: #ece2d8; }
   .coffee .icon { background: #f7e0cc; }
-  .tl-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); }
+  .tl-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); font-weight: 700; }
   .tl-title { font-weight: 700; font-size: 17px; margin: 2px 0 2px; }
   .tl-title a { color: var(--ink); text-decoration-color: rgba(217, 95, 26, 0.45); }
   .tl-detail { color: var(--ink-soft); font-size: 15px; }
@@ -353,6 +384,13 @@
   <!-- ============ WED ============ -->
   <section class="block" id="wed">
     <div class="section-title"><h2>Arrive &amp; settle</h2><span class="date">Wed 30 Sep</span></div>
+    <div class="day-agenda" aria-label="Day schedule at a glance">
+    <div class="ag"><span class="t">4:55p</span><span class="w">Depart EWR</span></div>
+    <div class="ag"><span class="t">7:43p</span><span class="w">Land SAN</span></div>
+    <div class="ag"><span class="t">8:00p</span><span class="w">Tesla pickup</span></div>
+    <div class="ag"><span class="t">9:15p</span><span class="w">Airbnb check-in</span></div>
+    <div class="ag"><span class="t">~8p</span><span class="w">Airport / takeaway dinner</span></div>
+    </div>
     <p class="lede">Land, collect the car, point it north. Tonight is just about getting to the base and breathing the air we're thinking of living in.</p>
     <div class="chips">
       <span class="chip sage">No viewings · travel day</span>
@@ -376,7 +414,8 @@
     </div>
 
     <ul class="timeline">
-      <li>
+<li>
+        <div class="tl-time">4:55<span class="ampm">p</span><span class="range">land 7:43p</span></div>
         <div class="icon" aria-hidden="true">✈️</div>
         <div>
           <div class="tl-label">Flight</div>
@@ -385,7 +424,8 @@
           <div class="tl-foot"><span class="chip sage">United nonstop 4:55p · $832 · not booked</span></div>
         </div>
       </li>
-      <li class="drive">
+<li class="drive">
+        <div class="tl-time">8:00<span class="ampm">p</span></div>
         <div class="icon" aria-hidden="true">🚗</div>
         <div>
           <div class="tl-label">Car pickup</div>
@@ -394,7 +434,8 @@
           <div class="tl-foot"><span class="chip sage">$501 before taxes · Sep 30 – Oct 4</span></div>
         </div>
       </li>
-      <li class="drive">
+<li class="drive">
+        <div class="tl-time">8:20<span class="ampm">p</span><span class="range">~35–50 min</span></div>
         <div class="icon" aria-hidden="true">🛣️</div>
         <div>
           <div class="tl-label">Drive note</div>
@@ -402,7 +443,8 @@
           <div class="tl-detail">I-5 → I-805 → SR-78. Estimate; traffic varies.</div>
         </div>
       </li>
-      <li>
+<li>
+        <div class="tl-time">9:15<span class="ampm">p</span></div>
         <div class="icon" aria-hidden="true">🏠</div>
         <div>
           <div class="tl-label">Check-in</div>
@@ -410,7 +452,8 @@
           <div class="tl-detail">Entire 2BR home · 4.88 ★ (24) · ~$683 for the 4 nights on the search card. Central to the whole Oceanside–Vista–San Marcos–Escondido loop. <a href="#stay">Stay details.</a></div>
         </div>
       </li>
-      <li class="coffee has-thumb">
+<li class="coffee has-thumb">
+        <div class="tl-time">if open<span class="range">else Thu AM</span></div>
         <div class="icon" aria-hidden="true">☕</div>
         <div>
           <div class="tl-label">Coffee · arrival (the only one today)</div>
@@ -420,7 +463,8 @@
         </div>
         <img class="thumb" src="img/coffee-espresso-machine.jpg" width="480" height="480" alt="Close-up of a brass espresso machine in a café (mood photo)" loading="lazy" decoding="async">
       </li>
-      <li>
+<li>
+        <div class="tl-time">all day<span class="range">in transit</span></div>
         <div class="icon" aria-hidden="true">🥐</div>
         <div>
           <div class="tl-label">Breakfast &amp; lunch</div>
@@ -428,7 +472,8 @@
           <div class="tl-detail">Nothing planned on the ground. Eat at the gate; save the appetite for San Marcos.</div>
         </div>
       </li>
-      <li>
+<li>
+        <div class="tl-time">~8:00<span class="ampm">p</span><span class="range">airport bite</span></div>
         <div class="icon" aria-hidden="true">🍽️</div>
         <div>
           <div class="tl-label">Dinner</div>
@@ -444,6 +489,15 @@
   <!-- ============ THU ============ -->
   <section class="block" id="thu">
     <div class="section-title"><h2>Oceanside</h2><span class="date">Thu 1 Oct</span></div>
+    <div class="day-agenda" aria-label="Day schedule at a glance">
+    <div class="ag"><span class="t">7:30a</span><span class="w">Coffee</span></div>
+    <div class="ag"><span class="t">8:15a</span><span class="w">Breakfast</span></div>
+    <div class="ag"><span class="t">9:30a–12p</span><span class="w">Viewings</span></div>
+    <div class="ag"><span class="t">12:30p</span><span class="w">Lunch</span></div>
+    <div class="ag"><span class="t">1:45p</span><span class="w">Coffee</span></div>
+    <div class="ag"><span class="t">2:30–5p</span><span class="w">More homes</span></div>
+    <div class="ag"><span class="t">6:30p</span><span class="w">Dinner</span></div>
+    </div>
     <figure class="day-photo">
       <img src="img/thu-oceanside-pier.jpg" width="1200" height="900" alt="Oceanside Pier at sunset with palm trees in the foreground" loading="lazy" decoding="async">
       <figcaption>The pier at golden hour — the reward for a dense morning.</figcaption>
@@ -497,7 +551,8 @@
     <p class="gallery-note">Tap any photo to open it full size ♥</p>
 
     <ul class="timeline">
-      <li class="drive">
+<li class="drive">
+        <div class="tl-time">7:00<span class="ampm">a</span></div>
         <div class="icon" aria-hidden="true">🛣️</div>
         <div>
           <div class="tl-label">Drive note</div>
@@ -505,7 +560,8 @@
           <div class="tl-detail">Estimate. Leave early enough to be in a café chair by opening.</div>
         </div>
       </li>
-      <li class="coffee has-thumb">
+<li class="coffee has-thumb">
+        <div class="tl-time">7:30<span class="ampm">a</span></div>
         <div class="icon" aria-hidden="true">☕</div>
         <div>
           <div class="tl-label">Coffee · morning</div>
@@ -515,7 +571,8 @@
         </div>
         <img class="thumb" src="img/coffee-pourover-chemex.jpg" width="480" height="480" alt="Pour-over coffee brewing in a glass Chemex (mood photo)" loading="lazy" decoding="async">
       </li>
-      <li class="has-thumb">
+<li class="has-thumb">
+        <div class="tl-time">8:15<span class="ampm">a</span></div>
         <div class="icon" aria-hidden="true">🍳</div>
         <div>
           <div class="tl-label">Breakfast</div>
@@ -525,7 +582,8 @@
         </div>
         <img class="thumb" src="img/food-brunch-benedict.jpg" width="480" height="480" alt="Eggs Benedict with salad and orange juice on a brunch table (mood photo)" loading="lazy" decoding="async">
       </li>
-      <li class="viewing">
+<li class="viewing">
+        <div class="tl-time">9:30<span class="ampm">a</span><span class="range">→ noon</span></div>
         <div class="icon" aria-hidden="true">🏡</div>
         <div>
           <div class="tl-label">Morning viewings</div>
@@ -533,7 +591,8 @@
           <div class="tl-detail">4BR · garden · ≤ ~$1M · walk-to-park. Photos of the garden first, then the kitchen, then the street both ways — you'll want all three.</div>
         </div>
       </li>
-      <li class="has-thumb">
+<li class="has-thumb">
+        <div class="tl-time">12:30<span class="ampm">p</span></div>
         <div class="icon" aria-hidden="true">🥪</div>
         <div>
           <div class="tl-label">Lunch</div>
@@ -543,7 +602,8 @@
         </div>
         <img class="thumb" src="img/food-fish-tacos.jpg" width="480" height="480" alt="Two fish tacos with cabbage on a patterned plate (mood photo)" loading="lazy" decoding="async">
       </li>
-      <li class="coffee has-thumb">
+<li class="coffee has-thumb">
+        <div class="tl-time">1:45<span class="ampm">p</span></div>
         <div class="icon" aria-hidden="true">☕</div>
         <div>
           <div class="tl-label">Coffee · after lunch</div>
@@ -553,7 +613,8 @@
         </div>
         <img class="thumb" src="img/coffee-cafe-front.jpg" width="480" height="480" alt="Green café shopfront with a Thank You sign (mood photo)" loading="lazy" decoding="async">
       </li>
-      <li class="viewing">
+<li class="viewing">
+        <div class="tl-time">2:30<span class="ampm">p</span><span class="range">→ 5:00p</span></div>
         <div class="icon" aria-hidden="true">🌳</div>
         <div>
           <div class="tl-label">Afternoon</div>
@@ -561,7 +622,8 @@
           <div class="tl-detail">Time the walk from the door to the nearest park. Is it a stroll or a drive?</div>
         </div>
       </li>
-      <li>
+<li>
+        <div class="tl-time">6:30<span class="ampm">p</span></div>
         <div class="icon" aria-hidden="true">🍽️</div>
         <div>
           <div class="tl-label">Dinner</div>
@@ -570,7 +632,8 @@
           <div class="tl-foot"><span class="chip amber">EST $25–40</span></div>
         </div>
       </li>
-      <li class="drive">
+<li class="drive">
+        <div class="tl-time">8:30<span class="ampm">p</span></div>
         <div class="icon" aria-hidden="true">🌙</div>
         <div>
           <div class="tl-label">Drive home</div>
@@ -584,6 +647,15 @@
   <!-- ============ FRI ============ -->
   <section class="block" id="fri">
     <div class="section-title"><h2>Vista</h2><span class="date">Fri 2 Oct</span></div>
+    <div class="day-agenda" aria-label="Day schedule at a glance">
+    <div class="ag"><span class="t">7:30a</span><span class="w">Coffee</span></div>
+    <div class="ag"><span class="t">8:15a</span><span class="w">Breakfast</span></div>
+    <div class="ag"><span class="t">9:30a–12p</span><span class="w">Homes + walks</span></div>
+    <div class="ag"><span class="t">12:30p</span><span class="w">Lunch</span></div>
+    <div class="ag"><span class="t">1:45p</span><span class="w">Coffee</span></div>
+    <div class="ag"><span class="t">2:30–5p</span><span class="w">More homes</span></div>
+    <div class="ag"><span class="t">6:30p</span><span class="w">Dinner</span></div>
+    </div>
     <figure class="day-photo">
       <img src="img/fri-vista-hills.jpg" width="1200" height="854" alt="A single-storey house with a green garden in Vista, the San Marcos Mountains behind" loading="lazy" decoding="async">
       <figcaption>Vista: a house, a yard, hills behind. Roughly the whole brief.</figcaption>
@@ -620,7 +692,8 @@
     </div>
 
     <ul class="timeline">
-      <li class="drive">
+<li class="drive">
+        <div class="tl-time">7:00<span class="ampm">a</span></div>
         <div class="icon" aria-hidden="true">🛣️</div>
         <div>
           <div class="tl-label">Drive note</div>
@@ -628,7 +701,8 @@
           <div class="tl-detail">Estimate. Closest day to base.</div>
         </div>
       </li>
-      <li class="coffee has-thumb">
+<li class="coffee has-thumb">
+        <div class="tl-time">7:30<span class="ampm">a</span></div>
         <div class="icon" aria-hidden="true">☕</div>
         <div>
           <div class="tl-label">Coffee · morning</div>
@@ -638,7 +712,8 @@
         </div>
         <img class="thumb" src="img/coffee-muffin-latte.jpg" width="480" height="480" alt="A blueberry muffin next to a latte with foam art (mood photo)" loading="lazy" decoding="async">
       </li>
-      <li class="has-thumb">
+<li class="has-thumb">
+        <div class="tl-time">8:15<span class="ampm">a</span></div>
         <div class="icon" aria-hidden="true">🍳</div>
         <div>
           <div class="tl-label">Breakfast</div>
@@ -648,7 +723,8 @@
         </div>
         <img class="thumb" src="img/food-breakfast-toast.jpg" width="480" height="480" alt="Breakfast toast topped with poached eggs, bacon, tomato and avocado, coffee alongside (mood photo)" loading="lazy" decoding="async">
       </li>
-      <li class="viewing">
+<li class="viewing">
+        <div class="tl-time">9:30<span class="ampm">a</span><span class="range">→ noon</span></div>
         <div class="icon" aria-hidden="true">🏡</div>
         <div>
           <div class="tl-label">Morning</div>
@@ -656,7 +732,8 @@
           <div class="tl-detail">Use the buffer. Walk the block at the pace of a stroller.</div>
         </div>
       </li>
-      <li class="has-thumb">
+<li class="has-thumb">
+        <div class="tl-time">12:30<span class="ampm">p</span></div>
         <div class="icon" aria-hidden="true">🍕</div>
         <div>
           <div class="tl-label">Lunch</div>
@@ -666,7 +743,8 @@
         </div>
         <img class="thumb" src="img/food-margherita-pizza.jpg" width="480" height="480" alt="A margherita pizza with fresh basil (mood photo)" loading="lazy" decoding="async">
       </li>
-      <li class="coffee has-thumb">
+<li class="coffee has-thumb">
+        <div class="tl-time">1:45<span class="ampm">p</span></div>
         <div class="icon" aria-hidden="true">☕</div>
         <div>
           <div class="tl-label">Coffee · after lunch</div>
@@ -676,7 +754,8 @@
         </div>
         <img class="thumb" src="img/coffee-cappuccino-hands.jpg" width="480" height="480" alt="Hands holding a cappuccino with latte art at a café table (mood photo)" loading="lazy" decoding="async">
       </li>
-      <li class="viewing">
+<li class="viewing">
+        <div class="tl-time">2:30<span class="ampm">p</span><span class="range">→ 5:00p</span></div>
         <div class="icon" aria-hidden="true">🌳</div>
         <div>
           <div class="tl-label">Afternoon</div>
@@ -684,7 +763,8 @@
           <div class="tl-detail">Drive the school route at pick-up time if it lines up.</div>
         </div>
       </li>
-      <li>
+<li>
+        <div class="tl-time">6:30<span class="ampm">p</span></div>
         <div class="icon" aria-hidden="true">🍽️</div>
         <div>
           <div class="tl-label">Dinner</div>
@@ -693,7 +773,8 @@
           <div class="tl-foot"><span class="chip amber">EST $30–45</span></div>
         </div>
       </li>
-      <li class="drive">
+<li class="drive">
+        <div class="tl-time">8:15<span class="ampm">p</span></div>
         <div class="icon" aria-hidden="true">🌙</div>
         <div>
           <div class="tl-label">Drive home</div>
@@ -707,6 +788,15 @@
   <!-- ============ SAT ============ -->
   <section class="block" id="sat">
     <div class="section-title"><h2>San Marcos</h2><span class="date">Sat 3 Oct</span></div>
+    <div class="day-agenda" aria-label="Day schedule at a glance">
+    <div class="ag"><span class="t">7:30a</span><span class="w">Coffee</span></div>
+    <div class="ag"><span class="t">8:15a</span><span class="w">Breakfast</span></div>
+    <div class="ag"><span class="t">9:30a–12p</span><span class="w">Homes</span></div>
+    <div class="ag"><span class="t">12:30p</span><span class="w">Lunch</span></div>
+    <div class="ag"><span class="t">2:00p</span><span class="w">Coffee</span></div>
+    <div class="ag"><span class="t">2:45–5:30p</span><span class="w">Home + park</span></div>
+    <div class="ag"><span class="t">6:30p</span><span class="w">Dinner</span></div>
+    </div>
     <figure class="day-photo wide">
       <img src="img/sat-san-marcos-double-peak.jpg" width="1200" height="458" alt="Panorama looking north from Double Peak Park over San Marcos neighbourhoods" loading="lazy" decoding="async">
       <figcaption>From Double Peak: all of San Marcos laid out like a map of maybes.</figcaption>
@@ -741,7 +831,8 @@
     </div>
 
     <ul class="timeline">
-      <li class="drive">
+<li class="drive">
+        <div class="tl-time">7:15<span class="ampm">a</span><span class="range">local hops</span></div>
         <div class="icon" aria-hidden="true">🛣️</div>
         <div>
           <div class="tl-label">Drive note</div>
@@ -749,7 +840,8 @@
           <div class="tl-detail">Everything is minutes from the Airbnb; the Carlsbad coffee run after lunch is the longest leg and it's still short.</div>
         </div>
       </li>
-      <li class="coffee has-thumb">
+<li class="coffee has-thumb">
+        <div class="tl-time">7:30<span class="ampm">a</span></div>
         <div class="icon" aria-hidden="true">☕</div>
         <div>
           <div class="tl-label">Coffee · morning</div>
@@ -759,7 +851,8 @@
         </div>
         <img class="thumb" src="img/coffee-cafe-table.jpg" width="480" height="480" alt="A coffee cup on a wooden café table by the window (mood photo)" loading="lazy" decoding="async">
       </li>
-      <li>
+<li>
+        <div class="tl-time">8:15<span class="ampm">a</span></div>
         <div class="icon" aria-hidden="true">🍳</div>
         <div>
           <div class="tl-label">Breakfast</div>
@@ -768,7 +861,8 @@
           <div class="tl-foot"><span class="chip amber">EST $18–28</span></div>
         </div>
       </li>
-      <li class="viewing">
+<li class="viewing">
+        <div class="tl-time">9:30<span class="ampm">a</span><span class="range">→ noon</span></div>
         <div class="icon" aria-hidden="true">🏡</div>
         <div>
           <div class="tl-label">Morning viewings</div>
@@ -776,7 +870,8 @@
           <div class="tl-detail">San Elijo Hills / Discovery Hills. Check the solar situation and the afternoon sun on the garden.</div>
         </div>
       </li>
-      <li>
+<li>
+        <div class="tl-time">12:30<span class="ampm">p</span></div>
         <div class="icon" aria-hidden="true">🥗</div>
         <div>
           <div class="tl-label">Lunch</div>
@@ -785,7 +880,8 @@
           <div class="tl-foot"><span class="chip amber">EST $23–35</span></div>
         </div>
       </li>
-      <li class="coffee has-thumb">
+<li class="coffee has-thumb">
+        <div class="tl-time">2:00<span class="ampm">p</span></div>
         <div class="icon" aria-hidden="true">☕</div>
         <div>
           <div class="tl-label">Coffee · after lunch</div>
@@ -795,7 +891,8 @@
         </div>
         <img class="thumb" src="img/coffee-latte-reach.jpg" width="480" height="480" alt="A hand reaching for a latte with rosetta foam art (mood photo)" loading="lazy" decoding="async">
       </li>
-      <li class="viewing">
+<li class="viewing">
+        <div class="tl-time">2:45<span class="ampm">p</span><span class="range">→ 5:30p</span></div>
         <div class="icon" aria-hidden="true">🌳</div>
         <div>
           <div class="tl-label">Afternoon</div>
@@ -803,7 +900,8 @@
           <div class="tl-detail">Discovery Lake or the neighbourhood green. Sit on a bench for ten minutes and just listen.</div>
         </div>
       </li>
-      <li>
+<li>
+        <div class="tl-time">6:30<span class="ampm">p</span></div>
         <div class="icon" aria-hidden="true">🍽️</div>
         <div>
           <div class="tl-label">Dinner</div>
@@ -818,6 +916,15 @@
   <!-- ============ SUN ============ -->
   <section class="block" id="sun">
     <div class="section-title"><h2>Escondido → home</h2><span class="date">Sun 4 Oct</span></div>
+    <div class="day-agenda" aria-label="Day schedule at a glance">
+    <div class="ag"><span class="t">7:00a</span><span class="w">Checkout</span></div>
+    <div class="ag"><span class="t">7:30a</span><span class="w">Coffee</span></div>
+    <div class="ag"><span class="t">8:15a</span><span class="w">Breakfast</span></div>
+    <div class="ag"><span class="t">9:15–11:45a</span><span class="w">All 4 homes</span></div>
+    <div class="ag"><span class="t">12:00p</span><span class="w">Lunch</span></div>
+    <div class="ag"><span class="t">1:00p</span><span class="w">Drive to SAN</span></div>
+    <div class="ag"><span class="t">evening</span><span class="w">Flight home</span></div>
+    </div>
     <figure class="day-photo">
       <img src="img/sun-escondido-dixon-lake.jpg" width="1200" height="675" alt="Sunrise aerial view over Dixon Lake and the hills of Escondido" loading="lazy" decoding="async">
       <figcaption>Escondido at sunrise — the early start is worth it.</figcaption>
@@ -864,7 +971,8 @@
     </div>
 
     <ul class="timeline">
-      <li class="drive">
+<li class="drive">
+        <div class="tl-time">7:00<span class="ampm">a</span></div>
         <div class="icon" aria-hidden="true">🧳</div>
         <div>
           <div class="tl-label">Checkout</div>
@@ -872,7 +980,8 @@
           <div class="tl-detail">Everything goes in the boot at the Airbnb so the afternoon is one straight line to SAN.</div>
         </div>
       </li>
-      <li class="coffee has-thumb">
+<li class="coffee has-thumb">
+        <div class="tl-time">7:30<span class="ampm">a</span></div>
         <div class="icon" aria-hidden="true">☕</div>
         <div>
           <div class="tl-label">Coffee · morning (only)</div>
@@ -882,7 +991,8 @@
         </div>
         <img class="thumb" src="img/coffee-heart.jpg" width="800" height="800" alt="A cappuccino with a heart drawn in the foam (mood photo)" loading="lazy" decoding="async">
       </li>
-      <li>
+<li>
+        <div class="tl-time">8:15<span class="ampm">a</span></div>
         <div class="icon" aria-hidden="true">🍳</div>
         <div>
           <div class="tl-label">Breakfast</div>
@@ -891,7 +1001,8 @@
           <div class="tl-foot"><span class="chip amber">EST $15–25</span></div>
         </div>
       </li>
-      <li class="viewing">
+<li class="viewing">
+        <div class="tl-time">9:15<span class="ampm">a</span><span class="range">→ 11:45a</span></div>
         <div class="icon" aria-hidden="true">🏡</div>
         <div>
           <div class="tl-label">Morning viewings</div>
@@ -899,7 +1010,8 @@
           <div class="tl-detail">Tight schedule — book them back-to-back and closest-first. If one runs long, it's the one to drop.</div>
         </div>
       </li>
-      <li class="has-thumb">
+<li class="has-thumb">
+        <div class="tl-time">12:00<span class="ampm">p</span></div>
         <div class="icon" aria-hidden="true">🌮</div>
         <div>
           <div class="tl-label">Early lunch / takeaway</div>
@@ -909,7 +1021,8 @@
         </div>
         <img class="thumb" src="img/food-farm-taco.jpg" width="480" height="480" alt="A single street taco with corn and cheese on a white plate (mood photo)" loading="lazy" decoding="async">
       </li>
-      <li class="coffee">
+<li class="coffee">
+        <div class="tl-time">skip</div>
         <div class="icon" aria-hidden="true">☕</div>
         <div>
           <div class="tl-label">Coffee · after lunch</div>
@@ -917,7 +1030,8 @@
           <div class="tl-detail">Grab a second round at James only if you're ahead of schedule.</div>
         </div>
       </li>
-      <li class="drive">
+<li class="drive">
+        <div class="tl-time">1:00<span class="ampm">p</span><span class="range">~45–60 min</span></div>
         <div class="icon" aria-hidden="true">🛣️</div>
         <div>
           <div class="tl-label">Drive note</div>
@@ -925,7 +1039,8 @@
           <div class="tl-detail">Add a 90+ minute pre-flight buffer. Hand the Model Y back to the Turo host — SAN drop-off or Point Loma (92106), whichever you agreed; top up the charge to the listing's return level first.</div>
         </div>
       </li>
-      <li>
+<li>
+        <div class="tl-time">evening<span class="range">confirm board</span></div>
         <div class="icon" aria-hidden="true">✈️</div>
         <div>
           <div class="tl-label">Flight</div>
@@ -933,7 +1048,8 @@
           <div class="tl-detail">Return legs weren't expanded in the last search — <a href="#flights">re-check Sunday evening times</a> on the same Google Flights link before we stamp.</div>
         </div>
       </li>
-      <li>
+<li>
+        <div class="tl-time">late<span class="range">in air / home</span></div>
         <div class="icon" aria-hidden="true">🍽️</div>
         <div>
           <div class="tl-label">Dinner</div>
