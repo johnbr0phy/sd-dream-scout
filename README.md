@@ -30,7 +30,7 @@ Free plan the site only publishes if the repository is public.
   mood thumbnail (generic specialty coffee / brunch / tacos / pizza — not the actual venues)
 - Flights — nonstop only: United EWR 4:55p → SAN 7:43p, $832 round trip for 1 adult is the
   pick; United 7:00a → 9:49a at $707 is the cheaper nonstop; rest of the nonstop board listed
-  (Google Flights, nonstop filter, 20 Sep). San Marcos Airbnb base (~$683 / 4 nights),
+  (Google Flights, nonstop filter, 20 Sep). Vista Airbnb base (~$683 / 4 nights),
   and the car: 2026 Tesla Model Y Premium **with FSD included** on Turo, $501 before taxes
   (locked for the plan, not booked), with the 2025 Y LR + FSD add-on and Frontier Model 3
   as alternates
