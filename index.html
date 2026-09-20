@@ -196,6 +196,7 @@
   /* Day agenda strip — clock-first */
 
 
+  iframe.embed-map { display: block; border: 0; }
   .embed-map {
     width: 100%; height: 280px; border-radius: 16px;
     border: 1px solid #c5ddf7; margin: 10px 0 4px;
@@ -203,9 +204,7 @@
   }
   #map-hub.embed-map { height: 340px; }
   .map-strip { margin-top: 10px; }
-  .leaflet-container { font: 14px/1.4 var(--sans); }
-
-  .map-strip {
+.map-strip {
     display: flex; flex-direction: column; gap: 8px;
     margin: 0 0 16px; padding: 12px 14px;
     background: #eef6ff; border: 1px solid #c5ddf7; border-radius: 16px;
@@ -382,8 +381,6 @@
   }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 </style>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 <body>
 
@@ -486,7 +483,7 @@
   <p class="lede">Stay in the middle. Oceanside west, Vista north, Escondido east, Carlsbad Village a short hop for Maya's baby walk. One suitcase, one Tesla base, star-shaped days — not a hotel move every night.</p>
   <div class="map-strip" data-map="hub">
       <p class="map-why"><strong>🗺️ Why San Marcos is the hub.</strong> Star from the Airbnb: Oceanside west, Vista north, Escondido east, Carlsbad Village for Maya. One suitcase.</p>
-      <div class="embed-map" id="map-hub" role="img" aria-label="Why San Marcos is the hub"></div>
+      <iframe class="embed-map" id="map-hub" title="Map — hub" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://maps.google.com/maps?saddr=Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA&daddr=Oceanside%2C%20CA+to:Vista%2C%20CA+to:Escondido%2C%20CA+to:Carlsbad%20Village%2C%20Carlsbad%2C%20CA+to:Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA&output=embed"></iframe>
       <div class="map-actions">
         <a class="map-btn" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Oceanside%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Vista%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Escondido%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Carlsbad%20Village%2C%20Carlsbad%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Open in Google Maps</a>
         <a class="map-btn secondary" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Oceanside%2C%20CA" rel="noopener" target="_blank">Hub → Oceanside</a><a class="map-btn secondary" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Vista%2C%20CA" rel="noopener" target="_blank">Hub → Vista</a><a class="map-btn secondary" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Escondido%2C%20CA" rel="noopener" target="_blank">Hub → Escondido</a><a class="map-btn secondary" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Carlsbad%20Village%2C%20Carlsbad%2C%20CA" rel="noopener" target="_blank">Hub → Village</a>
@@ -511,7 +508,7 @@
     </div>
     <div class="map-strip" data-map="wed">
       <p class="map-why"><strong>🗺️ Wednesday route.</strong> Land SAN → hub → Carlsbad Village market → Brickmans.</p>
-      <div class="embed-map" id="map-wed" role="img" aria-label="Wednesday route"></div>
+      <iframe class="embed-map" id="map-wed" title="Map — wed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://maps.google.com/maps?saddr=San%20Diego%20International%20Airport%20SAN&daddr=Point%20Loma%2C%20San%20Diego%2C%20CA+to:Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA+to:Carlsbad%20Village%2C%20Carlsbad%2C%20CA+to:Brickmans%20Lakehouse%20San%20Marcos%2C%20CA&output=embed"></iframe>
       <div class="map-actions">
         <a class="map-btn" href="https://www.google.com/maps/dir/San%20Diego%20International%20Airport%20%28SAN%29/Point%20Loma%2C%20San%20Diego%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Revolution%20Roasters%2C%20Carlsbad%2C%20CA/2900%20State%20St%2C%20Carlsbad%2C%20CA/Brickmans%2C%20Lakehouse%20Resort%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Open in Google Maps</a>
         <a class="map-btn secondary" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Oceanside%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Vista%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Escondido%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Carlsbad%20Village%2C%20Carlsbad%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Hub star in Google Maps</a>
@@ -643,7 +640,7 @@
     </div>
     <div class="map-strip" data-map="thu">
       <p class="map-why"><strong>🗺️ Thursday route.</strong> Oceanside loop out-and-back from the hub (~20–30 min).</p>
-      <div class="embed-map" id="map-thu" role="img" aria-label="Thursday route"></div>
+      <iframe class="embed-map" id="map-thu" title="Map — thu" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://maps.google.com/maps?saddr=Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA&daddr=Ignite%20Coffee%20Oceanside%2C%20CA+to:2570%20Vista%20Way%2C%20Oceanside%2C%20CA+to:The%20Switchboard%20Oceanside%2C%20CA+to:Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA&output=embed"></iframe>
       <div class="map-actions">
         <a class="map-btn" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Ignite%20Coffee%20Company%2C%20Oceanside%2C%20CA/Piper%20Oceanside%2C%20Oceanside%2C%20CA/2570%20Vista%20Way%2C%20Oceanside%2C%20CA/Revolution%20Roasters%2C%20Oceanside%2C%20CA/The%20Switchboard%2C%20Oceanside%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Open in Google Maps</a>
         <a class="map-btn secondary" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Oceanside%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Vista%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Escondido%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Carlsbad%20Village%2C%20Carlsbad%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Hub star in Google Maps</a>
@@ -827,7 +824,7 @@
     </div>
     <div class="map-strip" data-map="fri">
       <p class="map-why"><strong>🗺️ Friday route.</strong> Vista doors + Carlsbad Village stroll, home to the same hub.</p>
-      <div class="embed-map" id="map-fri" role="img" aria-label="Friday route"></div>
+      <iframe class="embed-map" id="map-fri" title="Map — fri" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://maps.google.com/maps?saddr=Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA&daddr=James%20Coffee%20Vista%2C%20CA+to:1861%20University%20Dr%2C%20Vista%2C%20CA+to:Carlsbad%20Village%2C%20Carlsbad%2C%20CA+to:Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA&output=embed"></iframe>
       <div class="map-actions">
         <a class="map-btn" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/James%20Coffee%2C%20Vista%2C%20CA/1861%20University%20Dr%2C%20Vista%2C%20CA/Carlsbad%20Village%2C%20Carlsbad%2C%20CA/Sanders%20Social%20House%2C%20Vista%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Open in Google Maps</a>
         <a class="map-btn secondary" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Oceanside%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Vista%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Escondido%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Carlsbad%20Village%2C%20Carlsbad%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Hub star in Google Maps</a>
@@ -1003,7 +1000,7 @@
     </div>
     <div class="map-strip" data-map="sat">
       <p class="map-why"><strong>🗺️ Saturday route.</strong> Vista farmers market, then San Marcos Costco and local doors.</p>
-      <div class="embed-map" id="map-sat" role="img" aria-label="Saturday route"></div>
+      <iframe class="embed-map" id="map-sat" title="Map — sat" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://maps.google.com/maps?saddr=Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA&daddr=355%20S%20Melrose%20Dr%2C%20Vista%2C%20CA+to:725%20Center%20Dr%2C%20San%20Marcos%2C%20CA+to:Double%20Peak%20Park%2C%20San%20Marcos%2C%20CA+to:Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA&output=embed"></iframe>
       <div class="map-actions">
         <a class="map-btn" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/355%20S%20Melrose%20Dr%2C%20Vista%2C%20CA/Steady%20State%20Roasting%2C%20San%20Marcos%2C%20CA/725%20Center%20Dr%2C%20San%20Marcos%2C%20CA/Double%20Peak%20Park%2C%20San%20Marcos%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Open in Google Maps</a>
         <a class="map-btn secondary" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Oceanside%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Vista%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Escondido%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Carlsbad%20Village%2C%20Carlsbad%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Hub star in Google Maps</a>
@@ -1165,7 +1162,7 @@
     </div>
     <div class="map-strip" data-map="sun">
       <p class="map-why"><strong>🗺️ Sunday route.</strong> Escondido morning stack, then south to SAN.</p>
-      <div class="embed-map" id="map-sun" role="img" aria-label="Sunday route"></div>
+      <iframe class="embed-map" id="map-sun" title="Map — sun" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://maps.google.com/maps?saddr=Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA&daddr=Jimbo%27s%20Escondido%2C%20CA+to:San%20Diego%20International%20Airport%20SAN&output=embed"></iframe>
       <div class="map-actions">
         <a class="map-btn" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/James%20Coffee%20Co%2C%20Escondido%2C%20CA/1633%20S%20Centre%20City%20Pkwy%2C%20Escondido%2C%20CA/San%20Diego%20International%20Airport%20%28SAN%29" rel="noopener" target="_blank">Open in Google Maps</a>
         <a class="map-btn secondary" href="https://www.google.com/maps/dir/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Oceanside%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Vista%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Escondido%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA/Carlsbad%20Village%2C%20Carlsbad%2C%20CA/Lake%20San%20Marcos%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Hub star in Google Maps</a>
@@ -1509,80 +1506,6 @@
     }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
     targets.forEach(function (t) { io.observe(t); });
   })();
-</script>
-
-<script>
-(function () {
-  var PLACES = {"hub": [33.1231, -117.2081, "Airbnb hub \u00b7 Lake San Marcos"], "oceanside": [33.1959, -117.3795, "Oceanside"], "vista": [33.2, -117.2425, "Vista"], "escondido": [33.1192, -117.0864, "Escondido"], "carlsbad": [33.1581, -117.3506, "Carlsbad Village"], "san": [32.7336, -117.1897, "SAN airport"], "point_loma": [32.665, -117.242, "Tesla pickup \u00b7 Point Loma"], "rev_carlsbad": [33.1605, -117.35, "Revolution Roasters"], "fm_carlsbad": [33.1587, -117.3509, "Carlsbad Farmers Market"], "brickmans": [33.1265, -117.207, "Brickmans"], "ignite": [33.1955, -117.378, "Ignite Coffee"], "piper": [33.194, -117.379, "Piper"], "tj_oceanside": [33.1839, -117.2965, "Trader Joe's Oceanside"], "rev_oceanside": [33.178, -117.365, "Revolution Oceanside"], "switchboard": [33.1775, -117.364, "The Switchboard"], "james_vista": [33.2015, -117.242, "James Coffee Vista"], "tj_vista": [33.1985, -117.241, "Trader Joe's Vista"], "sanders": [33.165, -117.225, "Sanders Social House"], "vista_fm": [33.195, -117.2445, "Vista Farmers Market"], "steady": [33.135, -117.166, "Steady State Roasting"], "costco": [33.1385, -117.1605, "Costco San Marcos"], "double_peak": [33.109, -117.156, "Double Peak Park"], "james_esc": [33.119, -117.081, "James Coffee Escondido"], "jimbos": [33.1035, -117.0725, "Jimbo's"]};
-  var STOPS = {"hub": ["hub", "oceanside", "vista", "escondido", "carlsbad"], "wed": ["san", "point_loma", "hub", "rev_carlsbad", "fm_carlsbad", "brickmans"], "thu": ["hub", "ignite", "piper", "tj_oceanside", "rev_oceanside", "switchboard", "hub"], "fri": ["hub", "james_vista", "tj_vista", "carlsbad", "sanders", "hub"], "sat": ["hub", "vista_fm", "steady", "costco", "double_peak", "hub"], "sun": ["hub", "james_esc", "jimbos", "san"]};
-  var ORANGE = '#d95f1a';
-
-  function buildMap(id, stopKeys, star) {
-    var el = document.getElementById(id);
-    if (!el || typeof L === 'undefined') return;
-    var map = L.map(el, { scrollWheelZoom: false, attributionControl: true });
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-      maxZoom: 20,
-      subdomains: 'abcd',
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
-    }).addTo(map);
-
-    var pts = [];
-    var hub = PLACES.hub;
-    stopKeys.forEach(function (key, i) {
-      var p = PLACES[key];
-      if (!p) return;
-      var latlng = [p[0], p[1]];
-      pts.push(latlng);
-      var isHub = key === 'hub';
-      var marker = L.circleMarker(latlng, {
-        radius: isHub ? 10 : 7,
-        color: '#fff',
-        weight: 2,
-        fillColor: isHub ? ORANGE : '#1a73e8',
-        fillOpacity: 1
-      }).addTo(map);
-      marker.bindPopup('<strong>' + p[2] + '</strong>');
-      if (!isHub && star && hub) {
-        L.polyline([[hub[0], hub[1]], latlng], {
-          color: ORANGE, weight: 2, opacity: 0.55, dashArray: '6 6'
-        }).addTo(map);
-      }
-    });
-
-    if (!star && pts.length > 1) {
-      L.polyline(pts, { color: '#1a73e8', weight: 3, opacity: 0.75 }).addTo(map);
-    }
-
-    if (pts.length) {
-      map.fitBounds(pts, { padding: [28, 28], maxZoom: 12 });
-    }
-
-    // Invalidate size when scrolled into view (mobile / sticky nav)
-    setTimeout(function () { map.invalidateSize(); }, 200);
-    if ('IntersectionObserver' in window) {
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) map.invalidateSize();
-        });
-      }, { threshold: 0.2 });
-      io.observe(el);
-    }
-  }
-
-  function boot() {
-    buildMap('map-hub', STOPS.hub, true);
-    ['wed','thu','fri','sat','sun'].forEach(function (d) {
-      buildMap('map-' + d, STOPS[d], false);
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', boot);
-  } else {
-    boot();
-  }
-})();
 </script>
 
 </body>
