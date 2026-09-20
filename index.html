@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4772e">
+<meta name="description" content="John's solo San Diego North County house-scout itinerary — Wed 30 Sep to Sun 4 Oct 2026. Oceanside, Vista, San Marcos, Escondido. Research only, no bookings yet.">
+<title>North County ♥ — San Diego dream scout · 30 Sep – 4 Oct 2026</title>
+<style>
+  :root {
+    --orange: #f4772e;
+    --orange-deep: #d95f1a;
+    --orange-soft: #ffb37a;
+    --peach: #ffe8d6;
+    --cream: #fff8f1;
+    --paper: #fffdfa;
+    --ink: #3a2417;
+    --ink-soft: #6b4a37;
+    --muted: #9a7a68;
+    --line: #f2dcc9;
+    --rose: #e0475f;
+    --sage: #4f8a6b;
+    --sage-soft: #e3f2e8;
+    --amber: #b8730f;
+    --amber-soft: #fff1d6;
+    --sky: #3c7fb1;
+    --sky-soft: #e6f1fa;
+    --radius: 18px;
+    --shadow: 0 6px 24px rgba(120, 60, 20, 0.10);
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --nav-h: 60px;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.55;
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  a { color: var(--orange-deep); text-decoration: underline; text-decoration-color: rgba(217, 95, 26, 0.35); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: currentColor; }
+  img { display: block; max-width: 100%; height: auto; }
+  figure { margin: 0; }
+  h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.01em; margin: 0; }
+  p { margin: 0 0 0.9em; }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+
+  /* ---------- Orange dream header ---------- */
+  .band {
+    background: linear-gradient(160deg, #ff9a4d 0%, var(--orange) 55%, var(--orange-deep) 100%);
+    color: #fff;
+    padding: calc(22px + env(safe-area-inset-top)) 16px 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .band::before, .band::after {
+    content: "♥";
+    position: absolute;
+    font-size: 220px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.08);
+    pointer-events: none;
+  }
+  .band::before { left: -40px; top: -60px; transform: rotate(-16deg); }
+  .band::after { right: -50px; bottom: -90px; transform: rotate(12deg); }
+  .band .inner { position: relative; max-width: 720px; margin: 0 auto; }
+  .hearts { font-size: 26px; letter-spacing: 0.35em; margin-bottom: 8px; text-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+  .eyebrow { font-size: 13px; text-transform: uppercase; letter-spacing: 0.18em; opacity: 0.92; margin-bottom: 10px; }
+  .band h1 { font-size: clamp(34px, 9vw, 48px); line-height: 1.05; font-weight: 600; }
+  .band h1 em { font-style: italic; font-weight: 400; }
+  .band .sub { margin: 14px auto 0; font-size: 17px; max-width: 34ch; opacity: 0.96; }
+  .band .meta { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 18px; }
+  .band .meta span {
+    background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.35);
+    padding: 7px 12px; border-radius: 999px; font-size: 14px; backdrop-filter: blur(2px);
+  }
+  .band .status {
+    display: inline-block; margin-top: 18px; background: #fff; color: var(--orange-deep);
+    font-weight: 700; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 8px 14px; border-radius: 999px;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero { position: relative; }
+  .hero img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+  .hero figcaption {
+    background: var(--paper); border-bottom: 1px solid var(--line);
+    padding: 12px 16px; font-family: var(--serif); font-style: italic; color: var(--ink-soft); font-size: 16px; text-align: center;
+  }
+
+  /* ---------- Letter ---------- */
+  .letter { padding: 28px 0 8px; }
+  .letter .card {
+    background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 22px 20px; box-shadow: var(--shadow);
+    font-family: var(--serif); font-size: 18px; line-height: 1.6;
+  }
+  .letter .card p:last-child { margin-bottom: 0; }
+  .letter .salute { color: var(--orange-deep); font-style: italic; }
+  .letter .sign { text-align: right; color: var(--ink-soft); font-style: italic; margin-top: 12px; }
+
+  /* ---------- Glance grid ---------- */
+  .glance { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 18px 0 8px; }
+  .glance .tile {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px;
+  }
+  .glance .tile .k { font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); }
+  .glance .tile .v { font-weight: 600; margin-top: 2px; font-size: 16px; }
+  .glance .tile .s { color: var(--ink-soft); font-size: 14px; margin-top: 2px; }
+  .glance .tile.wide { grid-column: 1 / -1; }
+
+  /* ---------- Sticky day nav ---------- */
+  .daynav {
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(255, 248, 241, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+    padding-top: env(safe-area-inset-top);
+  }
+  .daynav ul {
+    list-style: none; margin: 0; padding: 8px 12px;
+    display: flex; gap: 8px; overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; scroll-snap-type: x proximity;
+  }
+  .daynav ul::-webkit-scrollbar { display: none; }
+  .daynav li { flex: 0 0 auto; scroll-snap-align: start; }
+  .daynav a {
+    display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    min-height: 44px; padding: 0 14px; border-radius: 999px;
+    background: #fff; border: 1px solid var(--line); color: var(--ink); text-decoration: none;
+    font-size: 15px; font-weight: 600; white-space: nowrap;
+  }
+  .daynav a small { font-weight: 400; color: var(--muted); font-size: 13px; }
+  .daynav a.active { background: var(--orange); border-color: var(--orange); color: #fff; }
+  .daynav a.active small { color: rgba(255,255,255,0.85); }
+
+  /* ---------- Sections ---------- */
+  section.block { padding: 28px 0 8px; scroll-margin-top: calc(var(--nav-h) + env(safe-area-inset-top) + 8px); }
+  .section-title { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
+  .section-title h2 { font-size: 28px; line-height: 1.15; }
+  .section-title .date { color: var(--orange-deep); font-family: var(--serif); font-style: italic; font-size: 18px; }
+  .lede { color: var(--ink-soft); margin-bottom: 14px; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 14px; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 6px; padding: 6px 11px; border-radius: 999px;
+    font-size: 13px; font-weight: 600; letter-spacing: 0.01em; border: 1px solid transparent;
+  }
+  .chip.orange { background: var(--peach); color: var(--orange-deep); border-color: #ffd1ad; }
+  .chip.sage { background: var(--sage-soft); color: var(--sage); border-color: #c8e4d2; }
+  .chip.amber { background: var(--amber-soft); color: var(--amber); border-color: #f5dfae; }
+  .chip.sky { background: var(--sky-soft); color: var(--sky); border-color: #c6ddef; }
+  .chip.rose { background: #fde4e8; color: var(--rose); border-color: #f8c3cc; }
+
+  .day-photo { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); margin: 0 0 16px; position: relative; }
+  .day-photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+  .day-photo.wide img { aspect-ratio: 21 / 9; }
+  .day-photo figcaption {
+    position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 14px 10px;
+    background: linear-gradient(to top, rgba(58, 36, 23, 0.72), rgba(58, 36, 23, 0));
+    color: #fff; font-family: var(--serif); font-style: italic; font-size: 15px; text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+  }
+
+  /* ---------- Mood gallery ---------- */
+  .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 0 0 18px; }
+  .gallery figure {
+    position: relative; border-radius: 14px; overflow: hidden; box-shadow: var(--shadow);
+    background: var(--peach); margin: 0;
+  }
+  .gallery figure.span2 { grid-column: 1 / -1; }
+  .gallery a { display: block; color: inherit; text-decoration: none; }
+  .gallery img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+  .gallery figure.span2 img { aspect-ratio: 21 / 9; }
+  .gallery figcaption {
+    position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 10px 8px;
+    background: linear-gradient(to top, rgba(58, 36, 23, 0.74), rgba(58, 36, 23, 0));
+    color: #fff; font-family: var(--serif); font-style: italic; font-size: 14px; line-height: 1.3;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.45);
+  }
+  .gallery figure.span2 figcaption { font-size: 15px; padding-left: 14px; padding-right: 14px; }
+  .gallery .heart {
+    position: absolute; top: 8px; right: 10px; color: #fff; font-size: 16px; line-height: 1;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.45); opacity: 0.9;
+  }
+  .gallery-note { color: var(--muted); font-size: 14px; margin: -8px 0 16px; text-align: center; }
+
+  /* ---------- Timeline ---------- */
+  .timeline { list-style: none; margin: 0; padding: 0; }
+  .timeline li {
+    display: grid; grid-template-columns: 44px 1fr; gap: 12px;
+    background: var(--paper); border: 1px solid var(--line); border-radius: 16px;
+    padding: 14px 14px 14px 12px; margin-bottom: 10px;
+  }
+  .timeline li.has-thumb { grid-template-columns: 44px 1fr 72px; }
+  .timeline .thumb {
+    width: 72px; height: 72px; border-radius: 14px; object-fit: cover; align-self: start;
+    box-shadow: var(--shadow); border: 2px solid #fff;
+  }
+  .timeline li.viewing { background: linear-gradient(135deg, #fff4ea, #fffdfa); border-color: #ffd1ad; }
+  .timeline li.coffee { border-left: 4px solid var(--orange-soft); }
+  .timeline li.drive { background: #fbf6f1; }
+  .icon {
+    width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center;
+    font-size: 22px; background: var(--peach); align-self: start;
+  }
+  .viewing .icon { background: var(--orange); color: #fff; }
+  .drive .icon { background: #ece2d8; }
+  .coffee .icon { background: #f7e0cc; }
+  .tl-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); }
+  .tl-title { font-weight: 700; font-size: 17px; margin: 2px 0 2px; }
+  .tl-title a { color: var(--ink); text-decoration-color: rgba(217, 95, 26, 0.45); }
+  .tl-detail { color: var(--ink-soft); font-size: 15px; }
+  .tl-detail .why { font-family: var(--serif); font-style: italic; color: var(--orange-deep); }
+  .tl-foot { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .tl-foot .chip { padding: 4px 9px; font-size: 12px; }
+
+  .note {
+    background: var(--amber-soft); border: 1px solid #f5dfae; border-radius: 14px;
+    padding: 12px 14px; font-size: 15px; color: #6a4a12; margin: 10px 0 14px;
+  }
+  .note.rose { background: #fde4e8; border-color: #f8c3cc; color: #8a2436; }
+  .note.sage { background: var(--sage-soft); border-color: #c8e4d2; color: #2f5c45; }
+  .note strong { font-weight: 700; }
+
+  /* ---------- Cards (flights / stay / car) ---------- */
+  .cards { display: grid; gap: 10px; }
+  .card {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px;
+  }
+  .card.pick { border-color: var(--orange-soft); box-shadow: 0 0 0 3px var(--peach); }
+  .card h3 { font-size: 18px; margin-bottom: 4px; }
+  .card .row { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+  .card .price { font-family: var(--serif); font-size: 22px; color: var(--orange-deep); font-weight: 600; }
+  .card .small { color: var(--ink-soft); font-size: 15px; }
+  .card .times { font-variant-numeric: tabular-nums; font-weight: 600; }
+
+  /* ---------- Cost table ---------- */
+  table { width: 100%; border-collapse: collapse; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; font-size: 15px; }
+  thead th { text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); padding: 12px 12px 8px; background: #fff3e8; }
+  td { padding: 11px 12px; border-top: 1px solid var(--line); vertical-align: top; }
+  td.amt { font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 600; text-align: right; }
+  tr.total td { background: var(--peach); font-weight: 700; font-size: 16px; }
+  tr.total td.amt { color: var(--orange-deep); font-family: var(--serif); font-size: 20px; }
+  td .src { display: block; color: var(--muted); font-size: 13px; margin-top: 2px; }
+
+  .coffee-tally { display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 14px; }
+  .coffee-tally .stop { display: grid; grid-template-columns: 56px 1fr auto; gap: 10px; align-items: center; background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 8px 10px; font-size: 15px; }
+  .coffee-tally .when { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 700; }
+  .coffee-tally .amt { color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+
+  .mood { display: grid; grid-template-columns: 96px 1fr; gap: 14px; align-items: center; margin: 16px 0 6px; }
+  .mood img { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; box-shadow: var(--shadow); }
+  .mood p { margin: 0; font-family: var(--serif); font-style: italic; color: var(--ink-soft); font-size: 16px; }
+
+  .questions { list-style: none; padding: 0; margin: 0; counter-reset: q; }
+  .questions li { counter-increment: q; display: grid; grid-template-columns: 34px 1fr; gap: 10px; padding: 12px 0; border-bottom: 1px dashed var(--line); font-size: 16px; }
+  .questions li::before { content: counter(q); width: 34px; height: 34px; border-radius: 50%; background: var(--peach); color: var(--orange-deep); font-weight: 700; display: grid; place-items: center; font-family: var(--serif); }
+  .questions li:last-child { border-bottom: 0; }
+
+  /* ---------- Footer ---------- */
+  footer {
+    margin-top: 36px; background: linear-gradient(160deg, var(--orange-deep), var(--orange));
+    color: #fff; text-align: center; padding: 34px 16px calc(36px + env(safe-area-inset-bottom));
+  }
+  footer .stamp {
+    display: inline-block; border: 2px dashed rgba(255,255,255,0.8); border-radius: 12px;
+    padding: 12px 18px; font-family: var(--serif); font-size: 20px; letter-spacing: 0.02em; transform: rotate(-2deg);
+  }
+  footer .hearts { margin-top: 18px; }
+  footer p { margin: 10px auto 0; max-width: 40ch; font-size: 15px; opacity: 0.95; }
+  footer .credits { font-size: 12px; opacity: 0.8; margin-top: 20px; line-height: 1.6; }
+  footer .credits a { color: #fff; }
+  .backtop { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px; margin-top: 18px; border-radius: 999px; background: #fff; color: var(--orange-deep); font-weight: 700; text-decoration: none; }
+
+  @media (min-width: 560px) {
+    .glance { grid-template-columns: repeat(3, 1fr); }
+    .glance .tile.wide { grid-column: span 3; }
+    .cards.two { grid-template-columns: 1fr 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header class="band" id="top">
+  <div class="inner">
+    <div class="hearts" aria-hidden="true">♥ ♥ ♥</div>
+    <div class="eyebrow">North County ♥ San Diego</div>
+    <h1>The dream scout,<br><em>coming into focus</em></h1>
+    <p class="sub">Four days, four towns, thirteen front doors. Walking the streets we keep talking about — for us.</p>
+    <div class="meta">
+      <span>Wed 30 Sep → Sun 4 Oct 2026</span>
+      <span>John, solo this time</span>
+      <span>EWR ↔ SAN</span>
+      <span>Base: San Marcos</span>
+    </div>
+    <div class="status">Research only · no bookings yet</div>
+  </div>
+</header>
+
+<figure class="hero">
+  <img src="img/hero-oceanside-coast.jpg" width="1600" height="901" alt="Oceanside beach seen from the pier: a row of orange cottages under palm trees with hills behind" fetchpriority="high">
+  <figcaption>Oceanside, from the pier. Somewhere behind those palms is a kitchen we'll argue about paint colours in.</figcaption>
+</figure>
+
+<main class="wrap">
+
+  <!-- ============ Letter ============ -->
+  <div class="letter">
+    <div class="card">
+      <p><span class="salute">Maya,</span></p>
+      <p>This is the week I go and stand in the actual driveways. Thirteen homes, four towns, one very patient Tesla. You get every one of them by text from the kerb — the garden, the light, whether the park is really a walk or a "walk".</p>
+      <p>Nothing is booked yet. This is the shape of it, pretty and complete, so we can stamp it together. Two coffees most days, because scouting is serious work.</p>
+      <p class="sign">— back to you both Sunday night ♥</p>
+    </div>
+
+    <div class="glance">
+      <div class="tile"><div class="k">When</div><div class="v">30 Sep – 4 Oct</div><div class="s">Wed → Sun · 4 nights</div></div>
+      <div class="tile"><div class="k">Who</div><div class="v">John only</div><div class="s">1 adult on every booking</div></div>
+      <div class="tile"><div class="k">Fly</div><div class="v">United nonstop · $832</div><div class="s">EWR 4:55p → SAN 7:43p · 1 adult RT (early 7:00a: $707)</div></div>
+      <div class="tile"><div class="k">Sleep</div><div class="v">San Marcos Airbnb</div><div class="s">~$683 · 4 nights · 2BR home</div></div>
+      <div class="tile"><div class="k">Drive</div><div class="v">2026 Model Y · FSD included</div><div class="s">Turo · $501 before taxes · locked, not booked</div></div>
+      <div class="tile"><div class="k">Doors</div><div class="v">4 · 2 · 3 · 4</div><div class="s">Oceanside · Vista · San Marcos · Escondido</div></div>
+      <div class="tile wide"><div class="k">What we're looking for</div><div class="v">4BR · garden · ≤ ~$1M · solar if we're lucky</div><div class="s">good schools nearby, walk-to-park energy. Shortlists live in the Operator chat — neighbourhoods and counts only here.</div></div>
+    </div>
+  </div>
+</main>
+
+<!-- ============ Day nav ============ -->
+<nav class="daynav" aria-label="Jump to a day">
+  <ul>
+    <li><a href="#wed">Wed <small>arrive</small></a></li>
+    <li><a href="#thu">Thu <small>Oceanside · 4</small></a></li>
+    <li><a href="#fri">Fri <small>Vista · 2</small></a></li>
+    <li><a href="#sat">Sat <small>San Marcos · 3</small></a></li>
+    <li><a href="#sun">Sun <small>Escondido · 4</small></a></li>
+    <li><a href="#logistics">Fly · Stay · Car</a></li>
+    <li><a href="#cost">$ Cost</a></li>
+  </ul>
+</nav>
+
+<main class="wrap">
+
+  <!-- ============ WED ============ -->
+  <section class="block" id="wed">
+    <div class="section-title"><h2>Arrive &amp; settle</h2><span class="date">Wed 30 Sep</span></div>
+    <p class="lede">Land, collect the car, point it north. Tonight is just about getting to the base and breathing the air we're thinking of living in.</p>
+    <div class="chips">
+      <span class="chip sage">No viewings · travel day</span>
+      <span class="chip orange">☕ 1 coffee (arrival)</span>
+    </div>
+
+    <div class="gallery">
+      <figure>
+        <a href="img/wed-point-loma-sunset.jpg" target="_blank" rel="noopener">
+          <img src="img/wed-point-loma-sunset.jpg" width="1000" height="666" alt="Orange sunset over the Pacific at Point Loma, San Diego, with the headland in silhouette" loading="lazy" decoding="async">
+          <span class="heart" aria-hidden="true">♥</span>
+          <figcaption>Point Loma sunset — the Model Y is waiting near here.</figcaption>
+        </a>
+      </figure>
+      <figure>
+        <a href="img/wed-lake-san-marcos.jpg" target="_blank" rel="noopener">
+          <img src="img/wed-lake-san-marcos.jpg" width="1000" height="666" alt="Lake San Marcos with a fountain, palm trees and homes along the shore" loading="lazy" decoding="async">
+          <figcaption>Lake San Marcos — minutes from the Airbnb.</figcaption>
+        </a>
+      </figure>
+    </div>
+
+    <ul class="timeline">
+      <li>
+        <div class="icon" aria-hidden="true">✈️</div>
+        <div>
+          <div class="tl-label">Flight</div>
+          <div class="tl-title">EWR → SAN</div>
+          <div class="tl-detail">Nonstop only. The pick is United 4:55p → 7:43p, <strong>$832</strong> round trip for 1 adult — a normal morning at home, a golden-hour landing. The cheaper nonstop is United 7:00a → 9:49a at <strong>$707</strong> if a whole first day matters more than the lie-in. <a href="#flights">Flight details.</a></div>
+          <div class="tl-foot"><span class="chip sage">United nonstop 4:55p · $832 · not booked</span></div>
+        </div>
+      </li>
+      <li class="drive">
+        <div class="icon" aria-hidden="true">🚗</div>
+        <div>
+          <div class="tl-label">Car pickup</div>
+          <div class="tl-title">2026 Tesla Model Y Premium — FSD included</div>
+          <div class="tl-detail">Turo, host Tony in 92106 (Point Loma — minutes from SAN). Confirm the handover spot or SAN delivery with the host, check FSD is active on <em>this</em> car before you pull away, and charge if needed. <a href="#car">Car details.</a></div>
+          <div class="tl-foot"><span class="chip sage">$501 before taxes · Sep 30 – Oct 4</span></div>
+        </div>
+      </li>
+      <li class="drive">
+        <div class="icon" aria-hidden="true">🛣️</div>
+        <div>
+          <div class="tl-label">Drive note</div>
+          <div class="tl-title">SAN → San Marcos Airbnb · ~35–50 min</div>
+          <div class="tl-detail">I-5 → I-805 → SR-78. Estimate; traffic varies.</div>
+        </div>
+      </li>
+      <li>
+        <div class="icon" aria-hidden="true">🏠</div>
+        <div>
+          <div class="tl-label">Check-in</div>
+          <div class="tl-title">San Marcos Airbnb (primary)</div>
+          <div class="tl-detail">Entire 2BR home · 4.88 ★ (24) · ~$683 for the 4 nights on the search card. Central to the whole Oceanside–Vista–San Marcos–Escondido loop. <a href="#stay">Stay details.</a></div>
+        </div>
+      </li>
+      <li class="coffee has-thumb">
+        <div class="icon" aria-hidden="true">☕</div>
+        <div>
+          <div class="tl-label">Coffee · arrival (the only one today)</div>
+          <div class="tl-title"><a href="https://www.revoroasters.com/" rel="noopener">Revolution Roasters — Carlsbad Village</a></div>
+          <div class="tl-detail">Specialty roaster on the way to base, not a chain. Site says open daily; <span class="why">on the 7:43p landing, confirm evening hours and the Roosevelt St pin — if they've closed, this one rolls into Thursday morning.</span></div>
+          <div class="tl-foot"><span class="chip amber">EST $6–8</span></div>
+        </div>
+        <img class="thumb" src="img/coffee-espresso-machine.jpg" width="480" height="480" alt="Close-up of a brass espresso machine in a café (mood photo)" loading="lazy" decoding="async">
+      </li>
+      <li>
+        <div class="icon" aria-hidden="true">🥐</div>
+        <div>
+          <div class="tl-label">Breakfast &amp; lunch</div>
+          <div class="tl-title">In transit — EWR / in the air</div>
+          <div class="tl-detail">Nothing planned on the ground. Eat at the gate; save the appetite for San Marcos.</div>
+        </div>
+      </li>
+      <li>
+        <div class="icon" aria-hidden="true">🍽️</div>
+        <div>
+          <div class="tl-label">Dinner</div>
+          <div class="tl-title"><a href="https://www.thelakehouseresort.com/san-marcos-dining/brickmans" rel="noopener">Brickmans — Lakehouse Resort, San Marcos</a></div>
+          <div class="tl-detail">Golf-side American, light dinner near base. Dinner 5–8pm Sun–Thu — <span class="why">only reachable on the 9:49a flight. On the 7:43p pick, tonight is an airport bite and Brickmans waits for Saturday.</span></div>
+          <div class="tl-foot"><span class="chip amber">EST $25–40</span></div>
+        </div>
+      </li>
+    </ul>
+    <div class="note"><strong>Practical heart:</strong> Brickmans closes at 8pm on a Wednesday, and the 4:55p pick lands at 7:43p — so Wednesday dinner is a bite at SAN or a takeaway on the way north, no reservation. That's the trade for a normal morning at home. Switch to the 7:00a ($707) if you'd rather have the whole afternoon and a proper first dinner.</div>
+  </section>
+
+  <!-- ============ THU ============ -->
+  <section class="block" id="thu">
+    <div class="section-title"><h2>Oceanside</h2><span class="date">Thu 1 Oct</span></div>
+    <figure class="day-photo">
+      <img src="img/thu-oceanside-pier.jpg" width="1200" height="900" alt="Oceanside Pier at sunset with palm trees in the foreground" loading="lazy" decoding="async">
+      <figcaption>The pier at golden hour — the reward for a dense morning.</figcaption>
+    </figure>
+    <p class="lede">The coastal one. Four homes, stacked tight in the morning so the afternoon has room for a park walk and a slow second coffee.</p>
+    <div class="chips">
+      <span class="chip orange">🏡 4 homes · dense AM OK</span>
+      <span class="chip sky">Fire Mountain · South Oceanside inland · MiraCosta-adjacent</span>
+      <span class="chip orange">☕ 2 coffees</span>
+    </div>
+
+    <div class="gallery">
+      <figure class="span2">
+        <a href="img/thu-oceanside-beach-palms.jpg" target="_blank" rel="noopener">
+          <img src="img/thu-oceanside-beach-palms.jpg" width="1400" height="650" alt="Oceanside beach with tall palm trees, the pier stretching out to sea in the distance" loading="lazy" decoding="async">
+          <span class="heart" aria-hidden="true">♥</span>
+          <figcaption>Miles of beach and one very long wooden pier. This is the ten-minute drive from every Oceanside door.</figcaption>
+        </a>
+      </figure>
+      <figure>
+        <a href="img/thu-oceanside-harbor-sunset.jpg" target="_blank" rel="noopener">
+          <img src="img/thu-oceanside-harbor-sunset.jpg" width="1000" height="617" alt="Palm trees silhouetted against an orange sunset at Oceanside Harbor" loading="lazy" decoding="async">
+          <figcaption>Harbour palms at sunset.</figcaption>
+        </a>
+      </figure>
+      <figure>
+        <a href="img/thu-oceanside-harbor-village.jpg" target="_blank" rel="noopener">
+          <img src="img/thu-oceanside-harbor-village.jpg" width="1000" height="666" alt="Sailboats moored at Oceanside Harbor Village with a small lighthouse behind" loading="lazy" decoding="async">
+          <figcaption>Harbor Village.</figcaption>
+        </a>
+      </figure>
+      <figure>
+        <a href="img/thu-oceanside-under-pier.jpg" target="_blank" rel="noopener">
+          <img src="img/thu-oceanside-under-pier.jpg" width="1000" height="666" alt="Looking along the wooden pilings underneath Oceanside Pier at low tide" loading="lazy" decoding="async">
+          <figcaption>Under the pier.</figcaption>
+        </a>
+      </figure>
+      <figure>
+        <a href="img/thu-oceanside-lifeguard-tower.jpg" target="_blank" rel="noopener">
+          <img src="img/thu-oceanside-lifeguard-tower.jpg" width="1000" height="666" alt="Lifeguard tower number one on Oceanside beach at dusk" loading="lazy" decoding="async">
+          <figcaption>Tower 1 at dusk.</figcaption>
+        </a>
+      </figure>
+      <figure class="span2">
+        <a href="img/thu-oceanside-palms-sky.jpg" target="_blank" rel="noopener">
+          <img src="img/thu-oceanside-palms-sky.jpg" width="1000" height="666" alt="Tall palm trees against a dramatic blue sky in Oceanside" loading="lazy" decoding="async">
+          <figcaption>Palm-tree weather, most days. Fire Mountain and South O are a few minutes up the hill from here.</figcaption>
+        </a>
+      </figure>
+    </div>
+    <p class="gallery-note">Tap any photo to open it full size ♥</p>
+
+    <ul class="timeline">
+      <li class="drive">
+        <div class="icon" aria-hidden="true">🛣️</div>
+        <div>
+          <div class="tl-label">Drive note</div>
+          <div class="tl-title">San Marcos → Oceanside · ~20–30 min</div>
+          <div class="tl-detail">Estimate. Leave early enough to be in a café chair by opening.</div>
+        </div>
+      </li>
+      <li class="coffee has-thumb">
+        <div class="icon" aria-hidden="true">☕</div>
+        <div>
+          <div class="tl-label">Coffee · morning</div>
+          <div class="tl-title"><a href="https://ignitecoffeecompany.com/" rel="noopener">Ignite Coffee Company</a></div>
+          <div class="tl-detail">Downtown Oceanside, Mission Ave near the pier. Local single-origin roaster. <span class="why">Confirm the pin on their site.</span></div>
+          <div class="tl-foot"><span class="chip amber">EST $6–8</span></div>
+        </div>
+        <img class="thumb" src="img/coffee-pourover-chemex.jpg" width="480" height="480" alt="Pour-over coffee brewing in a glass Chemex (mood photo)" loading="lazy" decoding="async">
+      </li>
+      <li class="has-thumb">
+        <div class="icon" aria-hidden="true">🍳</div>
+        <div>
+          <div class="tl-label">Breakfast</div>
+          <div class="tl-title"><a href="https://www.piperoceanside.com/location/piper/" rel="noopener">Piper (at Seabird)</a></div>
+          <div class="tl-detail">Coastal California cooking. Breakfast daily 7–11am.</div>
+          <div class="tl-foot"><span class="chip amber">EST $20–30</span></div>
+        </div>
+        <img class="thumb" src="img/food-brunch-benedict.jpg" width="480" height="480" alt="Eggs Benedict with salad and orange juice on a brunch table (mood photo)" loading="lazy" decoding="async">
+      </li>
+      <li class="viewing">
+        <div class="icon" aria-hidden="true">🏡</div>
+        <div>
+          <div class="tl-label">Morning viewings</div>
+          <div class="tl-title">Stack 3 of the 4 Oceanside homes</div>
+          <div class="tl-detail">4BR · garden · ≤ ~$1M · walk-to-park. Photos of the garden first, then the kitchen, then the street both ways — you'll want all three.</div>
+        </div>
+      </li>
+      <li class="has-thumb">
+        <div class="icon" aria-hidden="true">🥪</div>
+        <div>
+          <div class="tl-label">Lunch</div>
+          <div class="tl-title">Piper lunch (Mon–Fri 12–3pm) — or something casual by the pier</div>
+          <div class="tl-detail">Same room as breakfast if the morning ran long; otherwise keep it quick.</div>
+          <div class="tl-foot"><span class="chip amber">EST $20–30</span></div>
+        </div>
+        <img class="thumb" src="img/food-fish-tacos.jpg" width="480" height="480" alt="Two fish tacos with cabbage on a patterned plate (mood photo)" loading="lazy" decoding="async">
+      </li>
+      <li class="coffee has-thumb">
+        <div class="icon" aria-hidden="true">☕</div>
+        <div>
+          <div class="tl-label">Coffee · after lunch</div>
+          <div class="tl-title"><a href="https://www.revoroasters.com/" rel="noopener">Revolution Roasters — Oceanside</a></div>
+          <div class="tl-detail">S Coast Hwy. House-roasted, community café. Open daily 6am–6pm.</div>
+          <div class="tl-foot"><span class="chip amber">EST $6–8</span></div>
+        </div>
+        <img class="thumb" src="img/coffee-cafe-front.jpg" width="480" height="480" alt="Green café shopfront with a Thank You sign (mood photo)" loading="lazy" decoding="async">
+      </li>
+      <li class="viewing">
+        <div class="icon" aria-hidden="true">🌳</div>
+        <div>
+          <div class="tl-label">Afternoon</div>
+          <div class="tl-title">The 4th Oceanside home + a park / school walk</div>
+          <div class="tl-detail">Time the walk from the door to the nearest park. Is it a stroll or a drive?</div>
+        </div>
+      </li>
+      <li>
+        <div class="icon" aria-hidden="true">🍽️</div>
+        <div>
+          <div class="tl-label">Dinner</div>
+          <div class="tl-title"><a href="https://switchboardrestaurant.com/" rel="noopener">The Switchboard — Fin Hotel</a></div>
+          <div class="tl-detail">Hawaiian-inspired, S Coast Hwy. Evening service roughly 4–9pm (Wed hours listed; confirm Thu).</div>
+          <div class="tl-foot"><span class="chip amber">EST $25–40</span></div>
+        </div>
+      </li>
+      <li class="drive">
+        <div class="icon" aria-hidden="true">🌙</div>
+        <div>
+          <div class="tl-label">Drive home</div>
+          <div class="tl-title">Oceanside → San Marcos · ~20–30 min</div>
+          <div class="tl-detail">Send the day's photos before you forget which door was which.</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ FRI ============ -->
+  <section class="block" id="fri">
+    <div class="section-title"><h2>Vista</h2><span class="date">Fri 2 Oct</span></div>
+    <figure class="day-photo">
+      <img src="img/fri-vista-hills.jpg" width="1200" height="854" alt="A single-storey house with a green garden in Vista, the San Marcos Mountains behind" loading="lazy" decoding="async">
+      <figcaption>Vista: a house, a yard, hills behind. Roughly the whole brief.</figcaption>
+    </figure>
+    <p class="lede">The thin day, on purpose. Only two homes on the shortlist, so the gaps become school runs and park loops — the stuff that tells you what living here would actually feel like.</p>
+    <div class="chips">
+      <span class="chip orange">🏡 2 homes · thin — buffer</span>
+      <span class="chip sky">Shadowridge · Heritage</span>
+      <span class="chip rose">Skip downtown Vista / 92084 for housing</span>
+      <span class="chip orange">☕ 2 coffees</span>
+    </div>
+    <div class="note">Main St cafés are fine for coffee — we're just not touring homes in the 92084 core. Shadowridge and Heritage are the streets we mean.</div>
+
+    <div class="gallery">
+      <figure>
+        <a href="img/fri-vista-main-street-art.jpg" target="_blank" rel="noopener">
+          <img src="img/fri-vista-main-street-art.jpg" width="1000" height="666" alt="A colourful metal sculpture on Main Street in historic downtown Vista" loading="lazy" decoding="async">
+          <span class="heart" aria-hidden="true">♥</span>
+          <figcaption>Main St art — the coffee end of Vista.</figcaption>
+        </a>
+      </figure>
+      <figure>
+        <a href="img/fri-vista-gateway-arch.jpg" target="_blank" rel="noopener">
+          <img src="img/fri-vista-gateway-arch.jpg" width="1000" height="666" alt="The Vista gateway arch spanning South Santa Fe Avenue, seen from above" loading="lazy" decoding="async">
+          <figcaption>The Vista arch — breakfast is up this road.</figcaption>
+        </a>
+      </figure>
+      <figure class="span2">
+        <a href="img/fri-vista-botanical-garden.jpg" target="_blank" rel="noopener">
+          <img src="img/fri-vista-botanical-garden.jpg" width="1000" height="666" alt="Herb garden beds and winding paths at Alta Vista Botanical Gardens in Vista, hills behind" loading="lazy" decoding="async">
+          <figcaption>Alta Vista Botanical Gardens, Brengle Terrace Park — the green we want a short walk from the door.</figcaption>
+        </a>
+      </figure>
+    </div>
+
+    <ul class="timeline">
+      <li class="drive">
+        <div class="icon" aria-hidden="true">🛣️</div>
+        <div>
+          <div class="tl-label">Drive note</div>
+          <div class="tl-title">San Marcos → Shadowridge · ~15–25 min</div>
+          <div class="tl-detail">Estimate. Closest day to base.</div>
+        </div>
+      </li>
+      <li class="coffee has-thumb">
+        <div class="icon" aria-hidden="true">☕</div>
+        <div>
+          <div class="tl-label">Coffee · morning</div>
+          <div class="tl-title"><a href="https://jamescoffeeco.com/pages/locations" rel="noopener">James Coffee — Vista</a></div>
+          <div class="tl-detail">Main St. Local specialty bakery-café. Daily 7am–4pm.</div>
+          <div class="tl-foot"><span class="chip amber">EST $6–8</span></div>
+        </div>
+        <img class="thumb" src="img/coffee-muffin-latte.jpg" width="480" height="480" alt="A blueberry muffin next to a latte with foam art (mood photo)" loading="lazy" decoding="async">
+      </li>
+      <li class="has-thumb">
+        <div class="icon" aria-hidden="true">🍳</div>
+        <div>
+          <div class="tl-label">Breakfast</div>
+          <div class="tl-title"><a href="https://www.coyotecafeca.com/" rel="noopener">Coyote Cafe</a></div>
+          <div class="tl-detail">N Santa Fe Ave (92083 — not the 92084 core). Homestyle breakfast. Fri 6:30am–8pm.</div>
+          <div class="tl-foot"><span class="chip amber">EST $15–25</span></div>
+        </div>
+        <img class="thumb" src="img/food-breakfast-toast.jpg" width="480" height="480" alt="Breakfast toast topped with poached eggs, bacon, tomato and avocado, coffee alongside (mood photo)" loading="lazy" decoding="async">
+      </li>
+      <li class="viewing">
+        <div class="icon" aria-hidden="true">🏡</div>
+        <div>
+          <div class="tl-label">Morning</div>
+          <div class="tl-title">Home #1 + a school / park walk</div>
+          <div class="tl-detail">Use the buffer. Walk the block at the pace of a stroller.</div>
+        </div>
+      </li>
+      <li class="has-thumb">
+        <div class="icon" aria-hidden="true">🍕</div>
+        <div>
+          <div class="tl-label">Lunch</div>
+          <div class="tl-title"><a href="https://leucadiapizza.com/vista" rel="noopener">Leucadia Pizzeria — Shadowridge</a></div>
+          <div class="tl-detail">S Melrose Dr. Fri 11am–9pm. Right in the neighbourhood we're circling.</div>
+          <div class="tl-foot"><span class="chip amber">EST $18–28</span></div>
+        </div>
+        <img class="thumb" src="img/food-margherita-pizza.jpg" width="480" height="480" alt="A margherita pizza with fresh basil (mood photo)" loading="lazy" decoding="async">
+      </li>
+      <li class="coffee has-thumb">
+        <div class="icon" aria-hidden="true">☕</div>
+        <div>
+          <div class="tl-label">Coffee · after lunch</div>
+          <div class="tl-title"><a href="https://www.cosmicbloomcoffee.com/" rel="noopener">Cosmic Bloom Coffee</a></div>
+          <div class="tl-detail">Main St, Vista. Specialty roaster café.</div>
+          <div class="tl-foot"><span class="chip amber">EST $6–8</span></div>
+        </div>
+        <img class="thumb" src="img/coffee-cappuccino-hands.jpg" width="480" height="480" alt="Hands holding a cappuccino with latte art at a café table (mood photo)" loading="lazy" decoding="async">
+      </li>
+      <li class="viewing">
+        <div class="icon" aria-hidden="true">🌳</div>
+        <div>
+          <div class="tl-label">Afternoon</div>
+          <div class="tl-title">Home #2 + a second park walk / neighbourhood loop</div>
+          <div class="tl-detail">Drive the school route at pick-up time if it lines up.</div>
+        </div>
+      </li>
+      <li>
+        <div class="icon" aria-hidden="true">🍽️</div>
+        <div>
+          <div class="tl-label">Dinner</div>
+          <div class="tl-title"><a href="https://www.invitedclubs.com/clubs/shadowridge-golf-club/our-story/directions-hours" rel="noopener">Sanders Social House — Shadowridge Golf Club</a></div>
+          <div class="tl-detail">Gateway Dr, 92081. Fri dinner 5–8pm per the club's hours page. <span class="why">Confirm public dining access and dress code before you go.</span></div>
+          <div class="tl-foot"><span class="chip amber">EST $30–45</span></div>
+        </div>
+      </li>
+      <li class="drive">
+        <div class="icon" aria-hidden="true">🌙</div>
+        <div>
+          <div class="tl-label">Drive home</div>
+          <div class="tl-title">Shadowridge → San Marcos · ~15–25 min</div>
+          <div class="tl-detail">Early night. Saturday is home turf.</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ SAT ============ -->
+  <section class="block" id="sat">
+    <div class="section-title"><h2>San Marcos</h2><span class="date">Sat 3 Oct</span></div>
+    <figure class="day-photo wide">
+      <img src="img/sat-san-marcos-double-peak.jpg" width="1200" height="458" alt="Panorama looking north from Double Peak Park over San Marcos neighbourhoods" loading="lazy" decoding="async">
+      <figcaption>From Double Peak: all of San Marcos laid out like a map of maybes.</figcaption>
+    </figure>
+    <p class="lede">Home turf — you're sleeping here already. Three homes at a steady mid-day pace, with a little coastal coffee run so Saturday still feels like Saturday.</p>
+    <div class="chips">
+      <span class="chip orange">🏡 3 homes · steady pace</span>
+      <span class="chip sky">San Elijo Hills · Discovery Hills · 92078</span>
+      <span class="chip orange">☕ 2 coffees</span>
+    </div>
+
+    <div class="gallery">
+      <figure class="span2">
+        <a href="img/sat-double-peak-south.jpg" target="_blank" rel="noopener">
+          <img src="img/sat-double-peak-south.jpg" width="1600" height="533" alt="Panorama looking south from Double Peak Park over the hills toward San Elijo Hills" loading="lazy" decoding="async">
+          <span class="heart" aria-hidden="true">♥</span>
+          <figcaption>Double Peak, looking south toward San Elijo Hills — Saturday's first two doors are down there somewhere.</figcaption>
+        </a>
+      </figure>
+      <figure>
+        <a href="img/sat-san-marcos-lake-view.jpg" target="_blank" rel="noopener">
+          <img src="img/sat-san-marcos-lake-view.jpg" width="1000" height="666" alt="View over San Marcos rooftops and trees toward Lake San Marcos and the hills" loading="lazy" decoding="async">
+          <figcaption>Rooftops, trees, the lake — the 92078 view.</figcaption>
+        </a>
+      </figure>
+      <figure>
+        <a href="img/sat-lakehouse-bridge.jpg" target="_blank" rel="noopener">
+          <img src="img/sat-lakehouse-bridge.jpg" width="1000" height="666" alt="Lake San Marcos seen from a footbridge, the Lakehouse hotel on the far shore" loading="lazy" decoding="async">
+          <figcaption>The Lakehouse — Brickmans is on that shore.</figcaption>
+        </a>
+      </figure>
+    </div>
+
+    <ul class="timeline">
+      <li class="drive">
+        <div class="icon" aria-hidden="true">🛣️</div>
+        <div>
+          <div class="tl-label">Drive note</div>
+          <div class="tl-title">Short hops all day</div>
+          <div class="tl-detail">Everything is minutes from the Airbnb; the Carlsbad coffee run after lunch is the longest leg and it's still short.</div>
+        </div>
+      </li>
+      <li class="coffee has-thumb">
+        <div class="icon" aria-hidden="true">☕</div>
+        <div>
+          <div class="tl-label">Coffee · morning</div>
+          <div class="tl-title"><a href="https://www.steadystateroasting.com/" rel="noopener">Steady State Roasting — San Marcos</a></div>
+          <div class="tl-detail">Grand Ave. Third-wave roastery café. Tue–Sat 7am–2pm.</div>
+          <div class="tl-foot"><span class="chip amber">EST $6–8</span></div>
+        </div>
+        <img class="thumb" src="img/coffee-cafe-table.jpg" width="480" height="480" alt="A coffee cup on a wooden café table by the window (mood photo)" loading="lazy" decoding="async">
+      </li>
+      <li>
+        <div class="icon" aria-hidden="true">🍳</div>
+        <div>
+          <div class="tl-label">Breakfast</div>
+          <div class="tl-title"><a href="https://www.thelakehouseresort.com/san-marcos-dining/brickmans" rel="noopener">Brickmans breakfast — Lakehouse</a></div>
+          <div class="tl-detail">Breakfast 7–11am. Lake views before the first door.</div>
+          <div class="tl-foot"><span class="chip amber">EST $18–28</span></div>
+        </div>
+      </li>
+      <li class="viewing">
+        <div class="icon" aria-hidden="true">🏡</div>
+        <div>
+          <div class="tl-label">Morning viewings</div>
+          <div class="tl-title">Homes #1–2</div>
+          <div class="tl-detail">San Elijo Hills / Discovery Hills. Check the solar situation and the afternoon sun on the garden.</div>
+        </div>
+      </li>
+      <li>
+        <div class="icon" aria-hidden="true">🥗</div>
+        <div>
+          <div class="tl-label">Lunch</div>
+          <div class="tl-title"><a href="https://shoresbar.com/" rel="noopener">Shores Bar + Kitchen</a></div>
+          <div class="tl-detail">W San Marcos Blvd. Coastal New American. Sat from 11:30am.</div>
+          <div class="tl-foot"><span class="chip amber">EST $23–35</span></div>
+        </div>
+      </li>
+      <li class="coffee has-thumb">
+        <div class="icon" aria-hidden="true">☕</div>
+        <div>
+          <div class="tl-label">Coffee · after lunch</div>
+          <div class="tl-title"><a href="https://www.steadystateroasting.com/" rel="noopener">Steady State Roasting — Carlsbad</a></div>
+          <div class="tl-detail">State St, Suite G. Same excellent program, open daily 7am–4pm. <span class="why">A short hop that keeps Saturday specialty without chain coffee.</span></div>
+          <div class="tl-foot"><span class="chip amber">EST $6–8</span></div>
+        </div>
+        <img class="thumb" src="img/coffee-latte-reach.jpg" width="480" height="480" alt="A hand reaching for a latte with rosetta foam art (mood photo)" loading="lazy" decoding="async">
+      </li>
+      <li class="viewing">
+        <div class="icon" aria-hidden="true">🌳</div>
+        <div>
+          <div class="tl-label">Afternoon</div>
+          <div class="tl-title">Home #3 + a park walk</div>
+          <div class="tl-detail">Discovery Lake or the neighbourhood green. Sit on a bench for ten minutes and just listen.</div>
+        </div>
+      </li>
+      <li>
+        <div class="icon" aria-hidden="true">🍽️</div>
+        <div>
+          <div class="tl-label">Dinner</div>
+          <div class="tl-title">Brickmans dinner — or back to Shores</div>
+          <div class="tl-detail">Brickmans dinner runs 5–9pm Fri–Sat; Shores is open late. Whichever the day earned.</div>
+          <div class="tl-foot"><span class="chip amber">EST $28–43</span></div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ SUN ============ -->
+  <section class="block" id="sun">
+    <div class="section-title"><h2>Escondido → home</h2><span class="date">Sun 4 Oct</span></div>
+    <figure class="day-photo">
+      <img src="img/sun-escondido-dixon-lake.jpg" width="1200" height="675" alt="Sunrise aerial view over Dixon Lake and the hills of Escondido" loading="lazy" decoding="async">
+      <figcaption>Escondido at sunrise — the early start is worth it.</figcaption>
+    </figure>
+    <p class="lede">A dense morning: four doors before lunch, tacos by half twelve, then the long roll south to the airport with the whole week in your camera roll.</p>
+    <div class="chips">
+      <span class="chip orange">🏡 4 homes · dense AM only</span>
+      <span class="chip sky">Escondido</span>
+      <span class="chip orange">☕ 1 coffee (morning)</span>
+      <span class="chip sage">Airbnb checkout</span>
+    </div>
+
+    <div class="gallery">
+      <figure>
+        <a href="img/sun-escondido-grand-arch.jpg" target="_blank" rel="noopener">
+          <img src="img/sun-escondido-grand-arch.jpg" width="1000" height="666" alt="The green Escondido arch over Grand Avenue in the historic downtown" loading="lazy" decoding="async">
+          <span class="heart" aria-hidden="true">♥</span>
+          <figcaption>Grand Ave — coffee is two blocks from the arch.</figcaption>
+        </a>
+      </figure>
+      <figure>
+        <a href="img/sun-escondido-downtown-golden.jpg" target="_blank" rel="noopener">
+          <img src="img/sun-escondido-downtown-golden.jpg" width="1000" height="666" alt="Golden-hour aerial of Escondido's historic downtown with a tall palm in the foreground" loading="lazy" decoding="async">
+          <figcaption>Downtown in that late orange light.</figcaption>
+        </a>
+      </figure>
+      <figure>
+        <a href="img/sun-daley-ranch.jpg" target="_blank" rel="noopener">
+          <img src="img/sun-daley-ranch.jpg" width="1000" height="666" alt="Sunlit trail winding through the green hills of Daley Ranch, Escondido" loading="lazy" decoding="async">
+          <figcaption>Daley Ranch trails, above the reservoir.</figcaption>
+        </a>
+      </figure>
+      <figure>
+        <a href="img/sun-kit-carson-park.jpg" target="_blank" rel="noopener">
+          <img src="img/sun-kit-carson-park.jpg" width="1000" height="666" alt="Lawn, mature trees and a creek with a footbridge at Kit Carson Park, Escondido" loading="lazy" decoding="async">
+          <figcaption>Kit Carson Park — the stroller-pace kind of park.</figcaption>
+        </a>
+      </figure>
+    </div>
+
+    <div class="mood">
+      <img src="img/orange-citrus.jpg" width="800" height="800" alt="A single bright orange on a dark background" loading="lazy" decoding="async">
+      <p>Escondido is old grove country — hills that used to be citrus and avocado. If one of Sunday's gardens has a fruit tree, that's the photo I'm sending first.</p>
+    </div>
+
+    <ul class="timeline">
+      <li class="drive">
+        <div class="icon" aria-hidden="true">🧳</div>
+        <div>
+          <div class="tl-label">Checkout</div>
+          <div class="tl-title">Pack the car before coffee</div>
+          <div class="tl-detail">Everything goes in the boot at the Airbnb so the afternoon is one straight line to SAN.</div>
+        </div>
+      </li>
+      <li class="coffee has-thumb">
+        <div class="icon" aria-hidden="true">☕</div>
+        <div>
+          <div class="tl-label">Coffee · morning (only)</div>
+          <div class="tl-title"><a href="https://jamescoffeeco.com/pages/locations" rel="noopener">James Coffee — Escondido Bakery</a></div>
+          <div class="tl-detail">E Pennsylvania Ave. Daily 7am–5pm.</div>
+          <div class="tl-foot"><span class="chip amber">EST $6–8</span></div>
+        </div>
+        <img class="thumb" src="img/coffee-heart.jpg" width="800" height="800" alt="A cappuccino with a heart drawn in the foam (mood photo)" loading="lazy" decoding="async">
+      </li>
+      <li>
+        <div class="icon" aria-hidden="true">🍳</div>
+        <div>
+          <div class="tl-label">Breakfast</div>
+          <div class="tl-title"><a href="https://www.freshcafeco.com/contact" rel="noopener">Fresh Café</a></div>
+          <div class="tl-detail">E 2nd Ave. Healthy breakfast / lunch. Sun 8am–2pm.</div>
+          <div class="tl-foot"><span class="chip amber">EST $15–25</span></div>
+        </div>
+      </li>
+      <li class="viewing">
+        <div class="icon" aria-hidden="true">🏡</div>
+        <div>
+          <div class="tl-label">Morning viewings</div>
+          <div class="tl-title">Stack all 4 Escondido homes</div>
+          <div class="tl-detail">Tight schedule — book them back-to-back and closest-first. If one runs long, it's the one to drop.</div>
+        </div>
+      </li>
+      <li class="has-thumb">
+        <div class="icon" aria-hidden="true">🌮</div>
+        <div>
+          <div class="tl-label">Early lunch / takeaway</div>
+          <div class="tl-title"><a href="https://mesaagricola.com/" rel="noopener">Mesa Agrícola</a></div>
+          <div class="tl-detail">S Escondido Blvd. Farm tacos — on the NYT 2026 list. Wed–Sun 11am–6pm. <span class="why">Eat by ~12:30 to protect the airport buffer.</span></div>
+          <div class="tl-foot"><span class="chip amber">EST $13–23</span></div>
+        </div>
+        <img class="thumb" src="img/food-farm-taco.jpg" width="480" height="480" alt="A single street taco with corn and cheese on a white plate (mood photo)" loading="lazy" decoding="async">
+      </li>
+      <li class="coffee">
+        <div class="icon" aria-hidden="true">☕</div>
+        <div>
+          <div class="tl-label">Coffee · after lunch</div>
+          <div class="tl-title">Skipped — airport run</div>
+          <div class="tl-detail">Grab a second round at James only if you're ahead of schedule.</div>
+        </div>
+      </li>
+      <li class="drive">
+        <div class="icon" aria-hidden="true">🛣️</div>
+        <div>
+          <div class="tl-label">Drive note</div>
+          <div class="tl-title">Escondido → SAN · ~45–60 min</div>
+          <div class="tl-detail">Add a 90+ minute pre-flight buffer. Hand the Model Y back to the Turo host — SAN drop-off or Point Loma (92106), whichever you agreed; top up the charge to the listing's return level first.</div>
+        </div>
+      </li>
+      <li>
+        <div class="icon" aria-hidden="true">✈️</div>
+        <div>
+          <div class="tl-label">Flight</div>
+          <div class="tl-title">SAN → EWR · evening preferred</div>
+          <div class="tl-detail">Return legs weren't expanded in the last search — <a href="#flights">re-check Sunday evening times</a> on the same Google Flights link before we stamp.</div>
+        </div>
+      </li>
+      <li>
+        <div class="icon" aria-hidden="true">🍽️</div>
+        <div>
+          <div class="tl-label">Dinner</div>
+          <div class="tl-title">In the air / home late</div>
+          <div class="tl-detail">No reservation. Thirteen houses to talk about instead.</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ LOGISTICS ============ -->
+  <section class="block" id="logistics">
+    <div class="section-title"><h2>Fly · Stay · Car</h2></div>
+    <p class="lede">The three bookings that turn this from a page into a plan. All quoted solo on 20 Sep 2026; none booked yet.</p>
+
+    <h3 id="flights" style="font-size:22px; margin:18px 0 10px; scroll-margin-top: calc(var(--nav-h) + 12px);">✈️ Flights — EWR ↔ SAN</h3>
+    <div class="note sage"><strong>Nonstop only — John's call.</strong> No connections on this trip. Fares below are the nonstop-filtered board from <a href="https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNi0wOS0zMGoHCAESA0VXUnIHCAESA1NBThoeEgoyMDI2LTEwLTA0agcIARIDU0FOcgcIARIDRVdSQAFIAZgBAQ&curr=USD&hl=en" rel="noopener">Google Flights</a>, 20 Sep 2026, 1 adult round trip. Not booked — fares move.</div>
+    <div class="cards">
+      <div class="card pick">
+        <div class="row"><h3>Primary · United nonstop — the golden-hour arrival ♥</h3><span class="chip sage">Nonstop · pick</span></div>
+        <div class="times">Wed 4:55p → 7:43p · 5h48</div>
+        <div class="small">A normal Wednesday morning at home, then wheels down as the light goes orange over the bay. Pick up the Model Y, roll north, keys in hand by nine-ish. Dinner is an airport bite; Thursday is the first real day.</div>
+        <div class="row" style="margin-top:6px;"><span class="price">$832</span><span class="chip sage">1 adult round trip · quoted 20 Sep</span></div>
+      </div>
+      <div class="card">
+        <div class="row"><h3>Cheapest nonstop · United — the whole-first-day flight</h3><span class="chip sage">Nonstop</span></div>
+        <div class="times">Wed 7:00a → 9:49a · 5h49</div>
+        <div class="small">$125 less, a 5am alarm, and a whole extra afternoon in California: Carlsbad coffee, the Airbnb keys, Brickmans for dinner.</div>
+        <div class="row" style="margin-top:6px;"><span class="price">$707</span><span class="chip sage">1 adult round trip · quoted 20 Sep</span></div>
+      </div>
+      <div class="card">
+        <h3>The rest of the nonstop board</h3>
+        <div class="small times">United 9:30a departure · $832</div>
+        <div class="small times">United 7:25p departure · $832 — lands after ten, too late</div>
+        <div class="small times">Alaska 5:02p departure · $993 — same afternoon slot, $161 more</div>
+        <div class="small" style="margin-top:6px;">Same board, same day. None beat the 4:55p on arrival time for the money.</div>
+      </div>
+    </div>
+    <div class="note"><strong>Return:</strong> Sunday evening SAN → EWR nonstop legs weren't expanded in the scrape — re-check on the same link. <strong>Bags:</strong> United Basic Economy often charges for a carry-on; confirm the fare family before booking.</div>
+
+    <h3 id="stay" style="font-size:22px; margin:26px 0 10px; scroll-margin-top: calc(var(--nav-h) + 12px);">🏠 Stay — San Marcos base</h3>
+    <div class="cards two">
+      <div class="card pick">
+        <div class="row"><h3>Primary · Home in San Marcos</h3><span class="chip sage">Quoted</span></div>
+        <div class="small">Entire home · 2BR · 4.88 ★ (24) · central to all four towns</div>
+        <div class="row" style="margin-top:6px;"><span class="price">~$683</span><span class="small">4 nights · search card (was $830)</span></div>
+        <div class="small" style="margin-top:6px;"><a href="https://www.airbnb.com/rooms/1114067635535339932?check_in=2026-09-30&check_out=2026-10-04&adults=1" rel="noopener">Open the listing</a> — confirm parking, EV charging and the all-fees total before paying.</div>
+      </div>
+      <div class="card">
+        <h3>Alternates</h3>
+        <div class="small">San Marcos "Lake San Marcos Gem" · 3BR · 4.95 ★ · ~$700</div>
+        <div class="small">San Marcos, deck / lake views · 3BR · 4.98 ★ · ~$710</div>
+        <div class="small">Carlsbad condo (coast) · 2BR · 4.67 ★ · $801 (was $1,073)</div>
+        <div class="small" style="margin-top:6px;">All search-card totals from 20 Sep. Search was run for 2 guests — re-run for 1 before stamping.</div>
+      </div>
+    </div>
+
+    <h3 id="car" style="font-size:22px; margin:26px 0 10px; scroll-margin-top: calc(var(--nav-h) + 12px);">🚗 Car — Tesla with FSD</h3>
+    <div class="note sage"><strong>The requirement, met:</strong> a new-generation Tesla <strong>with FSD (Supervised)</strong> — and the pick is a <strong>2026 Model Y Premium with FSD included</strong>, no add-on. FSD still means eyes on the road; it just makes four days of 78 and I-5 a lot gentler. Locked for the plan, not booked.</div>
+    <div class="cards">
+      <div class="card pick">
+        <div class="row"><h3>Primary · 2026 Tesla Model Y Premium — FSD included ♥</h3><span class="chip sage">Locked · not booked</span></div>
+        <div class="small">Turo · host Tony · 92106 (Point Loma, minutes from SAN). Sep 30 – Oct 4 2026. FSD comes with the car — nothing extra to switch on or pay for.</div>
+        <div class="row" style="margin-top:6px;"><span class="price">$501</span><span class="small">before taxes · 4 days · Turo taxes, fees &amp; protection plan still to add</span></div>
+        <div class="small" style="margin-top:6px;"><a href="https://turo.com/us/en/suv-rental/united-states/san-diego-ca/tesla/model-y/3868230" rel="noopener">Open the Turo listing</a> — confirm SAN delivery or the pickup spot, mileage allowance, and the all-in total on the checkout screen before stamping. Supercharging is renter-paid (~$10–15 a charge).</div>
+      </div>
+      <div class="card">
+        <div class="row"><h3>Alt · 2025 Model Y Long Range — FSD paid extra</h3><span class="chip amber">Add-on $ unknown</span></div>
+        <div class="small">$342 before taxes for the same dates, but FSD is a paid add-on and the price wasn't shown. Only cheaper if the add-on comes in under ~$159.</div>
+      </div>
+      <div class="card">
+        <div class="row"><h3>Fallback · Frontier Tesla — 2025 Model 3 (Highland) + FSD</h3><span class="chip amber">Rate card</span></div>
+        <div class="small">San Diego Civic Core, downtown. $65/day Mon–Thu · $85/day Fri–Sun · 2-day minimum · $500 refundable deposit · insurance required. Illustrative Wed–Sat ≈ $300, Sunday billing open. <a href="https://frontiertesla.com/pricing" rel="noopener">frontiertesla.com/pricing</a></div>
+        <div class="small" style="margin-top:6px;">Tesla's own Miramar rental pilot ended — don't plan on it.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COST ============ -->
+  <section class="block" id="cost">
+    <div class="section-title"><h2>What the dream costs</h2><span class="date">solo, this trip</span></div>
+    <p class="lede">The three big lines are now real solo quotes — flights, the Airbnb, the Model Y. Food and coffee are the plan's two-person estimates, roughly halved. Nothing here is spent yet.</p>
+
+    <table>
+      <thead><tr><th>Line</th><th style="text-align:right">USD</th></tr></thead>
+      <tbody>
+        <tr><td>Flights · United nonstop · 1 adult round trip<span class="src">Quoted — nonstop-filtered Google Flights board, 20 Sep. EWR 4:55p → SAN 7:43p at $832; the 7:00a → 9:49a is $707 if you'd rather save $125</span></td><td class="amt">$832</td></tr>
+        <tr><td>Airbnb · San Marcos primary · 4 nights<span class="src">Quoted — search card 20 Sep (alts ~$700–$801)</span></td><td class="amt">$683</td></tr>
+        <tr><td>2026 Tesla Model Y Premium · FSD included · Turo · 4 days<span class="src">Quoted — listing price before taxes, 20 Sep. Turo taxes, fees &amp; protection plan not yet added (alt: 2025 Y LR $342 + FSD add-on, $ unknown)</span></td><td class="amt">$501</td></tr>
+        <tr><td>Food · breakfast / lunch / dinner · ~4.5 days<span class="src">Solo EST (~$55–85 a day)</span></td><td class="amt">$250–380</td></tr>
+        <tr><td>Coffee · 8 café stops<span class="src">Solo EST $6–8 a stop — tally below</span></td><td class="amt">$48–64</td></tr>
+        <tr><td>Parking · tolls · Supercharging<span class="src">EST</span></td><td class="amt">$40–80</td></tr>
+        <tr><td>Misc · tips, water, contingency<span class="src">EST</span></td><td class="amt">$50–100</td></tr>
+        <tr class="total"><td>Grand total · solo EST<span class="src" style="font-weight:400">Lines above sum to ~$2,400–2,650; the total carries headroom for Turo taxes, fees &amp; protection on the $501. About $125 less on the 7:00a flight. The original 2-adult plan ranged ~$2,500–$3,600</span></td><td class="amt">~$2,550–2,900</td></tr>
+      </tbody>
+    </table>
+
+    <div class="mood">
+      <img src="img/coffee-heart.jpg" width="800" height="800" alt="A cappuccino with a heart drawn in the foam" loading="lazy" decoding="async">
+      <p>Eight cups. One for each morning we might have here, and a few extra for the afternoons.</p>
+    </div>
+    <div class="coffee-tally">
+      <div class="stop"><span class="when">Wed</span><span>Revolution Roasters — Carlsbad</span><span class="amt">$6–8</span></div>
+      <div class="stop"><span class="when">Thu AM</span><span>Ignite Coffee Company — Oceanside</span><span class="amt">$6–8</span></div>
+      <div class="stop"><span class="when">Thu PM</span><span>Revolution Roasters — Oceanside</span><span class="amt">$6–8</span></div>
+      <div class="stop"><span class="when">Fri AM</span><span>James Coffee — Vista</span><span class="amt">$6–8</span></div>
+      <div class="stop"><span class="when">Fri PM</span><span>Cosmic Bloom Coffee — Vista</span><span class="amt">$6–8</span></div>
+      <div class="stop"><span class="when">Sat AM</span><span>Steady State Roasting — San Marcos</span><span class="amt">$6–8</span></div>
+      <div class="stop"><span class="when">Sat PM</span><span>Steady State Roasting — Carlsbad</span><span class="amt">$6–8</span></div>
+      <div class="stop"><span class="when">Sun AM</span><span>James Coffee — Escondido Bakery</span><span class="amt">$6–8</span></div>
+    </div>
+    <p class="small" style="color:var(--muted); font-size:14px; margin-top:10px;">Exact drink prices weren't on the roasters' sites (bean bags, not menus) — estimates.</p>
+  </section>
+
+  <!-- ============ BEFORE WE STAMP ============ -->
+  <section class="block" id="stamp">
+    <div class="section-title"><h2>Before we stamp</h2></div>
+    <p class="lede">The little decisions that lock the big ones.</p>
+    <ol class="questions">
+      <li><span><strong>When do we book?</strong> Fares, the $683 and the $501 all move; flights first, then the Airbnb, then the Turo.</span></li>
+      <li><span><strong>Turo Model Y ($501 before taxes):</strong> confirm the all-in total with taxes, fees and protection plan, SAN delivery vs. Point Loma pickup, and mileage — then book it.</span></li>
+      <li><span><strong>Airbnb:</strong> San Marcos primary at ~$683, or the Carlsbad condo at $801 for the coast?</span></li>
+      <li><span><strong>Flight:</strong> United nonstop 4:55p → 7:43p at $832 is the pick (normal morning, golden-hour landing, airport-bite dinner). The 7:00a at $707 buys a whole first day for $125 less. Nonstop only either way. Confirm the Sunday evening nonstop home and the fare family (carry-on) before booking.</span></li>
+      <li><span><strong>Vista</strong> stays Shadowridge / Heritage only — skip 92084 for housing. Still right?</span></li>
+      <li><span><strong>Sunday return time</strong> — re-check the evening SAN → EWR legs before we lock anything.</span></li>
+    </ol>
+  </section>
+</main>
+
+<footer>
+  <div class="stamp">No bookings yet — stamp to lock</div>
+  <div class="hearts" aria-hidden="true">♥ ♥ ♥</div>
+  <p>Made with love for the house we haven't found yet. Every price re-verified at booking time.</p>
+  <a class="backtop" href="#top">Back to the top</a>
+  <div class="credits">
+    Photos via Wikimedia Commons (place photos are the real places; coffee and food shots are mood photos, not the actual cafés).
+    Oceanside coast — Scotwriter21 (CC BY-SA 4.0) · Oceanside Pier — JAFactsDude (CC0) · Oceanside beach &amp; palms — Tgormanbrown (CC BY-SA 4.0) · Oceanside Harbor sunset — John D. (CC BY 2.0) · Harbor Village — Ccarll (CC BY-SA 4.0) · Under the pier, Tower 1 — Visitor7 (CC BY-SA 3.0) ·
+    Point Loma sunset — Jon Sullivan (PD) · Lake San Marcos, San Marcos view — Taylorj661 (PD) · Lakehouse bridge — EnneDee (CC BY-SA 4.0) · Vista hills — Z3lvs (CC0) · Vista Main St — anonymous (PD) · Vista arch — City of Vista (PD) · Alta Vista Botanical Gardens — cultivar413 (CC BY 2.0) ·
+    Double Peak — Alicezeppelin (CC0) · Dixon Lake, Escondido downtown, Daley Ranch, Kit Carson Park — Mark Skovorodko (CC BY-SA 4.0) · Orange — Dietmar Rabich (CC BY-SA 4.0) ·
+    Heart latte — Londonjackbooks (CC0) · Espresso machine — Crew (CC0) · Chemex — Zachary Newton (CC0) · Café table — Luke Chesser (CC0) · Café front — Matt Jones (CC0) · Cappuccino, latte — Shixart1985 (CC BY 2.0) · Muffin &amp; latte — Bahnfrend (CC BY-SA 4.0) ·
+    Eggs Benedict — Constance Chen (CC0) · Breakfast toast — Kgbo (CC BY-SA 4.0) · Pizza — mroach (CC BY-SA 2.0) · Fish tacos — Sarah Stierch (CC BY 4.0) · Street taco — Alabama Extension (CC0).
+    Full list with links in the <a href="https://github.com/johnbr0phy/house-search/blob/main/sd-scout-2026-09/README.md" rel="noopener">README</a>.
+  </div>
+</footer>
+
+<script>
+  // Highlight the day pill for whichever section is on screen. Purely progressive — anchors work without it.
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll('.daynav a'));
+    var rail = document.querySelector('.daynav ul');
+    var byId = {};
+    links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+    var targets = Object.keys(byId).map(function (id) { return document.getElementById(id); }).filter(Boolean);
+    if (!('IntersectionObserver' in window) || !targets.length) return;
+    var current = null;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var a = byId[e.target.id];
+        if (!a || a === current) return;
+        if (current) current.classList.remove('active');
+        a.classList.add('active');
+        current = a;
+        // Scroll the pill rail only — never the page.
+        rail.scrollTo({ left: a.offsetLeft - (rail.clientWidth - a.offsetWidth) / 2, behavior: 'smooth' });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    targets.forEach(function (t) { io.observe(t); });
+  })();
+</script>
+</body>
+</html>
