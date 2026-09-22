@@ -28,9 +28,9 @@ Free plan the site only publishes if the repository is public.
   viewing blocks (neighbourhoods + Operator shortlist counts only — no listing addresses),
   lunch, after-lunch coffee, dinner, drive notes. Coffee and meal stops carry a small
   mood thumbnail (generic specialty coffee / brunch / tacos / pizza — not the actual venues)
-- Flights — nonstop only: United EWR 4:55p → SAN 7:43p, $832 round trip for 1 adult is the
-  pick; United 7:00a → 9:49a at $707 is the cheaper nonstop; rest of the nonstop board listed
-  (Google Flights, nonstop filter, 20 Sep). Vista Airbnb base (~$683 / 4 nights),
+- Flights — outbound locked: Alaska nonstop EWR 5:02 PM → SAN 7:58 PM, 5h56, $374 one-way
+  for 1 adult economy (Google Flights read 21 Sep 2026 ~8:33pm ET, not booked). Return
+  SAN → EWR Sunday 4 Oct is not locked (outbound $374 OW + return TBD). Vista Airbnb base (~$683 / 4 nights),
   and the car: 2026 Tesla Model Y Premium **with FSD included** on Turo, $501 before taxes
   (locked for the plan, not booked), with the 2025 Y LR + FSD add-on and Frontier Model 3
   as alternates
