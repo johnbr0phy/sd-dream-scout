@@ -1,7 +1,7 @@
 # San Diego dream scout — 30 Sep → 4 Oct 2026
 
 A single, self-contained, phone-first itinerary page for John's solo North County
-house-scout trip (Oceanside → Vista → San Marcos → Escondido).
+house-scout trip (Oceanside → Vista → San Marcos → Carlsbad).
 
 Open `index.html` directly — no build step, no network needed. All images live in `img/`.
 
@@ -28,12 +28,14 @@ Free plan the site only publishes if the repository is public.
   viewing blocks (neighbourhoods + Operator shortlist counts only — no listing addresses),
   lunch, after-lunch coffee, dinner, drive notes. Coffee and meal stops carry a small
   mood thumbnail (generic specialty coffee / brunch / tacos / pizza — not the actual venues)
-- Flights — outbound locked: Alaska nonstop EWR 5:02 PM → SAN 7:58 PM, 5h56, $374 one-way
-  for 1 adult economy (Google Flights read 21 Sep 2026 ~8:33pm ET, not booked). Return
-  SAN → EWR Sunday 4 Oct is not locked (outbound $374 OW + return TBD). Vista Airbnb base (~$683 / 4 nights),
-  and the car: 2026 Tesla Model Y Premium **with FSD included** on Turo, $501 before taxes
-  (locked for the plan, not booked), with the 2025 Y LR + FSD add-on and Frontier Model 3
-  as alternates
+- Fly · Stay · Car, all **booked** (checked against confirmation emails, 26 Sep): United UA1626
+  EWR 4:55p → SAN 7:43p Wed and UA327 SAN 1:30p → EWR 9:58p Sun ($1,231.80 on Chase points);
+  "Vista Getaway" downtown Vista studio on Airbnb ($677.60); Turo 2026 Model Y with FSD, Point Loma
+  pickup Wed 8 PM / return Sun 11 AM ($441.59). Door/gate codes and confirmation numbers stay off the page
+- Nick Miele's (Compass) self-guided neighbourhood plan folded into Thu-Sun: Oceanside, Vista,
+  San Marcos, and Carlsbad (Calavera Hills on Fri, La Costa on the Sun airport run). Escondido is cut
+- Brompton days: drive to each area, park once (parking spot on every ride block), and ride Nick's
+  neighbourhoods with bike-route links. Bike logistics (checked bag, Tesla boot, studio, kit) under Fly · Stay · Car
 - Solo cost breakdown, coffee tally, and "before we stamp" questions
 - Footer: *No bookings yet — stamp to lock*
 
