@@ -34,6 +34,8 @@ Free plan the site only publishes if the repository is public.
   pickup Wed 8 PM / return Sun 11 AM ($441.59). Door/gate codes and confirmation numbers stay off the page
 - Nick Miele's (Compass) self-guided neighbourhood plan folded into Thu-Sun: Oceanside, Vista,
   San Marcos, and Carlsbad (Calavera Hills on Fri, La Costa on the Sun airport run). Escondido is cut
+- Brompton days: drive to each area, park once (parking spot on every ride block), and ride Nick's
+  neighbourhoods with bike-route links. Bike logistics (checked bag, Tesla boot, studio, kit) under Fly · Stay · Car
 - Solo cost breakdown, coffee tally, and "before we stamp" questions
 - Footer: *No bookings yet — stamp to lock*
 
