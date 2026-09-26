@@ -130,6 +130,12 @@
  margin: 0; padding: 10px 16px; justify-content: center;
  max-width: 980px; margin-inline: auto;
  }
+ @media (max-width: 719px) {
+ .daynav ul {
+ flex-wrap: nowrap; justify-content: flex-start;
+ overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none;
+ }
+ }
  .daynav ul::-webkit-scrollbar { display: none; }
  .daynav li { flex: 0 0 auto; scroll-snap-align: start; }
  .daynav a {
@@ -415,7 +421,7 @@
  <div class="glance">
  <div class="tile"><div class="k">When</div><div class="v">30 Sep - 4 Oct</div><div class="s">Wed → Sun · 4 nights</div></div>
  <div class="tile"><div class="k">Who</div><div class="v">John only</div><div class="s">1 adult on every booking</div></div>
- <div class="tile"><div class="k">Fly</div><div class="v">United nonstop · $707</div><div class="s">EWR 07:00 AM → SAN 09:49 AM · 5h49 · 1 adult RT</div></div>
+ <div class="tile"><div class="k">Fly</div><div class="v">Alaska nonstop · $374 OW</div><div class="s">EWR 5:02 PM → SAN 7:58 PM · 5h56 · return TBD</div></div>
  <div class="tile"><div class="k">Sleep</div><div class="v"><a href="#stay">Hilltop house · $687</a></div><div class="s">Vista · locked listing · not paid</div></div>
  <div class="tile"><div class="k">Drive</div><div class="v">2026 Model Y · FSD included</div><div class="s">Turo · $501 before taxes · locked, not booked</div></div>
  <div class="tile"><div class="k">Doors</div><div class="v">4 · 5 · 3 · 2</div><div class="s">Oceanside · Vista (priority) · San Marcos · Escondido (check)</div></div>
@@ -492,31 +498,27 @@
  <section class="block" id="wed">
  <div class="section-title"><h2>Arrive &amp; settle</h2><span class="date">Wed 30 Sep</span></div>
  <div class="day-agenda" aria-label="Day schedule at a glance">
- <div class="ag"><span class="t">07:00 AM</span><span class="w">Depart EWR</span></div>
- <div class="ag"><span class="t">09:49 AM</span><span class="w">Land SAN</span></div>
- <div class="ag"><span class="t">10:15 AM</span><span class="w">Tesla pickup</span></div>
- <div class="ag"><span class="t">11:30 AM</span><span class="w">Airbnb check-in</span></div>
- <div class="ag"><span class="t">12:30 PM</span><span class="w">Lunch</span></div>
- <div class="ag"><span class="t">01:45 PM</span><span class="w">Coffee</span></div>
- <div class="ag"><span class="t">02:30 PM</span><span class="w">Carlsbad Farmers Market</span></div>
- <div class="ag"><span class="t">06:30 PM</span><span class="w">Brickmans dinner</span></div>
+ <div class="ag"><span class="t">5:02 PM</span><span class="w">Depart EWR</span></div>
+ <div class="ag"><span class="t">7:58 PM</span><span class="w">Land SAN</span></div>
+ <div class="ag"><span class="t">~8:30 PM</span><span class="w">Tesla pickup</span></div>
+ <div class="ag"><span class="t">~9:30 PM</span><span class="w">Vista check-in</span></div>
+ <div class="ag"><span class="t">Late</span><span class="w">Dinner in Vista</span></div>
  </div>
  <div class="map-strip" data-map="wed">
- <p class="map-why"><strong>🗺️ Wednesday route.</strong> Land SAN → Vista hub → Carlsbad Village market → Vista dinner.</p>
- <iframe class="embed-map" id="map-wed" title="Map - wed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://maps.google.com/maps?saddr=San%20Diego%20International%20Airport%20SAN&daddr=Point%20Loma%2C%20San%20Diego%2C%20CA+to:Vista%2C%20CA+to:Carlsbad%20Village%2C%20Carlsbad%2C%20CA+to:Vista%2C%20CA&output=embed"></iframe>
+ <p class="map-why"><strong>🗺️ Wednesday route.</strong> SAN → Point Loma (Turo) → Vista. Late travel night only.</p>
+ <iframe class="embed-map" id="map-wed" title="Map - wed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://maps.google.com/maps?saddr=San%20Diego%20International%20Airport%20SAN&daddr=Point%20Loma%2C%20San%20Diego%2C%20CA+to:Vista%2C%20CA&output=embed"></iframe>
  <div class="map-actions">
- <a class="map-btn" href="https://www.google.com/maps/dir/San%20Diego%20International%20Airport%20%28SAN%29/Point%20Loma%2C%20San%20Diego%2C%20CA/Vista%2C%20CA/Revolution%20Roasters%2C%20Carlsbad%2C%20CA/2900%20State%20St%2C%20Carlsbad%2C%20CA/Brickmans%2C%20Lakehouse%20Resort%2C%20San%20Marcos%2C%20CA" rel="noopener" target="_blank">Open in Google Maps</a>
- <a class="map-btn secondary" href="https://www.google.com/maps/dir/Vista%2C%20CA/Oceanside%2C%20CA/Vista%2C%20CA/Vista%2C%20CA/Vista%2C%20CA/Escondido%2C%20CA/Vista%2C%20CA/Carlsbad%20Village%2C%20Carlsbad%2C%20CA/Vista%2C%20CA" rel="noopener" target="_blank">Hub star in Google Maps</a>
+ <a class="map-btn" href="https://www.google.com/maps/dir/San%20Diego%20International%20Airport%20%28SAN%29/Point%20Loma%2C%20San%20Diego%2C%20CA/Vista%2C%20CA" rel="noopener" target="_blank">Open in Google Maps</a>
  </div>
  </div>
  
  
  
- <p class="lede">Morning nonstop, whole first day. Land, collect the car, check in, grocery-vibe coffee, then the Wednesday Carlsbad Village farmers market - Maya's Village energy on day one - and a proper Brickmans dinner. No evening coffee (after 4 PM rule).</p>
+ <p class="lede">Evening nonstop, late travel night. Depart EWR 5:02 PM, land SAN 7:58 PM, pick up the Tesla in Point Loma around 8:30, check in at the Hilltop house around 9:30, then eat in Vista. The Wednesday Carlsbad Village farmers market (2:30-7:00 PM) is missed - you are still in the air. Saturday's Vista farmers market is the one that still fits. No coffee: wheels down after 4 PM. Not Brickmans - that is across town in San Marcos.</p>
  <div class="chips">
  <span class="chip sage">No viewings · travel day</span>
- <span class="chip orange">☕ 1 coffee · after lunch (before 4 PM)</span>
- <span class="chip sage">🥕 Carlsbad Farmers Market Wed</span>
+ <span class="chip rose">☕ No coffee · after 4 PM</span>
+ <span class="chip rose">🥕 Village market missed</span>
  </div>
 
  <div class="gallery">
@@ -537,86 +539,74 @@
 
  <ul class="timeline">
 <li>
- <div class="tl-time">07:00 AM<span class="range">lands 09:49 AM</span></div>
+ <div class="tl-time">5:02 PM<span class="range">lands 7:58 PM</span></div>
  <div class="icon" aria-hidden="true">✈️</div>
  <div>
  <div class="tl-label">Flight</div>
  <div class="tl-title">EWR → SAN</div>
- <div class="tl-detail">United nonstop <strong>07:00 AM → 09:49 AM · 5h49</strong>, <strong>$707</strong> round trip for 1 adult - whole first day, Brickmans dinner, Carlsbad farmers market. <a href="#flights">Flight details.</a></div>
- <div class="tl-foot"><span class="chip sage">United nonstop 07:00 AM · $707 · not booked</span></div>
- </div>
- </li>
-<li class="drive">
- <div class="tl-time">10:15 AM</div>
- <div class="icon" aria-hidden="true">🚗</div>
- <div>
- <div class="tl-label">Car pickup</div>
- <div class="tl-title">2026 Tesla Model Y Premium - FSD included</div>
- <div class="tl-detail">Turo, host Tony in 92106 (Point Loma - minutes from SAN). Confirm the handover spot or SAN delivery with the host, check FSD is active on <em>this</em> car before you pull away, and charge if needed. <a href="#car">Car details.</a></div>
- <div class="tl-foot"><span class="chip sage">$501 before taxes · Sep 30 - Oct 4</span></div>
- </div>
- </li>
-<li class="drive">
- <div class="tl-time">10:45 AM<span class="range">~35-50 min</span></div>
- <div class="icon" aria-hidden="true">🛣️</div>
- <div>
- <div class="tl-label">Drive note</div>
- <div class="tl-title">SAN → Vista Airbnb · ~35-50 min</div>
- <div class="tl-detail">I-5 → I-805 → SR-78. Estimate; traffic varies. <a class="drive-maps" href="https://www.google.com/maps/dir/San%20Diego%20International%20Airport%20%28SAN%29/Vista%2C%20CA" rel="noopener" target="_blank">🗺️ Maps drive · SAN → Vista</a></div>
+ <div class="tl-detail">Alaska nonstop <strong>5:02 PM → 7:58 PM · 5h56</strong>, <strong>$374</strong> one-way for 1 adult economy. Return SAN → EWR Sunday 4 Oct is not locked - outbound $374 OW + return TBD. Not booked. <a href="#flights">Flight details.</a></div>
+ <div class="tl-foot"><span class="chip sage">Alaska nonstop 5:02 PM · $374 OW · not booked</span></div>
  </div>
  </li>
 <li>
- <div class="tl-time">11:30 AM</div>
- <div class="icon" aria-hidden="true">🏠</div>
- <div>
- <div class="tl-label">Check-in</div>
- <div class="tl-title"><a href="https://www.airbnb.com/rooms/782804933331065682?check_in=2026-09-30&amp;check_out=2026-10-04&amp;adults=1" rel="noopener">Hilltop 1 Bedroom House · Vista</a></div>
- <div class="tl-detail">Hilltop 1 Bedroom House · <strong>$687</strong> / 4 nights · private driveway. Priority town. Close to Carlsbad Village, Oceanside, and San Marcos - Escondido is the stretch day. <a href="#stay">Stay details.</a></div>
- </div>
- </li>
-<li>
- <div class="tl-time">12:30 PM</div>
- <div class="icon" aria-hidden="true">🥪</div>
- <div>
- <div class="tl-label">Lunch</div>
- <div class="tl-title"><a href="https://www.harumamasd.com/vista-menu" rel="noopener">Harumama - Vista Main St</a></div>
- <div class="tl-detail">Noodles + buns at 40 Main St, near the Vista base. Light and fast before the Carlsbad farmers market. Brickmans is dinner only - not twice today.</div>
- <div class="tl-foot"><span class="chip amber">EST $16-24</span></div>
- </div>
- </li>
-<li class="coffee has-thumb">
- <div class="tl-time">01:45 PM</div>
- <div class="icon" aria-hidden="true">☕</div>
- <div>
- <div class="tl-label">Coffee · after lunch (only cup today)</div>
- <div class="tl-title"><a href="https://www.revoroasters.com/" rel="noopener">Revolution Roasters - Carlsbad Village</a></div>
- <div class="tl-detail">Specialty roaster on the way into the Village for the farmers market. Before 4 PM. <span class="why">Confirm the Roosevelt St pin and hours.</span></div>
- <div class="tl-foot"><span class="chip amber">EST $6-8</span></div>
- </div>
- <img class="thumb" src="img/coffee-espresso-machine.jpg" width="480" height="480" alt="Close-up of a brass espresso machine in a café (mood photo)" loading="lazy" decoding="async">
- </li>
-<li>
- <div class="tl-time">02:30 PM<span class="range">→ 05:00 PM</span></div>
+ <div class="tl-time">MISSED</div>
  <div class="icon" aria-hidden="true">🥕</div>
  <div>
  <div class="tl-label">Farmers market · Wednesday</div>
  <div class="tl-title"><a href="https://www.carlsbad-village.com/events/farmers-market" rel="noopener">Carlsbad State Street Farmers Market</a></div>
- <div class="tl-detail">State St between Carlsbad Village Dr &amp; Grand Ave. Wednesdays 02:30 PM-07:00 PM (Mar-Oct). Fresh produce, flowers, the Village walk Maya wants with baby - day-one life check, not a house. <a href="https://maps.google.com/?q=2900+State+St,+Carlsbad,+CA+92008" rel="noopener">Maps</a>.</div>
- <div class="tl-foot"><span class="chip orange">Maya ask</span><span class="chip sage">Village with a tote bag</span></div>
+ <div class="tl-detail">Missed. State St runs Wednesdays 2:30-7:00 PM (Mar-Oct), and you land at 7:58 PM. Do not detour to the Village tonight. The market that still fits is Saturday's <a href="#sat">Vista Farmers Market</a>.</div>
+ <div class="tl-foot"><span class="chip rose">Missed · evening arrival</span></div>
+ </div>
+ </li>
+<li class="coffee">
+ <div class="tl-time">SKIP</div>
+ <div class="icon" aria-hidden="true">☕</div>
+ <div>
+ <div class="tl-label">Coffee</div>
+ <div class="tl-title">No coffee today</div>
+ <div class="tl-detail">After-4 PM rule. You land at 7:58 PM, so there is no cup on Wednesday.</div>
+ </div>
+ </li>
+<li class="drive">
+ <div class="tl-time">~8:30 PM</div>
+ <div class="icon" aria-hidden="true">🚗</div>
+ <div>
+ <div class="tl-label">Car pickup</div>
+ <div class="tl-title">2026 Tesla Model Y Premium - FSD included</div>
+ <div class="tl-detail">Turo, host Tony in 92106 (Point Loma - minutes from SAN). Landing is 7:58 PM, so confirm an evening handover or SAN delivery with the host, check FSD is active on <em>this</em> car before you pull away, and charge if needed. <a href="#car">Car details.</a></div>
+ <div class="tl-foot"><span class="chip sage">$501 before taxes · Sep 30 - Oct 4</span></div>
+ </div>
+ </li>
+<li class="drive">
+ <div class="tl-time">~8:30 PM<span class="range">~35-50 min</span></div>
+ <div class="icon" aria-hidden="true">🛣️</div>
+ <div>
+ <div class="tl-label">Drive note</div>
+ <div class="tl-title">Point Loma → Vista Airbnb · ~35-50 min</div>
+ <div class="tl-detail">After the Turo handoff. I-5 → I-805 → SR-78. Estimate; night traffic varies. <a class="drive-maps" href="https://www.google.com/maps/dir/Point%20Loma%2C%20San%20Diego%2C%20CA/Vista%2C%20CA" rel="noopener" target="_blank">🗺️ Maps drive · Point Loma → Vista</a></div>
  </div>
  </li>
 <li>
- <div class="tl-time">06:30 PM</div>
+ <div class="tl-time">~9:30 PM</div>
+ <div class="icon" aria-hidden="true">🏠</div>
+ <div>
+ <div class="tl-label">Check-in</div>
+ <div class="tl-title"><a href="https://www.airbnb.com/rooms/782804933331065682?check_in=2026-09-30&amp;check_out=2026-10-04&amp;adults=1" rel="noopener">Hilltop 1 Bedroom House · Vista</a></div>
+ <div class="tl-detail">Same Hilltop listing · <strong>$687</strong> / 4 nights · private driveway. Arrival is late - confirm with the host that a ~9:30 PM check-in on 30 Sep works. <a href="#stay">Stay details.</a></div>
+ </div>
+ </li>
+<li>
+ <div class="tl-time">Late</div>
  <div class="icon" aria-hidden="true">🍽️</div>
  <div>
  <div class="tl-label">Dinner</div>
- <div class="tl-title"><a href="https://www.thelakehouseresort.com/san-marcos-dining/brickmans" rel="noopener">Brickmans - Lakehouse Resort, San Marcos</a></div>
- <div class="tl-detail">If you want Lakehouse energy it is a short hop into San Marcos; otherwise eat in Vista proper near the Airbnb. Morning flight makes either easy.</div>
+ <div class="tl-title">Late dinner in Vista</div>
+ <div class="tl-detail">Eat near the Hilltop house after check-in. Not Brickmans - that is across town at the Lakehouse in San Marcos, and this night is already SAN → Point Loma → Vista. Whatever is still open nearby; no reservation.</div>
  <div class="tl-foot"><span class="chip amber">EST $25-40</span></div>
  </div>
  </li>
  </ul>
- <div class="note"><strong>Practical heart:</strong> Morning flight buys Wednesday whole - farmers market in Carlsbad Village, coffee before 4 PM, Brickmans at a civil hour.</div>
+ <div class="note"><strong>Practical heart:</strong> Evening arrival, not a full Wednesday. Carlsbad Village farmers market is missed. No coffee after 4 PM. Dinner stays in Vista. Confirm late check-in with the Hilltop host. Saturday Vista Farmers Market is later on this page.</div>
  </section>
 
  <!-- ============ THU ============ -->
@@ -1064,7 +1054,7 @@
  <div>
  <div class="tl-label">Farmers market · Saturday only</div>
  <div class="tl-title"><a href="https://vistafarmersmarket.com/" rel="noopener">Vista Farmers Market</a></div>
- <div class="tl-detail">355 S Melrose Dr (courthouse lot), every Saturday 08:00 AM-12:00 PM. Do this before the San Marcos doors - it's the life Maya described. Midweek twin: Carlsbad Village Wed (already on Wednesday's plan).</div>
+ <div class="tl-detail">355 S Melrose Dr (courthouse lot), every Saturday 08:00 AM-12:00 PM. Do this before the San Marcos doors - it's the life Maya described. Wednesday's Carlsbad Village market is missed; this Saturday market is the one that still fits.</div>
  <div class="tl-foot"><span class="chip orange">Maya ask</span><span class="chip sage"><a href="https://maps.google.com/?q=355+S+Melrose+Dr,+Vista,+CA+92081" rel="noopener">Maps</a></span></div>
  </div>
  </li>
@@ -1309,7 +1299,7 @@
  <div>
  <div class="tl-label">Flight</div>
  <div class="tl-title">SAN → EWR · evening preferred</div>
- <div class="tl-detail">Sunday SAN → EWR nonstop home. Confirm the evening leg before stamp. <a href="#flights">Flight details.</a></div>
+ <div class="tl-detail">Sunday SAN → EWR is not locked. No return price on this page. Outbound is $374 one-way; return TBD. <a href="#flights">Flight details.</a></div>
  </div>
  </li>
 <li>
@@ -1355,21 +1345,26 @@
 
  <section class="block" id="logistics">
  <div class="section-title"><h2>Fly · Stay · Car</h2></div>
- <p class="lede">The three bookings that turn this from a page into a plan. All quoted solo on 20 Sep 2026; none booked yet.</p>
+ <p class="lede">The three bookings that turn this from a page into a plan. Stay and the Model Y were quoted solo on 20 Sep 2026. The outbound flight was read 21 Sep. Nothing is booked. The return is still open.</p>
 
  <h3 id="flights" style="font-size:22px; margin:18px 0 10px; scroll-margin-top: calc(var(--nav-h) + 12px);">✈️ Flights - EWR ↔ SAN</h3>
- <div class="note sage"><strong>Locked for now:</strong> one outbound. United nonstop Wed 07:00 AM → 09:49 AM · 5h49. Quoted 20 Sep from <a href="https://www.google.com/travel/flights/search?tfs=EAAaHhIKMjAyNi0wOS0zMGoHCAESA0VXUnIHCAESA1NBThoeEgoyMDI2LTEwLTA0agcIARIDU0FOcgcIARIDRVdSQAFIAZgBAQ&curr=USD&hl=en" rel="noopener">Google Flights</a>, 1 adult round trip. Not booked - fares move.</div>
+ <div class="note sage"><strong>Locked for now:</strong> outbound only. Alaska nonstop Wed 5:02 PM EWR → 7:58 PM SAN · 5h56 · <strong>$374</strong> one-way, 1 adult economy. Read 21 Sep 2026 ~8:33pm ET from <a href="https://www.google.com/travel/flights/search?tfs=CBwQAhomEgoyMDI2LTA5LTMwQBFIE1AAWBdqBwgBEgNFV1JyBwgBEgNTQU5AAUgBcAGCAQsI____________AZgBAg&tfu=EgYIABAAGAA&hl=en&curr=USD" rel="noopener">Google Flights</a>. Return SAN → EWR Sunday 4 Oct is not locked. Outbound $374 OW + return TBD. Not booked - fares move.</div>
  <div class="cards">
  <div class="card pick">
- <div class="row"><h3>United nonstop · Wed morning ♥</h3><span class="chip sage">Locked</span></div>
- <div class="times">Wed 07:00 AM → 09:49 AM · 5h49</div>
- <div class="small">Wheels down mid-morning. Whole first day: Vista Airbnb keys, Carlsbad farmers market, coffee before 4 PM, Brickmans dinner.</div>
- <div class="row" style="margin-top:6px;"><span class="price">$707</span><span class="chip sage">1 adult round trip · quoted 20 Sep</span></div>
+ <div class="row"><h3>Alaska nonstop · Wed evening ♥</h3><span class="chip sage">Locked</span></div>
+ <div class="times">Wed 5:02 PM → 7:58 PM · 5h56</div>
+ <div class="small">Wheels down 7:58 PM SAN. Late travel night: Tesla ~8:30 PM, Hilltop check-in ~9:30 PM (confirm with the host), dinner in Vista. Carlsbad Village farmers market is missed. No coffee after 4 PM.</div>
+ <div class="row" style="margin-top:6px;"><span class="price">$374</span><span class="chip sage">1 adult economy · one-way · read 21 Sep</span></div>
+ </div>
+ <div class="card">
+ <div class="row"><h3>Sunday return · SAN → EWR</h3><span class="chip amber">Not locked</span></div>
+ <div class="times">Sun 4 Oct · time not locked</div>
+ <div class="small">Still open. The outbound is not a round trip. Outbound $374 OW + return TBD.</div>
  </div>
  </div>
 
  <h3 id="stay" style="font-size:22px; margin:26px 0 10px; scroll-margin-top: calc(var(--nav-h) + 12px);">🏠 Stay - Vista base</h3>
- <div class="note sage"><strong>Locked:</strong> <a href="https://www.airbnb.com/rooms/782804933331065682?check_in=2026-09-30&amp;check_out=2026-10-04&amp;adults=1" rel="noopener">Hilltop 1 Bedroom House</a> in Vista · 30 Sep-4 Oct · 1 adult. John stamped the listing. Not paid yet.</div>
+ <div class="note sage"><strong>Locked:</strong> <a href="https://www.airbnb.com/rooms/782804933331065682?check_in=2026-09-30&amp;check_out=2026-10-04&amp;adults=1" rel="noopener">Hilltop 1 Bedroom House</a> in Vista · 30 Sep-4 Oct · 1 adult. John stamped the listing. Not paid yet. Wednesday arrival is ~9:30 PM - confirm late check-in with the host.</div>
  <div class="cards">
  <div class="card pick">
  <div class="row"><h3>Hilltop 1 Bedroom House ♥</h3><span class="chip sage">Locked · not booked</span></div>
@@ -1395,19 +1390,19 @@
  <!-- ============ COST ============ -->
  <section class="block" id="cost">
  <div class="section-title"><h2>What the dream costs</h2><span class="date">solo, this trip</span></div>
- <p class="lede">Flights, Hilltop Airbnb ($687), and the Model Y are real solo quotes. Food and coffee are estimates. </p>
+ <p class="lede">Hilltop Airbnb ($687) and the Model Y are real solo quotes. Food and coffee are estimates. Outbound flight is $374 one-way; return is TBD. The old ~$2,400-2,750 assumed a $707 round trip.</p>
 
  <table>
  <thead><tr><th>Line</th><th style="text-align:right">USD</th></tr></thead>
  <tbody>
- <tr><td>Flights · United nonstop · 1 adult round trip<span class="src">Quoted 20 Sep. United nonstop EWR 07:00 AM → SAN 09:49 AM · 5h49 · $707</span></td><td class="amt">$707</td></tr>
+ <tr><td>Flights · Alaska nonstop outbound · 1 adult economy<span class="src">Read 21 Sep 2026 ~8:33pm ET. Alaska nonstop EWR 5:02 PM → SAN 7:58 PM · 5h56 · $374 one-way. Return SAN → EWR Sun 4 Oct TBD.</span></td><td class="amt">$374</td></tr>
  <tr><td>Airbnb · Hilltop 1BR house · Vista<span class="src">Quoted 20 Sep · fees included · not booked · <a href="https://www.airbnb.com/rooms/782804933331065682?check_in=2026-09-30&amp;check_out=2026-10-04&amp;adults=1">listing</a></span></td><td class="amt">$687</td></tr>
  <tr><td>2026 Tesla Model Y Premium · FSD included · Turo · 4 days<span class="src">Quoted 20 Sep · listing before taxes. Turo taxes, fees &amp; protection plan not yet added</span></td><td class="amt">$501</td></tr>
  <tr><td>Food · breakfast / lunch / dinner · ~4.5 days<span class="src">Solo EST (~$55-85 a day)</span></td><td class="amt">$250-380</td></tr>
  <tr><td>Coffee · café stops<span class="src">Solo EST · morning + after lunch, nothing after 4 PM</span></td><td class="amt">$48-64</td></tr>
  <tr><td>Parking · tolls · Supercharging<span class="src">EST</span></td><td class="amt">$40-80</td></tr>
  <tr><td>Misc · tips, water, contingency<span class="src">EST</span></td><td class="amt">$50-100</td></tr>
- <tr class="total"><td>Grand total · solo EST<span class="src" style="font-weight:400">Lines above sum to ~$2,275-2,525; headroom for Turo taxes, fees &amp; protection on the $501. The original 2-adult plan ranged ~$2,500-$3,600</span></td><td class="amt">~$2,400-2,750</td></tr>
+ <tr class="total"><td>Grand total · solo<span class="src" style="font-weight:400">No new total. Return is TBD, so this is not a round-trip sum. The old ~$2,400-2,750 assumed a $707 United round trip. Outbound is now $374 one-way. Turo taxes, fees &amp; protection on the $501 are still extra.</span></td><td class="amt">TBD</td></tr>
  </tbody>
  </table>
 
@@ -1420,10 +1415,10 @@
  <ol class="questions">
  <li><span><strong>When do we book?</strong> Fares and the Model Y move; flights first, then a Vista Airbnb, then the Turo.</span></li>
  <li><span><strong>Turo Model Y ($501 before taxes):</strong> confirm the all-in total with taxes, fees and protection plan, SAN delivery vs. Point Loma pickup, and mileage - then book it.</span></li>
- <li><span><strong>Airbnb:</strong> Hilltop 1 Bedroom House locked · $687 / 4 nights · private driveway · <a href="https://www.airbnb.com/rooms/782804933331065682?check_in=2026-09-30&amp;check_out=2026-10-04&amp;adults=1">listing</a> · not paid yet.</span></li>
- <li><span><strong>Flight:</strong> United nonstop Wed 07:00 AM → 09:49 AM · 5h49 at $707 (locked for now).</span></li>
+ <li><span><strong>Airbnb:</strong> Hilltop 1 Bedroom House stays locked · $687 / 4 nights · private driveway · <a href="https://www.airbnb.com/rooms/782804933331065682?check_in=2026-09-30&amp;check_out=2026-10-04&amp;adults=1">listing</a> · not paid yet. Confirm with the host that a ~9:30 PM Wednesday check-in is allowed.</span></li>
+ <li><span><strong>Flight:</strong> Alaska nonstop Wed 5:02 PM EWR → 7:58 PM SAN · 5h56 · $374 one-way, 1 adult economy (locked for now, read 21 Sep). Return SAN → EWR Sunday 4 Oct is not locked. Outbound $374 OW + return TBD.</span></li>
  <li><span><strong>Vista is the base and the priority town.</strong> Escondido stays a check day only. Still right?</span></li>
- <li><span><strong>Sunday return time</strong> - re-check the evening SAN → EWR legs before we lock anything.</span></li>
+ <li><span><strong>Sunday return time</strong> - still not locked, and there is no return fare on this page. Re-check SAN → EWR before we stamp a price.</span></li>
  </ol>
  </section>
 </main>
