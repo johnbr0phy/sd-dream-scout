@@ -130,6 +130,12 @@
  margin: 0; padding: 10px 16px; justify-content: center;
  max-width: 980px; margin-inline: auto;
  }
+ @media (max-width: 719px) {
+ .daynav ul {
+ flex-wrap: nowrap; justify-content: flex-start;
+ overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none;
+ }
+ }
  .daynav ul::-webkit-scrollbar { display: none; }
  .daynav li { flex: 0 0 auto; scroll-snap-align: start; }
  .daynav a {
