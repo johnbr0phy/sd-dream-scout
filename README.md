@@ -33,7 +33,9 @@ Free plan the site only publishes if the repository is public.
   "Vista Getaway" downtown Vista studio on Airbnb ($677.60); Turo 2026 Model Y with FSD, Point Loma
   pickup Wed 8 PM / return Sun 11 AM ($441.59). Door/gate codes and confirmation numbers stay off the page
 - Nick Miele's (Compass) self-guided neighbourhood plan folded into Thu-Sun: Oceanside, Vista,
-  San Marcos, and Carlsbad (Calavera Hills on Fri, La Costa on the Sun airport run). Escondido is cut
+  San Marcos, and Carlsbad (Calavera Hills on Fri, La Costa on the Sun airport run). Escondido is cut.
+  Thu 1 Oct in-person tour: Rancho Del Oro, 8 homes, about 2.5 hours. Fri 2 Oct: 1:00-3:00 PM with Nick,
+  6 homes in Carlsbad and Shadowridge. Areas, criteria, and logistics only - no listing addresses or prices
 - Brompton days: drive to each area, park once (parking spot on every ride block), and ride Nick's
   neighbourhoods with bike-route links. Bike logistics (checked bag, Tesla boot, studio, kit) under Fly · Stay · Car
 - Solo cost breakdown, coffee tally, and "before we stamp" questions
@@ -106,6 +108,19 @@ listing photos.
 
 Images were resized (≤1600px wide; thumbnails 480px square, centre-cropped) and recompressed
 for phones; no other edits. CC BY-SA images are shared here under the same licence.
+
+## Changelog
+
+### 2 Oct 2026
+
+Thursday house-tour notes folded in (areas, criteria, and logistics only):
+
+- Thu Oceanside: Nick's in-person Rancho Del Oro tour (8 homes, about 2.5 hours, all close together). Lunch at Tanner's Prime Burgers (Vista Way). Anita's Mexican, South Coast Highway location, added as a dinner option
+- Fri Vista: 1:00-3:00 PM tour with Nick (6 homes, Carlsbad and Shadowridge). The overlapping Shadowridge bike loop is trimmed; coffee and the TJ's stop move to 3:15 and 3:45 so the day stays in order. Carlsbad Village evening kept
+- Filter: view, privacy, and outdoor space on top; a good kitchen, a walk-in closet, a fourth flex room; solar and a vegetable garden as nice-to-haves; gated preferred; cul-de-sac or a quiet street
+- Kerb checklist: big-ticket checks (windows, AC, water heater, solar leases, HOA)
+- A short market note from Nick, plus his tip to drop MLS photos into Claude for layout ideas
+- Groceries section unchanged
 
 ## Privacy
 
