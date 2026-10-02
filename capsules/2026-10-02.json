@@ -1,0 +1,320 @@
+{
+  "date": "2026-10-02",
+  "town": "Vista",
+  "plannedTimeline": [
+    {
+      "time": "07:30 AM",
+      "title": "James Coffee - Vista",
+      "detail": "Main St. Local specialty bakery-café. Daily 7am-4pm. The car stays in the studio's gated spot until lunch."
+    },
+    {
+      "time": "08:15 AM",
+      "title": "Coyote Cafe",
+      "detail": "N Santa Fe Ave, a short roll from the studio. Homestyle breakfast."
+    },
+    {
+      "time": "09:00 AM → 11:45 AM",
+      "title": "92084 → Brengle Terrace → home #1",
+      "detail": "No driving: 92084 (more land and space for the money), then the streets around Brengle Terrace and a lap of Brengle Terrace Park - one of Vista's best parks; see what weekend life looks like. Home #1 on the way back. Vista is hilly - low gear and no shame in walking a climb. 🗺️ Bike route"
+    },
+    {
+      "time": "12:00 PM",
+      "title": "Studio → Shadowridge · ~10 min",
+      "detail": "Fold, boot, go. Lunch in Shadowridge, then the 1:00 showing is in Carlsbad. Park at Buena Vista Park (1601 Shadowridge Dr, public park lot) for lunch."
+    },
+    {
+      "time": "12:30 PM",
+      "title": "Leucadia Pizzeria - Shadowridge",
+      "detail": "S Melrose Dr, a short roll from the park. Right in the neighbourhood we're circling."
+    },
+    {
+      "time": "01:00 PM",
+      "title": "6015 Paseo Salinero, Carlsbad",
+      "detail": "First stop. Score view, privacy (no one looking in), and outdoor space."
+    },
+    {
+      "time": "01:25 PM",
+      "title": "1510 Golfcrest Pl, Vista",
+      "detail": "Second stop."
+    },
+    {
+      "time": "01:35 PM",
+      "title": "1910 Willow Ridge Dr, Vista",
+      "detail": "Third stop."
+    },
+    {
+      "time": "01:45 PM",
+      "title": "1077 Cordoba Way, Vista",
+      "detail": "Fourth stop."
+    },
+    {
+      "time": "02:05 PM",
+      "title": "1762 Spyglass Cir, Vista",
+      "detail": "Fifth stop."
+    },
+    {
+      "time": "02:30 PM",
+      "title": "217 Camille Way, Vista",
+      "detail": "Sixth stop."
+    },
+    {
+      "time": "02:55 PM",
+      "title": "509 Avenida Aguila, San Marcos",
+      "detail": "Last stop. It starts at 2:55, so it runs past 3:20 once you leave San Marcos for Vista. Coffee moves to 3:40."
+    },
+    {
+      "time": "03:40 PM",
+      "title": "Cosmic Bloom Coffee",
+      "detail": "Main St, back downtown after the San Marcos stop. Was 3:15; moved because the last showing is 2:55. Still before 4 PM."
+    },
+    {
+      "time": "04:10 PM",
+      "title": "Trader Joe's - Vista",
+      "detail": "1861 University Dr. Was 3:45; moved with the coffee. Keep it short - Calavera is at 4:45. Is this the store you'd use every Tuesday? Then home #2 nearby. Alt: Sprouts · E Vista Way."
+    },
+    {
+      "time": "04:45 PM → 05:25 PM",
+      "title": "Calavera Hills + Lake Calavera",
+      "detail": "Drive ~15 min and park at the Lake Calavera Preserve trailhead. Ride Calavera Hills (newer condos built around trails), then walk the bike on the lake trail."
+    },
+    {
+      "time": "05:30 PM",
+      "title": "Carlsbad Village + seawall",
+      "detail": "Drive ~10 min, park in a Village public lot (check time limits). Roll State St and Grand Ave, then Nick's seawall along Carlsbad Blvd at sunset (~6:30). Walk the bike on the seawall walkway itself. If Vista doesn't make this feel easy, it's the wrong Vista pocket."
+    },
+    {
+      "time": "06:45 PM",
+      "title": "Le Papagayo - Carlsbad Village",
+      "detail": "112 State St. Alt if full: 264 Fresco."
+    },
+    {
+      "time": "08:15 PM",
+      "title": "Village → Vista · ~15-20 min",
+      "detail": "Car in the gated spot, bike upstairs. 🗺️ Maps drive"
+    },
+    {
+      "time": "08:45 PM",
+      "title": "Downtown Vista / Main Street",
+      "detail": "A few minutes' walk from the studio - no driving. Prey Brewing or Belching Beaver Tavern."
+    }
+  ],
+  "groceries": {
+    "primary": {
+      "name": "Trader Joe's",
+      "address": "1861 University Dr",
+      "link": "https://locations.traderjoes.com/ca/vista/259/"
+    },
+    "alt": {
+      "name": "Sprouts",
+      "address": "1400 E Vista Way, Vista, CA 92084",
+      "link": "https://www.sprouts.com/store/ca/vista/vista/"
+    }
+  },
+  "food": [
+    {
+      "name": "Leucadia Pizzeria - Shadowridge",
+      "note": "Lunch on S Melrose Dr, before the tour.",
+      "mapsLink": "https://www.google.com/maps/search/?api=1&query=Leucadia%20Pizzeria%20Shadowridge%20Vista%20CA"
+    },
+    {
+      "name": "Le Papagayo - Carlsbad Village",
+      "note": "Dinner at 112 State St. Alt if full: 264 Fresco.",
+      "mapsLink": "https://www.google.com/maps/search/?api=1&query=Le%20Papagayo%20112%20State%20St%20Carlsbad%20CA"
+    }
+  ],
+  "notes": {
+    "summary": "In-person tour with Nick. Seven showings from 1:00 PM in Carlsbad to 2:55 PM in San Marcos. No tour notes yet.",
+    "highlights": [],
+    "nextSteps": [],
+    "sources": [
+      "Friday 2 Oct showing schedule John sent, 7 addresses",
+      "Trip page section #fri",
+      "Trip page Vista card in #groceries"
+    ]
+  },
+  "houses": [
+    {
+      "address": "6015 Paseo Salinero, Carlsbad, CA 92009",
+      "showingTime": "1:00 PM",
+      "price": 699000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1140,
+      "yearBuilt": 2002,
+      "hoa": "$358/mo",
+      "mls": "260019570",
+      "notes": "No notes from the tour yet",
+      "photo": {
+        "url": "https://m.cbhomes.com/p/357/260019570/e57965a77940429/original.webp",
+        "kind": "listing",
+        "sourceUrl": "https://www.coldwellbankerhomes.com/ca/carlsbad/6015-paseo-salinero/pid_72994383/",
+        "credit": "Listing photo, Coldwell Banker / MLS 260019570. Hotlinked, not stored in this repo."
+      },
+      "ranking": {
+        "johnScore": null,
+        "scoreScale": null,
+        "scoreSource": null,
+        "dayOrder": null,
+        "dayGroup": null,
+        "orderSource": null
+      }
+    },
+    {
+      "address": "1510 Golfcrest Pl, Vista, CA 92081",
+      "showingTime": "1:25 PM",
+      "price": 925000,
+      "beds": 3,
+      "baths": 3,
+      "sqft": 1654,
+      "yearBuilt": 1990,
+      "hoa": null,
+      "mls": "NDP2608444",
+      "notes": "No notes from the tour yet",
+      "photo": {
+        "url": "https://cdn-crmls.roveridx.com/NDP2608444/09132026182250_1024_0.webp",
+        "kind": "listing",
+        "sourceUrl": "https://ashkongroup.com/ca/vista/1510-golfcrest-pl/",
+        "credit": "Listing photo, CRMLS / MLS NDP2608444. Hotlinked, not stored in this repo."
+      },
+      "ranking": {
+        "johnScore": null,
+        "scoreScale": null,
+        "scoreSource": null,
+        "dayOrder": null,
+        "dayGroup": null,
+        "orderSource": null
+      }
+    },
+    {
+      "address": "1910 Willow Ridge Dr, Vista, CA 92081",
+      "showingTime": "1:35 PM",
+      "price": 929000,
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 1810,
+      "yearBuilt": 1989,
+      "hoa": "$208/mo",
+      "mls": "260019722",
+      "notes": "No notes from the tour yet",
+      "photo": {
+        "url": "https://m.cbhomes.com/p/357/260019722/EBe96D13A8214e5/original.webp",
+        "kind": "listing",
+        "sourceUrl": "https://www.coldwellbankerhomes.com/ca/vista/1910-willow-ridge/pid_73030740/",
+        "credit": "Listing photo, Coldwell Banker / MLS 260019722. Hotlinked, not stored in this repo."
+      },
+      "ranking": {
+        "johnScore": null,
+        "scoreScale": null,
+        "scoreSource": null,
+        "dayOrder": null,
+        "dayGroup": null,
+        "orderSource": null
+      }
+    },
+    {
+      "address": "1077 Cordoba Way, Vista, CA 92081",
+      "showingTime": "1:45 PM",
+      "price": 899000,
+      "beds": 2,
+      "baths": 2,
+      "sqft": 1420,
+      "yearBuilt": 1988,
+      "hoa": "$256/mo",
+      "mls": "260020667",
+      "notes": "No notes from the tour yet",
+      "photo": {
+        "url": "https://m.cbhomes.com/p/357/260020667/671cDebB0802497/original.webp",
+        "kind": "listing",
+        "sourceUrl": "https://www.coldwellbankerhomes.com/ca/vista/1077-cordoba/pid_73216052/",
+        "credit": "Listing photo, Coldwell Banker / MLS 260020667. Hotlinked, not stored in this repo."
+      },
+      "ranking": {
+        "johnScore": null,
+        "scoreScale": null,
+        "scoreSource": null,
+        "dayOrder": null,
+        "dayGroup": null,
+        "orderSource": null
+      }
+    },
+    {
+      "address": "1762 Spyglass Cir, Vista, CA 92081",
+      "showingTime": "2:05 PM",
+      "price": 899000,
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 1835,
+      "yearBuilt": 1986,
+      "hoa": "$285/mo",
+      "mls": "NDP2608328",
+      "notes": "No notes from the tour yet",
+      "photo": {
+        "url": "https://m.cbhomes.com/p/733/NDP2608328/31B1d7a4d58045c/full.webp",
+        "kind": "listing",
+        "sourceUrl": "https://www.coldwellbankerhomes.com/ca/vista/1762-spyglass-circle/pid_73472022/",
+        "credit": "Listing photo, Coldwell Banker / MLS NDP2608328. Hotlinked, not stored in this repo."
+      },
+      "ranking": {
+        "johnScore": null,
+        "scoreScale": null,
+        "scoreSource": null,
+        "dayOrder": null,
+        "dayGroup": null,
+        "orderSource": null
+      }
+    },
+    {
+      "address": "217 Camille Way, Vista, CA 92083",
+      "showingTime": "2:30 PM",
+      "price": 899999,
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 2440,
+      "yearBuilt": 1991,
+      "hoa": null,
+      "mls": "NDP2606591",
+      "notes": "No notes from the tour yet",
+      "photo": {
+        "url": "https://m.cbhomes.com/p/733/NDP2606591/9b62A3aB084B4F0/full.webp",
+        "kind": "listing",
+        "sourceUrl": "https://www.coldwellbankerhomes.com/ca/vista/217-camille-way/pid_72435694/",
+        "credit": "Listing photo, Coldwell Banker / MLS NDP2606591. Hotlinked, not stored in this repo."
+      },
+      "ranking": {
+        "johnScore": null,
+        "scoreScale": null,
+        "scoreSource": null,
+        "dayOrder": null,
+        "dayGroup": null,
+        "orderSource": null
+      }
+    },
+    {
+      "address": "509 Avenida Aguila, San Marcos, CA 92069",
+      "showingTime": "2:55 PM",
+      "price": 910000,
+      "beds": 4,
+      "baths": 3,
+      "sqft": 1646,
+      "yearBuilt": 1990,
+      "hoa": null,
+      "mls": "26866541",
+      "notes": "No notes from the tour yet",
+      "photo": {
+        "url": "https://m.cbhomes.com/p/510/26866541/2Fb058347e58446/full.webp",
+        "kind": "listing",
+        "sourceUrl": "https://www.coldwellbankerhomes.com/ca/san-marcos/509-avenida-aguila/pid_72888591/",
+        "credit": "Listing photo, Coldwell Banker / MLS 26866541. Hotlinked, not stored in this repo."
+      },
+      "ranking": {
+        "johnScore": null,
+        "scoreScale": null,
+        "scoreSource": null,
+        "dayOrder": null,
+        "dayGroup": null,
+        "orderSource": null
+      }
+    }
+  ],
+  "takeaway": "Seven showings with Nick, 1:00 PM to 2:55 PM, from Carlsbad to San Marcos. No tour notes and no scores yet."
+}

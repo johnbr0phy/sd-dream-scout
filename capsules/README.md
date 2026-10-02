@@ -26,7 +26,7 @@ Live index: `capsules/index.html` (GitHub Pages: `/capsules/`).
 ## House fields
 
 `houses[]` uses `address`, `showingTime`, `price` (a number of dollars), `beds`, `baths`, `sqft`,
-`yearBuilt`, `hoa`, `notes`, `matchSource`, `photo`, and `ranking`.
+`yearBuilt`, `hoa`, `mls`, `notes`, `matchSource`, `photo`, and `ranking`.
 
 `showingTime` is the appointment, like `10:00 AM`. The page lists showings in that order.
 Ranking groups stay in the order written in the JSON.
@@ -51,3 +51,10 @@ Every house on the 1 Oct showing schedule uses a hotlinked listing photo. The fi
 - 1242 Via Candelas, 1267 Via Candelas, 1702 Avenida Vista Labera, 4724 Ventana Way, 4059 Ivey Vista Way, and 1721 Corte Viejo: Coldwell Banker listing photos.
 - 1727 Avenida Vista Labera: Coldwell Banker listing photo.
 - 914 Tempera Ct and 1861 Avenida Segovia: CRMLS listing photos.
+
+## Friday 2 Oct photo notes
+
+Every house on the 2 Oct showing schedule uses a hotlinked listing photo. The files are not in this repo. There are no tour notes and no scores yet.
+
+- 6015 Paseo Salinero, 1910 Willow Ridge Dr, 1077 Cordoba Way, 1762 Spyglass Cir, 217 Camille Way, and 509 Avenida Aguila: Coldwell Banker listing photos.
+- 1510 Golfcrest Pl: CRMLS listing photo.

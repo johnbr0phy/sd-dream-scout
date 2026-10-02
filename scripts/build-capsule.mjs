@@ -121,6 +121,7 @@ function statLine(house) {
   if (house.baths != null) bits.push(`${house.baths} bath`);
   if (house.sqft != null) bits.push(`${Number(house.sqft).toLocaleString('en-US')} sq ft`);
   if (house.hoa) bits.push(`HOA ${house.hoa}`);
+  if (house.mls) bits.push(`MLS ${house.mls}`);
   return bits.join(' · ');
 }
 
@@ -156,7 +157,7 @@ function scoreLine(ranking) {
 }
 
 function orderLine(ranking) {
-  if (!ranking) return '';
+  if (!ranking || !ranking.dayGroup) return '';
   const order = ranking.dayOrder == null
     ? 'No order within this group'
     : `Day order ${esc(ranking.dayOrder)}`;
@@ -208,12 +209,13 @@ function renderBody(data, day) {
 
   const groups = [];
   for (const house of data.houses || []) {
-    const name = house.ranking?.dayGroup || 'Ungrouped';
+    const name = house.ranking?.dayGroup || '';
     const last = groups[groups.length - 1];
     if (!last || last.name !== name) groups.push({ name, houses: [house] });
     else last.houses.push(house);
   }
   const houses = groups.map((group) => {
+    const label = group.name || 'No ranking yet';
     const cards = group.houses.map((house) => {
       const tone = group.name === 'Standout' ? ' pick' : group.name === 'Worst of the day' ? ' low' : '';
       const facts = statLine(house);
@@ -221,7 +223,7 @@ function renderBody(data, day) {
       const matched = house.matchSource ? `<p class="small">${esc(house.matchSource)}</p>` : '';
       return `
         <article class="card${tone}">
-          <div class="k">${esc(group.name)}</div>
+          <div class="k">${esc(label)}</div>
           <h3>${esc(house.address)}</h3>
           ${when}
           <p class="price">${money(house.price)}</p>
@@ -233,7 +235,8 @@ function renderBody(data, day) {
           ${matched}
         </article>`;
     }).join('');
-    return `<h3 style="margin:18px 0 8px;">${esc(group.name)}</h3>${cards}`;
+    const heading = group.name ? `<h3 style="margin:18px 0 8px;">${esc(group.name)}</h3>` : '';
+    return `${heading}${cards}`;
   }).join('');
 
   const showings = [...(data.houses || [])]
@@ -256,7 +259,7 @@ function renderBody(data, day) {
     <div class="note"><strong>Next.</strong> ${esc(nextText) || 'Nothing recorded.'}</div>
     <div class="section-title"><h2>Showings</h2><span class="date">by appointment time</span></div>
     <ul class="timeline">${showings || ''}</ul>
-    <div class="section-title"><h2>Houses</h2><span class="date">same ranking groups</span></div>
+    <div class="section-title"><h2>Houses</h2><span class="date">${(data.houses || []).some((house) => house.ranking?.dayGroup) ? 'same ranking groups' : 'no rankings yet'}</span></div>
     ${houses || '<p class="lede">No houses recorded.</p>'}
     <div class="section-title"><h2>Food</h2></div>
     ${food || '<p class="lede">No food stops recorded.</p>'}
