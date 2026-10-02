@@ -1,0 +1,431 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4772e">
+<title>Fri 2 Oct · Vista · time capsule</title>
+<style>
+ :root {
+ --orange: #f4772e;
+ --orange-deep: #d95f1a;
+ --orange-soft: #ffb37a;
+ --peach: #ffe8d6;
+ --cream: #fff8f1;
+ --paper: #fffdfa;
+ --ink: #3a2417;
+ --ink-soft: #6b4a37;
+ --muted: #9a7a68;
+ --line: #f2dcc9;
+ --rose: #e0475f;
+ --sage: #4f8a6b;
+ --sage-soft: #e3f2e8;
+ --amber: #b8730f;
+ --amber-soft: #fff1d6;
+ --sky: #3c7fb1;
+ --sky-soft: #e6f1fa;
+ --radius: 18px;
+ --shadow: 0 6px 24px rgba(120, 60, 20, 0.10);
+ --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Times New Roman", serif;
+ --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+ }
+ * { box-sizing: border-box; }
+ html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+ body {
+ margin: 0; background: var(--cream); color: var(--ink);
+ font-family: var(--sans); font-size: 17px; line-height: 1.55;
+ padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right);
+ padding-bottom: env(safe-area-inset-bottom);
+ }
+ a { color: var(--orange-deep); text-decoration: underline; text-decoration-color: rgba(217, 95, 26, 0.35); text-underline-offset: 2px; }
+ a:hover { text-decoration-color: currentColor; }
+ img { display: block; max-width: 100%; height: auto; }
+ h1, h2, h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.01em; margin: 0; }
+ p { margin: 0 0 0.9em; }
+ .wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+ .band {
+ background: linear-gradient(160deg, #ff9a4d 0%, var(--orange) 55%, var(--orange-deep) 100%);
+ color: #fff; padding: calc(22px + env(safe-area-inset-top)) 16px 28px; text-align: center;
+ }
+ .band .hearts { font-size: 22px; letter-spacing: 0.35em; margin-bottom: 8px; }
+ .band h1 { font-size: clamp(32px, 8vw, 44px); line-height: 1.05; }
+ .band .sub { margin: 12px auto 0; max-width: 36ch; font-size: 17px; }
+ .band nav { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+ .band nav a {
+ color: var(--orange-deep); background: #fff; text-decoration: none; font-weight: 700;
+ border-radius: 999px; padding: 8px 14px; min-height: 44px; display: inline-flex; align-items: center;
+ }
+ main { padding: 22px 0 8px; }
+ .lede { color: var(--ink-soft); }
+ .section-title { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin: 22px 0 8px; }
+ .section-title h2 { font-size: 28px; line-height: 1.15; }
+ .section-title .date { color: var(--orange-deep); font-family: var(--serif); font-style: italic; font-size: 18px; }
+ .card {
+ background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px; margin: 0 0 12px;
+ }
+ .card.pick { border-color: var(--orange-soft); box-shadow: 0 0 0 3px var(--peach); }
+ .card.low { background: #fff7f8; border-color: #f8c3cc; }
+ .card h3 { font-size: 22px; margin-bottom: 4px; }
+ .card .price { font-family: var(--serif); font-size: 28px; color: var(--orange-deep); margin: 0 0 6px; }
+ .card .small, .small { color: var(--ink-soft); font-size: 15px; }
+ .k { font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); font-weight: 700; }
+ .note {
+ background: var(--amber-soft); border: 1px solid #f5dfae; border-radius: 14px;
+ padding: 12px 14px; font-size: 15px; color: #6a4a12; margin: 10px 0 14px;
+ }
+ .note.sage { background: var(--sage-soft); border-color: #c8e4d2; color: #2f5c45; }
+ .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 14px; }
+ .chip {
+ display: inline-flex; align-items: center; gap: 6px; padding: 6px 11px; border-radius: 999px;
+ font-size: 13px; font-weight: 600; border: 1px solid transparent;
+ }
+ .chip.orange { background: var(--peach); color: var(--orange-deep); border-color: #ffd1ad; }
+ .chip.sage { background: var(--sage-soft); color: var(--sage); border-color: #c8e4d2; }
+ .chip.amber { background: var(--amber-soft); color: var(--amber); border-color: #f5dfae; }
+ .chip.sky { background: var(--sky-soft); color: var(--sky); border-color: #c6ddef; }
+ .chip.rose { background: #fde4e8; color: var(--rose); border-color: #f8c3cc; }
+ .timeline { list-style: none; margin: 0; padding: 0; }
+ .timeline li {
+ display: grid; grid-template-columns: 118px 1fr; gap: 10px;
+ background: var(--paper); border: 1px solid var(--line); border-radius: 16px;
+ padding: 12px 14px; margin-bottom: 10px;
+ }
+ .tl-time { font-variant-numeric: tabular-nums; font-weight: 800; font-size: 14px; color: var(--orange-deep); text-align: right; }
+ .tl-title { font-weight: 700; }
+ .tl-detail { color: var(--ink-soft); font-size: 15px; }
+ .house-photo { margin: 10px 0; border-radius: 14px; overflow: hidden; background: var(--peach); }
+ .house-photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+ .rep-flag {
+ display: inline-block; margin: 0 0 8px; background: #6a4a12; color: #fff;
+ font-weight: 800; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase;
+ padding: 6px 10px; border-radius: 999px;
+ }
+ ul.clean { margin: 0 0 12px; padding-left: 1.1em; }
+ ul.clean li { margin: 0 0 6px; }
+ .index-list { list-style: none; padding: 0; margin: 0; }
+ .index-list a.card { display: block; text-decoration: none; color: inherit; }
+ .index-list a.card:hover { border-color: var(--orange-soft); }
+ footer {
+ margin-top: 28px; background: linear-gradient(160deg, var(--orange-deep), var(--orange));
+ color: #fff; text-align: center; padding: 28px 16px calc(28px + env(safe-area-inset-bottom));
+ }
+ footer a { color: #fff; }
+ footer p { margin: 8px auto 0; max-width: 46ch; font-size: 14px; }
+</style>
+</head>
+<body>
+<header class="band">
+ <div class="hearts" aria-hidden="true">♥ ♥ ♥</div>
+ <h1 id="cap-title">Fri 2 Oct · Vista</h1>
+ <p class="sub" id="cap-sub">Time capsule · this trip only · Wed 30 Sep – Sun 4 Oct 2026</p>
+ <nav id="cap-nav" aria-label="Capsule"><a href="./">All capsules</a> <a href="../index.html#fri">Fri 2 Oct on the trip page</a></nav>
+</header>
+<main class="wrap" id="cap-root">
+ 
+ <div id="cap-body">
+    <p class="lede">Seven showings with Nick, 1:00 PM to 2:55 PM, from Carlsbad to San Marcos. No tour notes and no scores yet.</p>
+    <div class="section-title"><h2>Notes</h2><span class="date">Fri 2 Oct</span></div>
+    <p>In-person tour with Nick. Seven showings from 1:00 PM in Carlsbad to 2:55 PM in San Marcos. No tour notes yet.</p>
+    <ul class="clean"></ul>
+    <div class="note"><strong>Next.</strong> Nothing recorded.</div>
+    <div class="section-title"><h2>Showings</h2><span class="date">by appointment time</span></div>
+    <ul class="timeline">
+    <li>
+      <div class="tl-time">1:00 PM</div>
+      <div>
+        <div class="tl-title">6015 Paseo Salinero, Carlsbad, CA 92009</div>
+        <div class="tl-detail">$699K</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">1:25 PM</div>
+      <div>
+        <div class="tl-title">1510 Golfcrest Pl, Vista, CA 92081</div>
+        <div class="tl-detail">$925K</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">1:35 PM</div>
+      <div>
+        <div class="tl-title">1910 Willow Ridge Dr, Vista, CA 92081</div>
+        <div class="tl-detail">$929K</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">1:45 PM</div>
+      <div>
+        <div class="tl-title">1077 Cordoba Way, Vista, CA 92081</div>
+        <div class="tl-detail">$899K</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">2:05 PM</div>
+      <div>
+        <div class="tl-title">1762 Spyglass Cir, Vista, CA 92081</div>
+        <div class="tl-detail">$899K</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">2:30 PM</div>
+      <div>
+        <div class="tl-title">217 Camille Way, Vista, CA 92083</div>
+        <div class="tl-detail">$899,999</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">2:55 PM</div>
+      <div>
+        <div class="tl-title">509 Avenida Aguila, San Marcos, CA 92069</div>
+        <div class="tl-detail">$910K</div>
+      </div>
+    </li></ul>
+    <div class="section-title"><h2>Houses</h2><span class="date">no rankings yet</span></div>
+    
+        <article class="card">
+          <div class="k">No ranking yet</div>
+          <h3>6015 Paseo Salinero, Carlsbad, CA 92009</h3>
+          <p class="small">Showing 1:00 PM</p>
+          <p class="price">$699K</p>
+          <p class="small">2002 · 3 bed · 2 bath · 1,140 sq ft · HOA $358/mo · MLS 260019570</p>
+          <div class="house-photo"><img src="https://m.cbhomes.com/p/357/260019570/e57965a77940429/original.webp" alt="Listing photo" referrerpolicy="no-referrer"></div><p class="small"><a href="https://www.coldwellbankerhomes.com/ca/carlsbad/6015-paseo-salinero/pid_72994383/" rel="noopener" target="_blank">View listing photos</a> · <a href="https://www.coldwellbankerhomes.com/ca/carlsbad/6015-paseo-salinero/pid_72994383/" rel="noopener" target="_blank">Listing page</a><br>Listing photo, Coldwell Banker / MLS 260019570. Hotlinked, not stored in this repo.</p>
+          <p><strong>No score given</strong></p>
+          <p></p>
+          <p>No notes from the tour yet</p>
+          
+        </article>
+        <article class="card">
+          <div class="k">No ranking yet</div>
+          <h3>1510 Golfcrest Pl, Vista, CA 92081</h3>
+          <p class="small">Showing 1:25 PM</p>
+          <p class="price">$925K</p>
+          <p class="small">1990 · 3 bed · 3 bath · 1,654 sq ft · MLS NDP2608444</p>
+          <div class="house-photo"><img src="https://cdn-crmls.roveridx.com/NDP2608444/09132026182250_1024_0.webp" alt="Listing photo" referrerpolicy="no-referrer"></div><p class="small"><a href="https://ashkongroup.com/ca/vista/1510-golfcrest-pl/" rel="noopener" target="_blank">View listing photos</a> · <a href="https://ashkongroup.com/ca/vista/1510-golfcrest-pl/" rel="noopener" target="_blank">Listing page</a><br>Listing photo, CRMLS / MLS NDP2608444. Hotlinked, not stored in this repo.</p>
+          <p><strong>No score given</strong></p>
+          <p></p>
+          <p>No notes from the tour yet</p>
+          
+        </article>
+        <article class="card">
+          <div class="k">No ranking yet</div>
+          <h3>1910 Willow Ridge Dr, Vista, CA 92081</h3>
+          <p class="small">Showing 1:35 PM</p>
+          <p class="price">$929K</p>
+          <p class="small">1989 · 3 bed · 2.5 bath · 1,810 sq ft · HOA $208/mo · MLS 260019722</p>
+          <div class="house-photo"><img src="https://m.cbhomes.com/p/357/260019722/EBe96D13A8214e5/original.webp" alt="Listing photo" referrerpolicy="no-referrer"></div><p class="small"><a href="https://www.coldwellbankerhomes.com/ca/vista/1910-willow-ridge/pid_73030740/" rel="noopener" target="_blank">View listing photos</a> · <a href="https://www.coldwellbankerhomes.com/ca/vista/1910-willow-ridge/pid_73030740/" rel="noopener" target="_blank">Listing page</a><br>Listing photo, Coldwell Banker / MLS 260019722. Hotlinked, not stored in this repo.</p>
+          <p><strong>No score given</strong></p>
+          <p></p>
+          <p>No notes from the tour yet</p>
+          
+        </article>
+        <article class="card">
+          <div class="k">No ranking yet</div>
+          <h3>1077 Cordoba Way, Vista, CA 92081</h3>
+          <p class="small">Showing 1:45 PM</p>
+          <p class="price">$899K</p>
+          <p class="small">1988 · 2 bed · 2 bath · 1,420 sq ft · HOA $256/mo · MLS 260020667</p>
+          <div class="house-photo"><img src="https://m.cbhomes.com/p/357/260020667/671cDebB0802497/original.webp" alt="Listing photo" referrerpolicy="no-referrer"></div><p class="small"><a href="https://www.coldwellbankerhomes.com/ca/vista/1077-cordoba/pid_73216052/" rel="noopener" target="_blank">View listing photos</a> · <a href="https://www.coldwellbankerhomes.com/ca/vista/1077-cordoba/pid_73216052/" rel="noopener" target="_blank">Listing page</a><br>Listing photo, Coldwell Banker / MLS 260020667. Hotlinked, not stored in this repo.</p>
+          <p><strong>No score given</strong></p>
+          <p></p>
+          <p>No notes from the tour yet</p>
+          
+        </article>
+        <article class="card">
+          <div class="k">No ranking yet</div>
+          <h3>1762 Spyglass Cir, Vista, CA 92081</h3>
+          <p class="small">Showing 2:05 PM</p>
+          <p class="price">$899K</p>
+          <p class="small">1986 · 3 bed · 2.5 bath · 1,835 sq ft · HOA $285/mo · MLS NDP2608328</p>
+          <div class="house-photo"><img src="https://m.cbhomes.com/p/733/NDP2608328/31B1d7a4d58045c/full.webp" alt="Listing photo" referrerpolicy="no-referrer"></div><p class="small"><a href="https://www.coldwellbankerhomes.com/ca/vista/1762-spyglass-circle/pid_73472022/" rel="noopener" target="_blank">View listing photos</a> · <a href="https://www.coldwellbankerhomes.com/ca/vista/1762-spyglass-circle/pid_73472022/" rel="noopener" target="_blank">Listing page</a><br>Listing photo, Coldwell Banker / MLS NDP2608328. Hotlinked, not stored in this repo.</p>
+          <p><strong>No score given</strong></p>
+          <p></p>
+          <p>No notes from the tour yet</p>
+          
+        </article>
+        <article class="card">
+          <div class="k">No ranking yet</div>
+          <h3>217 Camille Way, Vista, CA 92083</h3>
+          <p class="small">Showing 2:30 PM</p>
+          <p class="price">$899,999</p>
+          <p class="small">1991 · 4 bed · 2.5 bath · 2,440 sq ft · MLS NDP2606591</p>
+          <div class="house-photo"><img src="https://m.cbhomes.com/p/733/NDP2606591/9b62A3aB084B4F0/full.webp" alt="Listing photo" referrerpolicy="no-referrer"></div><p class="small"><a href="https://www.coldwellbankerhomes.com/ca/vista/217-camille-way/pid_72435694/" rel="noopener" target="_blank">View listing photos</a> · <a href="https://www.coldwellbankerhomes.com/ca/vista/217-camille-way/pid_72435694/" rel="noopener" target="_blank">Listing page</a><br>Listing photo, Coldwell Banker / MLS NDP2606591. Hotlinked, not stored in this repo.</p>
+          <p><strong>No score given</strong></p>
+          <p></p>
+          <p>No notes from the tour yet</p>
+          
+        </article>
+        <article class="card">
+          <div class="k">No ranking yet</div>
+          <h3>509 Avenida Aguila, San Marcos, CA 92069</h3>
+          <p class="small">Showing 2:55 PM</p>
+          <p class="price">$910K</p>
+          <p class="small">1990 · 4 bed · 3 bath · 1,646 sq ft · MLS 26866541</p>
+          <div class="house-photo"><img src="https://m.cbhomes.com/p/510/26866541/2Fb058347e58446/full.webp" alt="Listing photo" referrerpolicy="no-referrer"></div><p class="small"><a href="https://www.coldwellbankerhomes.com/ca/san-marcos/509-avenida-aguila/pid_72888591/" rel="noopener" target="_blank">View listing photos</a> · <a href="https://www.coldwellbankerhomes.com/ca/san-marcos/509-avenida-aguila/pid_72888591/" rel="noopener" target="_blank">Listing page</a><br>Listing photo, Coldwell Banker / MLS 26866541. Hotlinked, not stored in this repo.</p>
+          <p><strong>No score given</strong></p>
+          <p></p>
+          <p>No notes from the tour yet</p>
+          
+        </article>
+    <div class="section-title"><h2>Food</h2></div>
+    
+    <div class="card">
+      <h3><a href="https://www.google.com/maps/search/?api=1&amp;query=Leucadia%20Pizzeria%20Shadowridge%20Vista%20CA" rel="noopener" target="_blank">Leucadia Pizzeria - Shadowridge</a></h3>
+      <p class="small">Lunch on S Melrose Dr, before the tour.</p>
+    </div>
+    <div class="card">
+      <h3><a href="https://www.google.com/maps/search/?api=1&amp;query=Le%20Papagayo%20112%20State%20St%20Carlsbad%20CA" rel="noopener" target="_blank">Le Papagayo - Carlsbad Village</a></h3>
+      <p class="small">Dinner at 112 State St. Alt if full: 264 Fresco.</p>
+    </div>
+    <div class="section-title"><h2>Where you'd buy food</h2></div>
+    
+    <div class="card">
+      <div class="k">Primary</div>
+      <p><a href="https://locations.traderjoes.com/ca/vista/259/" rel="noopener">Trader Joe's</a></p>
+      <p class="small">1861 University Dr</p>
+    </div>
+    <div class="card">
+      <div class="k">Alt</div>
+      <p><a href="https://www.sprouts.com/store/ca/vista/vista/" rel="noopener">Sprouts</a></p>
+      <p class="small">1400 E Vista Way, Vista, CA 92084</p>
+    </div>
+    <div class="section-title"><h2>Planned timeline</h2><span class="date">from the trip page</span></div>
+    <ul class="timeline">
+    <li>
+      <div class="tl-time">07:30 AM</div>
+      <div>
+        <div class="tl-title">James Coffee - Vista</div>
+        <div class="tl-detail">Main St. Local specialty bakery-café. Daily 7am-4pm. The car stays in the studio's gated spot until lunch.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">08:15 AM</div>
+      <div>
+        <div class="tl-title">Coyote Cafe</div>
+        <div class="tl-detail">N Santa Fe Ave, a short roll from the studio. Homestyle breakfast.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">09:00 AM → 11:45 AM</div>
+      <div>
+        <div class="tl-title">92084 → Brengle Terrace → home #1</div>
+        <div class="tl-detail">No driving: 92084 (more land and space for the money), then the streets around Brengle Terrace and a lap of Brengle Terrace Park - one of Vista's best parks; see what weekend life looks like. Home #1 on the way back. Vista is hilly - low gear and no shame in walking a climb. 🗺️ Bike route</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">12:00 PM</div>
+      <div>
+        <div class="tl-title">Studio → Shadowridge · ~10 min</div>
+        <div class="tl-detail">Fold, boot, go. Lunch in Shadowridge, then the 1:00 showing is in Carlsbad. Park at Buena Vista Park (1601 Shadowridge Dr, public park lot) for lunch.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">12:30 PM</div>
+      <div>
+        <div class="tl-title">Leucadia Pizzeria - Shadowridge</div>
+        <div class="tl-detail">S Melrose Dr, a short roll from the park. Right in the neighbourhood we're circling.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">01:00 PM</div>
+      <div>
+        <div class="tl-title">6015 Paseo Salinero, Carlsbad</div>
+        <div class="tl-detail">First stop. Score view, privacy (no one looking in), and outdoor space.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">01:25 PM</div>
+      <div>
+        <div class="tl-title">1510 Golfcrest Pl, Vista</div>
+        <div class="tl-detail">Second stop.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">01:35 PM</div>
+      <div>
+        <div class="tl-title">1910 Willow Ridge Dr, Vista</div>
+        <div class="tl-detail">Third stop.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">01:45 PM</div>
+      <div>
+        <div class="tl-title">1077 Cordoba Way, Vista</div>
+        <div class="tl-detail">Fourth stop.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">02:05 PM</div>
+      <div>
+        <div class="tl-title">1762 Spyglass Cir, Vista</div>
+        <div class="tl-detail">Fifth stop.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">02:30 PM</div>
+      <div>
+        <div class="tl-title">217 Camille Way, Vista</div>
+        <div class="tl-detail">Sixth stop.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">02:55 PM</div>
+      <div>
+        <div class="tl-title">509 Avenida Aguila, San Marcos</div>
+        <div class="tl-detail">Last stop. It starts at 2:55, so it runs past 3:20 once you leave San Marcos for Vista. Coffee moves to 3:40.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">03:40 PM</div>
+      <div>
+        <div class="tl-title">Cosmic Bloom Coffee</div>
+        <div class="tl-detail">Main St, back downtown after the San Marcos stop. Was 3:15; moved because the last showing is 2:55. Still before 4 PM.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">04:10 PM</div>
+      <div>
+        <div class="tl-title">Trader Joe's - Vista</div>
+        <div class="tl-detail">1861 University Dr. Was 3:45; moved with the coffee. Keep it short - Calavera is at 4:45. Is this the store you'd use every Tuesday? Then home #2 nearby. Alt: Sprouts · E Vista Way.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">04:45 PM → 05:25 PM</div>
+      <div>
+        <div class="tl-title">Calavera Hills + Lake Calavera</div>
+        <div class="tl-detail">Drive ~15 min and park at the Lake Calavera Preserve trailhead. Ride Calavera Hills (newer condos built around trails), then walk the bike on the lake trail.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">05:30 PM</div>
+      <div>
+        <div class="tl-title">Carlsbad Village + seawall</div>
+        <div class="tl-detail">Drive ~10 min, park in a Village public lot (check time limits). Roll State St and Grand Ave, then Nick's seawall along Carlsbad Blvd at sunset (~6:30). Walk the bike on the seawall walkway itself. If Vista doesn't make this feel easy, it's the wrong Vista pocket.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">06:45 PM</div>
+      <div>
+        <div class="tl-title">Le Papagayo - Carlsbad Village</div>
+        <div class="tl-detail">112 State St. Alt if full: 264 Fresco.</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">08:15 PM</div>
+      <div>
+        <div class="tl-title">Village → Vista · ~15-20 min</div>
+        <div class="tl-detail">Car in the gated spot, bike upstairs. 🗺️ Maps drive</div>
+      </div>
+    </li>
+    <li>
+      <div class="tl-time">08:45 PM</div>
+      <div>
+        <div class="tl-title">Downtown Vista / Main Street</div>
+        <div class="tl-detail">A few minutes' walk from the studio - no driving. Prey Brewing or Belching Beaver Tavern.</div>
+      </div>
+    </li></ul>
+    <div class="section-title"><h2>Sources</h2></div>
+    <ul class="clean"><li>Friday 2 Oct showing schedule John sent, 7 addresses</li><li>Trip page section #fri</li><li>Trip page Vista card in #groceries</li></ul></div>
+</main>
+<footer>
+ <p id="cap-foot">North County dream scout · Wed 30 Sep – Sun 4 Oct 2026</p>
+</footer>
+
+
+</body></html>

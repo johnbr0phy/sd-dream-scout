@@ -34,8 +34,8 @@ Free plan the site only publishes if the repository is public.
   pickup Wed 8 PM / return Sun 11 AM ($441.59). Door/gate codes and confirmation numbers stay off the page
 - Nick Miele's (Compass) self-guided neighbourhood plan folded into Thu-Sun: Oceanside, Vista,
   San Marcos, and Carlsbad (Calavera Hills on Fri, La Costa on the Sun airport run). Escondido is cut.
-  Thu 1 Oct in-person tour: Rancho Del Oro, 8 homes, about 2.5 hours. Fri 2 Oct: 1:00-3:00 PM with Nick,
-  6 homes in Carlsbad and Shadowridge. Areas, criteria, and logistics only - no listing addresses or prices
+  Thu 1 Oct in-person tour: Rancho Del Oro, 8 homes, about 2.5 hours. Fri 2 Oct: seven showings
+  with Nick, 1:00 PM to 2:55 PM, named on the Friday timeline. Listing prices stay in the capsules.
 - Brompton days: drive to each area, park once (parking spot on every ride block), and ride Nick's
   neighbourhoods with bike-route links. Bike logistics (checked bag, Tesla boot, studio, kit) under Fly · Stay · Car
 - Solo cost breakdown, coffee tally, and "before we stamp" questions
@@ -125,12 +125,13 @@ Thursday house-tour notes folded in (areas, criteria, and logistics only):
 ### 2 Oct 2026 — time capsules
 
 `capsules/` holds one JSON record per trip day and the HTML pages built from it.
-Thursday 1 Oct is the first capsule. See `capsules/README.md`. Addresses and prices
-are included there. Offer plans and the baby's name are not. The Thursday page now
-uses John's 9-address showing schedule, with listing photos hotlinked from the listing sites.
+Thursday 1 Oct and Friday 2 Oct are the capsules so far. See `capsules/README.md`. Addresses and prices
+are included there. Offer plans and the baby's name are not. Listing photos are hotlinked from the listing sites.
+
+Friday's trip-page tour is the seven timed stops John sent. The last is 2:55 PM in San Marcos, so coffee is 3:40, Trader Joe's is 4:10, and Calavera Hills starts at 4:45.
 
 ## Privacy
 
-No credentials and no personal emails. The day-by-day trip page stays on areas and logistics.
-`capsules/` may name addresses, prices, and house notes from this trip. It does not include
-offer plans or the baby's name. Listing photos are linked, not copied into the repo.
+No credentials and no personal emails. Friday's tour block names the seven showing addresses and times.
+Listing prices and house facts live in `capsules/`. Neither place includes offer plans or the baby's name.
+Listing photos are linked, not copied into the repo.
