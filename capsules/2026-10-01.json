@@ -83,7 +83,7 @@
     }
   ],
   "notes": {
-    "summary": "In-person tour with Nick (Compass) through Rancho Del Oro, Oceanside: 8 homes in about 2.5 hours, all close together. View, privacy (no one looking in), and outdoor space came first. A good kitchen matters to Maya. Also wanted: a walk-in closet, and a fourth flex room for an office or playroom. Solar and a vegetable garden are nice-to-haves. A gated community is preferred, and a cul-de-sac or quiet street is strongly preferred.",
+    "summary": "In-person tour with Nick (Compass) through Rancho Del Oro, Oceanside. The notes describe 8 homes in about 2.5 hours, all close together. John's showing schedule has 9 Oceanside addresses. View, privacy (no one looking in), and outdoor space came first. A good kitchen matters to Maya. Also wanted: a walk-in closet, and a fourth flex room for an office or playroom. Solar and a vegetable garden are nice-to-haves. A gated community is preferred, and a cul-de-sac or quiet street is strongly preferred.",
     "highlights": [
       "Top three: view, privacy, and outdoor space.",
       "A good kitchen matters to Maya. A walk-in closet. A fourth flex room for an office or playroom.",
@@ -94,7 +94,8 @@
       "Read solar lease contracts carefully. Some are predatory.",
       "HOA on this tour ran about $140-200/mo. Confirm what that fee covers.",
       "Single-family homes under $1M are getting hard to find. The market is a bit frozen, so buyers have more room on price.",
-      "Nick's tip: put the MLS photos into Claude and ask it to decorate them for layout ideas."
+      "Nick's tip: put the MLS photos into Claude and ask it to decorate them for layout ideas.",
+      "The showing schedule has 9 stops. 1861 Avenida Segovia was on it and had no tour writeup."
     ],
     "nextSteps": [
       "Friday with Nick, 1:00-3:00 PM: 6 homes in Carlsbad and Shadowridge."
@@ -102,19 +103,22 @@
     "sources": [
       "Granola summary, House hunting insights, Thu 1 Oct 2026 10:11 AM PT",
       "Trip page section #thu",
-      "Trip page Oceanside card in #groceries"
+      "Trip page Oceanside card in #groceries",
+      "Thursday 1 Oct showing schedule John sent, 9 Oceanside addresses"
     ]
   },
   "houses": [
     {
       "address": "1242 Via Candelas, Oceanside, CA 92056",
-      "price": 890000,
+      "showingTime": "11:15 AM",
+      "price": 891000,
       "beds": 3,
       "baths": 2.5,
-      "sqft": 1850,
+      "sqft": 1771,
       "yearBuilt": 2019,
-      "hoa": "~$180/mo",
+      "hoa": "$180/mo",
       "notes": "Gated community, shared pool. Unobstructed hill, mountain, and San Diego view from the backyard, and no neighbors behind. Tankless water heater and central AC. Needs floors ($15-18K), a garden ($20-30K), and kitchen and downstairs cosmetics ($10-15K). About 50 days on market. Tour figure was about $890K and about 1,850 sq ft.",
+      "matchSource": "The tour notes already named 1242 Via Candelas as the standout. John's schedule puts the showing at 11:15 AM. Public listing: $891,000, 3 bedrooms, 2.5 baths, 1,771 sq ft, built 2019, HOA $180/mo (Coldwell Banker Homes, MLS 260019815).",
       "photo": {
         "url": "https://m.cbhomes.com/p/357/260019815/998Bc79cB07f459/original.webp",
         "kind": "listing",
@@ -132,13 +136,15 @@
     },
     {
       "address": "1267 Via Candelas, Oceanside, CA 92056",
-      "price": 925000,
-      "beds": null,
-      "baths": null,
-      "sqft": null,
-      "yearBuilt": null,
-      "hoa": null,
+      "showingTime": "11:40 AM",
+      "price": 924999,
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 1864,
+      "yearBuilt": 2018,
+      "hoa": "$175/mo",
       "notes": "Same community as 1242 Via Candelas. Nicer kitchen. Neighbors looking in from all sides. About 90 days on market. The tour notes had this at $925K.",
+      "matchSource": "The tour notes already named 1267 Via Candelas as a contender at $925K. John's schedule puts the showing at 11:40 AM. Public listing: $924,999, 3 bedrooms, 2.5 baths, 1,864 sq ft, built 2018, HOA $175/mo (Coldwell Banker Homes, MLS NDP2606564).",
       "photo": {
         "url": "https://m.cbhomes.com/p/733/NDP2606564/2BcA2C3F580e4b6/full.webp",
         "kind": "listing",
@@ -156,13 +162,15 @@
     },
     {
       "address": "1702 Avenida Vista Labera, Oceanside, CA 92056",
+      "showingTime": "12:30 PM",
       "price": 915000,
-      "beds": null,
-      "baths": null,
-      "sqft": 1400,
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 1432,
       "yearBuilt": 1988,
-      "hoa": null,
-      "notes": "The tour notes called this 1702 Rancho del Oro. The public listing that matches that price, the 1988 build, about 1,400 sq ft, and Rancho Del Oro is 1702 Avenida Vista Labera. Nicest garden of the day: lime trees, grass, a BBQ. Move-in ready, cramped, and no fourth room.",
+      "hoa": "$143/mo",
+      "notes": "John confirmed this is the $915K garden contender. The tour notes called it 1702 Rancho del Oro. Nicest garden of the day: lime trees, grass, a BBQ. Move-in ready, cramped, and no fourth room.",
+      "matchSource": "John confirmed 1702 Avenida Vista Labera is the $915K garden contender, and the schedule puts it at 12:30 PM. Public listing: $915,000, 3 bedrooms, 2.5 baths, 1,432 sq ft, built 1988, HOA $143/mo (Coldwell Banker Homes, MLS NDP2608679). The tour size was about 1,400 sq ft.",
       "photo": {
         "url": "https://m1.cbhomes.com/p/733/NDP2608679/06063A33A0f5472/full.webp",
         "kind": "listing",
@@ -179,19 +187,21 @@
       }
     },
     {
-      "address": "855 Rancho del Oro, Oceanside, CA",
+      "address": "4724 Ventana Way, Oceanside, CA 92057",
+      "showingTime": "10:00 AM",
       "price": 859000,
       "beds": 3,
-      "baths": null,
-      "sqft": 1500,
-      "yearBuilt": null,
-      "hoa": null,
-      "notes": "Dated fixer. 3 bed, about 1,500 sq ft. The notes give 855 Rancho del Oro. No public listing was clearly this house, so the photo is a stand-in.",
+      "baths": 2.5,
+      "sqft": 1532,
+      "yearBuilt": 2001,
+      "hoa": "$111/mo",
+      "notes": "Dated fixer in the tour notes. The notes called it 855 Rancho del Oro, 3 bed, about 1,500 sq ft. The listing copy calls the house move-in ready.",
+      "matchSource": "Matched the tour note of $859K, 3 bedrooms, about 1,500 sq ft, written as 855 Rancho del Oro. Public listing: $859,000, 3 bedrooms, 2.5 baths, 1,532 sq ft, built 2001, in Rancho Del Oro, HOA $111/mo (Coldwell Banker Homes, MLS 260022755). Price and bedroom count match, and 1,532 sq ft is the note's 1,500. No other showing is $859,000 and 3 bedrooms.",
       "photo": {
-        "url": "../img/fri-vista-hills.jpg",
-        "kind": "representative",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Marcos_Mountains_seen_from_Vista,_California.jpg",
-        "credit": "Z3lvs, CC0, via Wikimedia Commons. A house in Vista, not this Oceanside home."
+        "url": "https://m.cbhomes.com/p/357/260022755/d29c2D50cB1e4fE/original.webp",
+        "kind": "listing",
+        "sourceUrl": "https://www.coldwellbankerhomes.com/ca/oceanside/4724-ventana-way/pid_73783322/",
+        "credit": "Listing photo, Coldwell Banker / MLS 260022755. Hotlinked, not stored in this repo."
       },
       "ranking": {
         "johnScore": null,
@@ -203,19 +213,21 @@
       }
     },
     {
-      "address": "Rancho Del Oro, Oceanside (address not in notes)",
-      "price": 900000,
+      "address": "914 Tempera Ct, Oceanside, CA 92057",
+      "showingTime": "10:25 AM",
+      "price": 899000,
       "beds": 4,
-      "baths": null,
-      "sqft": 2000,
-      "yearBuilt": null,
+      "baths": 2.5,
+      "sqft": 2077,
+      "yearBuilt": 1993,
       "hoa": null,
-      "notes": "4 bed, about 2,000 sq ft. Funky downstairs, great outdoor space, a built-in BBQ, and old moldy windows. Address was not in the notes.",
+      "notes": "Funky downstairs, great outdoor space, a built-in BBQ, and old moldy windows. The tour notes had this at about $900K, 4 bed, about 2,000 sq ft, with no street address.",
+      "matchSource": "Matched the tour note of about $900K, 4 bedrooms, about 2,000 sq ft. Public listing: $899,000, 4 bedrooms, 2.5 baths, 2,077 sq ft, built 1993 (The Knight Group, MLS NDP2609007). $899,000 is the note's $900K, the bedroom count matches, and 2,077 sq ft is the note's 2,000. No other showing is a 4-bedroom near 2,000 sq ft.",
       "photo": {
-        "url": "../img/fri-vista-hills.jpg",
-        "kind": "representative",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Marcos_Mountains_seen_from_Vista,_California.jpg",
-        "credit": "Z3lvs, CC0, via Wikimedia Commons. A house in Vista, not this Oceanside home."
+        "url": "https://cdn-crmls.roveridx.com/NDP2609007/09272026203804_1024_0.jpg",
+        "kind": "listing",
+        "sourceUrl": "https://theknightgroupla.com/ca/oceanside/rancho-del-oro-34024-/914-tempera-ct/",
+        "credit": "Listing photo, CRMLS / MLS NDP2609007. Hotlinked, not stored in this repo."
       },
       "ranking": {
         "johnScore": null,
@@ -227,19 +239,21 @@
       }
     },
     {
-      "address": "Rancho Del Oro, Oceanside (address not in notes)",
-      "price": 850000,
+      "address": "4059 Ivey Vista Way, Oceanside, CA 92057",
+      "showingTime": "10:50 AM",
+      "price": 849999,
       "beds": 4,
-      "baths": null,
-      "sqft": 1600,
-      "yearBuilt": null,
-      "hoa": null,
-      "notes": "4 bed, about 1,600 sq ft. The most turnkey of the day. Galley kitchen. Neighbors look into the yard. Address was not in the notes.",
+      "baths": 2.5,
+      "sqft": 1610,
+      "yearBuilt": 1999,
+      "hoa": "$225/mo",
+      "notes": "The most turnkey of the day. Galley kitchen. Neighbors look into the yard. The tour notes had this at about $850K, 4 bed, about 1,600 sq ft, with no street address.",
+      "matchSource": "Matched the tour note of about $850K, 4 bedrooms, about 1,600 sq ft. Public listing page: $849,999, 4 bedrooms, 2.5 baths, 1,610 sq ft, built 1999, HOA $225/mo (Coldwell Banker Homes, MLS NDP2608454). An earlier search snippet still showed $880,000. $849,999 is the note's $850K, the bedroom count matches, and 1,610 sq ft is the note's 1,600.",
       "photo": {
-        "url": "../img/fri-vista-hills.jpg",
-        "kind": "representative",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Marcos_Mountains_seen_from_Vista,_California.jpg",
-        "credit": "Z3lvs, CC0, via Wikimedia Commons. A house in Vista, not this Oceanside home."
+        "url": "https://m.cbhomes.com/p/733/NDP2608454/9fDf296D1d414eB/full.webp",
+        "kind": "listing",
+        "sourceUrl": "https://www.coldwellbankerhomes.com/ca/oceanside/4059-ivey-vista-way/pid_73616009/",
+        "credit": "Listing photo, Coldwell Banker / MLS NDP2608454. Hotlinked, not stored in this repo."
       },
       "ranking": {
         "johnScore": null,
@@ -251,19 +265,21 @@
       }
     },
     {
-      "address": "Rancho Del Oro, Oceanside (address not in notes)",
+      "address": "1721 Corte Viejo, Oceanside, CA 92056",
+      "showingTime": "12:05 PM",
       "price": 869000,
       "beds": 3,
-      "baths": null,
-      "sqft": 1400,
-      "yearBuilt": null,
-      "hoa": null,
-      "notes": "Single-story, 3 bed, about 1,400 sq ft. Solar plus two leased Tesla batteries at $202/mo. No pool. Cramped. Address was not in the notes.",
+      "baths": 2,
+      "sqft": 1380,
+      "yearBuilt": 1991,
+      "hoa": "$142/mo",
+      "notes": "Single-story, 3 bed, about 1,400 sq ft. Solar plus two leased Tesla batteries at $202/mo. No pool. Cramped. The listing copy says leased solar, inverters, and Tesla batteries.",
+      "matchSource": "Matched the tour note of $869K, single-story, 3 bedrooms, about 1,400 sq ft, with solar and two leased Tesla batteries. Public listing page: $869,000, 3 bedrooms, 2 baths, 1,380 sq ft, built 1991, one story, HOA $142/mo, and the description names leased solar, inverters, and Tesla batteries (Coldwell Banker Homes, MLS NDP2607772). An earlier search snippet still showed $889,000. Price and bedroom count match, 1,380 sq ft is the note's 1,400, and it is the only single-story showing with leased solar and Tesla batteries. Score 4.5/10 is the one score in the tour notes.",
       "photo": {
-        "url": "../img/fri-vista-hills.jpg",
-        "kind": "representative",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Marcos_Mountains_seen_from_Vista,_California.jpg",
-        "credit": "Z3lvs, CC0, via Wikimedia Commons. A house in Vista, not this Oceanside home."
+        "url": "https://m.cbhomes.com/p/733/NDP2607772/89f75e1dB94F48C/full.webp",
+        "kind": "listing",
+        "sourceUrl": "https://www.coldwellbankerhomes.com/ca/oceanside/1721-corte-viejo/pid_73134691/",
+        "credit": "Listing photo, Coldwell Banker / MLS NDP2607772. Hotlinked, not stored in this repo."
       },
       "ranking": {
         "johnScore": 4.5,
@@ -275,19 +291,21 @@
       }
     },
     {
-      "address": "Rancho Del Oro, Oceanside (address not in notes)",
+      "address": "1727 Avenida Vista Labera, Oceanside, CA 92056",
+      "showingTime": "12:55 PM",
       "price": 833000,
       "beds": 3,
-      "baths": null,
-      "sqft": 1700,
-      "yearBuilt": null,
-      "hoa": null,
-      "notes": "3 bed, about 1,700 sq ft. Musty, dated, and unfurnished. Last of the day. Address was not in the notes.",
+      "baths": 2.5,
+      "sqft": 1678,
+      "yearBuilt": 1988,
+      "hoa": "$142/mo",
+      "notes": "Musty, dated, and unfurnished. Last of the day in the tour notes. 3 bed, about 1,700 sq ft. The listing copy calls it move-in ready.",
+      "matchSource": "Matched the tour note of $833K, 3 bedrooms, about 1,700 sq ft, worst of the day. Public listing: $833,000, 3 bedrooms, 2.5 baths, 1,678 sq ft, built 1988, HOA $142/mo (MLS ND26199948; one Coldwell Banker page showed $843,000). Price and bedroom count match, and 1,678 sq ft is the note's 1,700. 1861 Avenida Segovia is also about 1,700 sq ft and 3 bedrooms, but it is listed at $850,000, so it does not take this note.",
       "photo": {
-        "url": "../img/fri-vista-hills.jpg",
-        "kind": "representative",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Marcos_Mountains_seen_from_Vista,_California.jpg",
-        "credit": "Z3lvs, CC0, via Wikimedia Commons. A house in Vista, not this Oceanside home."
+        "url": "https://images-listings.coldwellbanker.com/SANDICOR/ND/26/19/99/48/_P/ND26199948_P00.webp?width=1000",
+        "kind": "listing",
+        "sourceUrl": "https://www.coldwellbanker.com/ca/oceanside/1727-avenida-vista-labera/lid-P00800000HHA5XRoEVlYZJp8yMomVai4XLEb1j2k",
+        "credit": "Listing photo, Coldwell Banker / MLS ND26199948. Hotlinked, not stored in this repo."
       },
       "ranking": {
         "johnScore": null,
@@ -297,7 +315,33 @@
         "dayGroup": "Worst of the day",
         "orderSource": "Granola summary: worst of the day, last."
       }
+    },
+    {
+      "address": "1861 Avenida Segovia, Oceanside, CA 92056",
+      "showingTime": "1:20 PM",
+      "price": 850000,
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 1708,
+      "yearBuilt": 1989,
+      "hoa": "$142/mo",
+      "notes": "No notes from the tour.",
+      "matchSource": "No tour note matched. Public listing: $850,000, 3 bedrooms, 2.5 baths, 1,708 sq ft, built 1989, HOA $142/mo (MLS 260021328). The $850K tour note is a 4-bedroom of about 1,600 sq ft, which matches 4059 Ivey Vista Way. The $833K tour note is a 3-bedroom of about 1,700 sq ft, which matches 1727 Avenida Vista Labera at $833,000.",
+      "photo": {
+        "url": "https://cdn-crmls.roveridx.com/260021328SD/09062026171558_1024_0.webp",
+        "kind": "listing",
+        "sourceUrl": "https://ashkongroup.com/ca/oceanside/oceanside/1861-avenida-segovia/",
+        "credit": "Listing photo, CRMLS / MLS 260021328. Hotlinked, not stored in this repo."
+      },
+      "ranking": {
+        "johnScore": null,
+        "scoreScale": null,
+        "scoreSource": null,
+        "dayOrder": null,
+        "dayGroup": "On the schedule",
+        "orderSource": "Showing schedule. No tour note matched this address, so it has no day ranking."
+      }
     }
   ],
-  "takeaway": "1242 Via Candelas was the standout: the view, nobody behind the house, and a gated community, with a known list of floors, garden, and kitchen cosmetics. The other seven did not beat that mix. Friday is six more homes with Nick, 1:00 to 3:00, in Carlsbad and Shadowridge."
+  "takeaway": "1242 Via Candelas was the standout: the view, nobody behind the house, and a gated community, with a known list of floors, garden, and kitchen cosmetics. The other houses in the notes did not beat that mix. The schedule had nine stops, and 1861 Avenida Segovia had no tour notes. Friday is six more homes with Nick, 1:00 to 3:00, in Carlsbad and Shadowridge."
 }

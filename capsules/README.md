@@ -25,8 +25,12 @@ Live index: `capsules/index.html` (GitHub Pages: `/capsules/`).
 
 ## House fields
 
-`houses[]` uses `address`, `price` (a number of dollars), `beds`, `baths`, `sqft`,
-`yearBuilt`, `hoa`, `notes`, `photo`, and `ranking`.
+`houses[]` uses `address`, `showingTime`, `price` (a number of dollars), `beds`, `baths`, `sqft`,
+`yearBuilt`, `hoa`, `notes`, `matchSource`, `photo`, and `ranking`.
+
+`showingTime` is the appointment, like `10:00 AM`. The page lists showings in that order.
+Ranking groups stay in the order written in the JSON.
+`matchSource` says why an address was tied to a tour note, or why it was not.
 
 `photo.kind` is `listing`, `streetview`, or `representative`.
 
@@ -42,5 +46,8 @@ Leave out offer plans, offer timing, and negotiation reasoning. Do not name the 
 
 ## Thursday 1 Oct photo notes
 
-- 1242 Via Candelas, 1267 Via Candelas, and 1702 Avenida Vista Labera (the notes said "1702 Rancho del Oro"; the public listing at that price, year, and size is Avenida Vista Labera) use hotlinked Coldwell Banker listing photos. Zillow, Redfin, Realtor.com, and Compass did not have a usable active-listing photo URL for these three when the capsule was built.
-- 855 Rancho del Oro and the four homes with no address in the notes use `img/fri-vista-hills.jpg` (Z3lvs, CC0), labeled representative.
+Every house on the 1 Oct showing schedule uses a hotlinked listing photo. The files are not in this repo.
+
+- 1242 Via Candelas, 1267 Via Candelas, 1702 Avenida Vista Labera, 4724 Ventana Way, 4059 Ivey Vista Way, and 1721 Corte Viejo: Coldwell Banker listing photos.
+- 1727 Avenida Vista Labera: Coldwell Banker listing photo.
+- 914 Tempera Ct and 1861 Avenida Segovia: CRMLS listing photos.

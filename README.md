@@ -126,7 +126,8 @@ Thursday house-tour notes folded in (areas, criteria, and logistics only):
 
 `capsules/` holds one JSON record per trip day and the HTML pages built from it.
 Thursday 1 Oct is the first capsule. See `capsules/README.md`. Addresses and prices
-are included there. Offer plans and the baby's name are not.
+are included there. Offer plans and the baby's name are not. The Thursday page now
+uses John's 9-address showing schedule, with listing photos hotlinked from the listing sites.
 
 ## Privacy
 
