@@ -164,6 +164,14 @@ function orderLine(ranking) {
   return `${order}${source}`;
 }
 
+function showingMinutes(time) {
+  const match = String(time || '').match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+  if (!match) return Number.MAX_SAFE_INTEGER;
+  let hours = Number(match[1]) % 12;
+  if (match[3].toUpperCase() === 'PM') hours += 12;
+  return hours * 60 + Number(match[2]);
+}
+
 function renderBody(data, day) {
   const timeline = (data.plannedTimeline || []).map((item) => `
     <li>
@@ -209,20 +217,36 @@ function renderBody(data, day) {
     const cards = group.houses.map((house) => {
       const tone = group.name === 'Standout' ? ' pick' : group.name === 'Worst of the day' ? ' low' : '';
       const facts = statLine(house);
+      const when = house.showingTime ? `<p class="small">Showing ${esc(house.showingTime)}</p>` : '';
+      const matched = house.matchSource ? `<p class="small">${esc(house.matchSource)}</p>` : '';
       return `
         <article class="card${tone}">
           <div class="k">${esc(group.name)}</div>
           <h3>${esc(house.address)}</h3>
+          ${when}
           <p class="price">${money(house.price)}</p>
           ${facts ? `<p class="small">${esc(facts)}</p>` : ''}
           ${photoBlock(house.photo)}
           <p><strong>${scoreLine(house.ranking)}</strong></p>
           <p>${orderLine(house.ranking)}</p>
           <p>${esc(house.notes)}</p>
+          ${matched}
         </article>`;
     }).join('');
     return `<h3 style="margin:18px 0 8px;">${esc(group.name)}</h3>${cards}`;
   }).join('');
+
+  const showings = [...(data.houses || [])]
+    .filter((house) => house.showingTime)
+    .sort((a, b) => showingMinutes(a.showingTime) - showingMinutes(b.showingTime))
+    .map((house) => `
+    <li>
+      <div class="tl-time">${esc(house.showingTime)}</div>
+      <div>
+        <div class="tl-title">${esc(house.address)}</div>
+        <div class="tl-detail">${esc([money(house.price), house.ranking?.dayGroup].filter(Boolean).join(' · '))}</div>
+      </div>
+    </li>`).join('');
 
   return `
     <p class="lede">${esc(data.takeaway || '')}</p>
@@ -230,7 +254,9 @@ function renderBody(data, day) {
     <p>${esc(notes.summary || '')}</p>
     <ul class="clean">${highlights}</ul>
     <div class="note"><strong>Next.</strong> ${esc(nextText) || 'Nothing recorded.'}</div>
-    <div class="section-title"><h2>Houses</h2></div>
+    <div class="section-title"><h2>Showings</h2><span class="date">by appointment time</span></div>
+    <ul class="timeline">${showings || ''}</ul>
+    <div class="section-title"><h2>Houses</h2><span class="date">same ranking groups</span></div>
     ${houses || '<p class="lede">No houses recorded.</p>'}
     <div class="section-title"><h2>Food</h2></div>
     ${food || '<p class="lede">No food stops recorded.</p>'}
