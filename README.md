@@ -122,6 +122,14 @@ Thursday house-tour notes folded in (areas, criteria, and logistics only):
 - A short market note from Nick, plus his tip to drop MLS photos into Claude for layout ideas
 - Groceries section unchanged
 
+### 2 Oct 2026 — time capsules
+
+`capsules/` holds one JSON record per trip day and the HTML pages built from it.
+Thursday 1 Oct is the first capsule. See `capsules/README.md`. Addresses and prices
+are included there. Offer plans and the baby's name are not.
+
 ## Privacy
 
-No credentials, no listing street addresses, no personal emails. Business names and links only.
+No credentials and no personal emails. The day-by-day trip page stays on areas and logistics.
+`capsules/` may name addresses, prices, and house notes from this trip. It does not include
+offer plans or the baby's name. Listing photos are linked, not copied into the repo.
